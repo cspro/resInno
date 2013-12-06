@@ -382,6 +382,47 @@ img, area, map {
     clear: left;
     -webkit-transition:0.5s linear all;
     transition:0.5s linear all;
+    h1, h2 {
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 1em;
+    }
+    .iconKey {
+      li {
+        display: inline-block;
+        margin: 0 0 3px 0;
+        padding: 0 1em 0 0;
+        list-style-type: none;
+        line-height: 20px;
+        vertical-align: top;
+        font-size: 0.75em;
+        background-color: lighten($projectButtonBg, 15%);
+        border-radius: 3px;
+        div {
+          display: inline-block;
+          padding: 1px;
+          border-radius: 3px;
+          overflow: hidden;
+          margin: 0 3px -6px 0;
+          width: 24px;
+          height: 21px;
+          background-color: darken($projectButtonBg, 15%);
+          span {
+            display: block;
+            width: 18px;
+            height: 15px;
+            float: left;
+            margin: 2px;
+            background-size: 100%;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    .counter {
+      font-size: 0.85em;
+    }
     // &.ng-hide {}
     // &.ng-hide-add, &.ng-hide-remove {
       // /* this needs to be here to make it visible during the animation
@@ -529,21 +570,6 @@ img, area, map {
         -webkit-box-shadow: 0px 0px 2px 0px rgba(68,68,68,0.5);
         box-shadow:         0px 0px 2px 0px rgba(68,68,68,0.5);
       }
-      &.CC {
-        background:$projectButtonBg url('../images/project_icon_CC.svg')  50% 50% no-repeat;
-      }
-      &.DD {
-        background:$projectButtonBg url('../images/project_icon_DD.svg')  50% 50% no-repeat;
-      }
-      &.EE {
-        background:$projectButtonBg url('../images/project_icon_EE.svg')  50% 50% no-repeat;
-      }
-      &.OL {
-        background:$projectButtonBg url('../images/project_icon_OL.svg')  50% 50% no-repeat;
-      }
-      &.NG {
-        background:$projectButtonBg url('../images/project_icon_NG.svg')  50% 50% no-repeat;
-      }
       -webkit-transition: all 0.15s ease-in-out;
       transition: all 0.15s ease-in-out;
       -webkit-transition: background-color 0.25s ease-in-out;
@@ -552,5 +578,20 @@ img, area, map {
   }
 }
 
+.CC {
+  background:$projectButtonBg url('../images/project_icon_CC.svg')  50% 50% no-repeat;
+}
+.DD {
+  background:$projectButtonBg url('../images/project_icon_DD.svg')  50% 50% no-repeat;
+}
+.EE {
+  background:$projectButtonBg url('../images/project_icon_EE.svg')  50% 50% no-repeat;
+}
+.OL {
+  background:$projectButtonBg url('../images/project_icon_OL.svg')  50% 50% no-repeat;
+}
+.NG {
+  background:$projectButtonBg url('../images/project_icon_NG.svg')  50% 50% no-repeat;
+}
 
 @import 'modal';

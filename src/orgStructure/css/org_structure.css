@@ -411,9 +411,54 @@ img, area, map {
   -webkit-transition: 0.5s linear all;
   transition: 0.5s linear all;
 }
+/* line 385, ../sass/org_structure.scss */
+.copyWrapper .copy h1, .copyWrapper .copy h2 {
+  margin-bottom: 0;
+}
+/* line 388, ../sass/org_structure.scss */
+.copyWrapper .copy p {
+  margin-top: 1em;
+}
+/* line 392, ../sass/org_structure.scss */
+.copyWrapper .copy .iconKey li {
+  display: inline-block;
+  margin: 0 0 3px 0;
+  padding: 0 1em 0 0;
+  list-style-type: none;
+  line-height: 20px;
+  vertical-align: top;
+  font-size: 0.75em;
+  background-color: #e1e1e1;
+  border-radius: 3px;
+}
+/* line 402, ../sass/org_structure.scss */
+.copyWrapper .copy .iconKey li div {
+  display: inline-block;
+  padding: 1px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0 3px -6px 0;
+  width: 24px;
+  height: 21px;
+  background-color: #959595;
+}
+/* line 411, ../sass/org_structure.scss */
+.copyWrapper .copy .iconKey li div span {
+  display: block;
+  width: 18px;
+  height: 15px;
+  float: left;
+  margin: 2px;
+  background-size: 100%;
+  background-color: transparent;
+}
+/* line 423, ../sass/org_structure.scss */
+.copyWrapper .copy .counter {
+  font-size: 0.85em;
+}
 
 @media (min-width: 600px) {
-  /* line 396, ../sass/org_structure.scss */
+  /* line 437, ../sass/org_structure.scss */
   #circleWrapper {
     position: relative;
     display: block;
@@ -421,15 +466,15 @@ img, area, map {
     margin-right: 2em;
   }
 
-  /* line 402, ../sass/org_structure.scss */
+  /* line 443, ../sass/org_structure.scss */
   .copyWrapper {
     clear: none;
   }
-  /* line 404, ../sass/org_structure.scss */
+  /* line 445, ../sass/org_structure.scss */
   .copyWrapper .copyToggle {
     display: none !important;
   }
-  /* line 407, ../sass/org_structure.scss */
+  /* line 448, ../sass/org_structure.scss */
   .copyWrapper .copy {
     display: table !important;
     clear: none;
@@ -437,17 +482,17 @@ img, area, map {
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /* line 417, ../sass/org_structure.scss */
+  /* line 458, ../sass/org_structure.scss */
   .projectColumns h2 {
     padding: 6px;
     font-size: 1.15em;
   }
 
-  /* line 422, ../sass/org_structure.scss */
+  /* line 463, ../sass/org_structure.scss */
   .projectColumn.professional {
     padding-right: 0;
   }
-  /* line 424, ../sass/org_structure.scss */
+  /* line 465, ../sass/org_structure.scss */
   .projectColumn.professional h2 {
     -webkit-border-top-left-radius: 8px;
     border-top-left-radius: 8px;
@@ -455,11 +500,11 @@ img, area, map {
     border-top-right-radius: 0px !important;
   }
 
-  /* line 431, ../sass/org_structure.scss */
+  /* line 472, ../sass/org_structure.scss */
   .projectColumn.higherEd {
     padding-left: 0;
   }
-  /* line 433, ../sass/org_structure.scss */
+  /* line 474, ../sass/org_structure.scss */
   .projectColumn.higherEd h2 {
     -webkit-border-top-left-radius: 0px !important;
     border-top-left-radius: 0px !important;
@@ -469,17 +514,17 @@ img, area, map {
 }
 /* Medium devices (desktops and up) */
 @media (min-width: 992px) {
-  /* line 445, ../sass/org_structure.scss */
+  /* line 486, ../sass/org_structure.scss */
   .projectColumns h2 {
     padding: 10px;
     font-size: 1.25em;
   }
 
-  /* line 450, ../sass/org_structure.scss */
+  /* line 491, ../sass/org_structure.scss */
   .projectColumn.professional {
     padding-right: 0;
   }
-  /* line 452, ../sass/org_structure.scss */
+  /* line 493, ../sass/org_structure.scss */
   .projectColumn.professional h2 {
     -webkit-border-top-left-radius: 10px !important;
     border-top-left-radius: 10px !important;
@@ -487,12 +532,12 @@ img, area, map {
     border-top-right-radius: 0px !important;
   }
 
-  /* line 459, ../sass/org_structure.scss */
+  /* line 500, ../sass/org_structure.scss */
   .projectColumn.higherEd {
     padding-right: 0;
     padding-left: 0;
   }
-  /* line 462, ../sass/org_structure.scss */
+  /* line 503, ../sass/org_structure.scss */
   .projectColumn.higherEd h2 {
     -webkit-border-top-right-radius: 0px !important;
     border-top-right-radius: 0px !important;
@@ -500,11 +545,11 @@ img, area, map {
     border-top-left-radius: 0px !important;
   }
 
-  /* line 469, ../sass/org_structure.scss */
+  /* line 510, ../sass/org_structure.scss */
   .projectColumn.school {
     padding-left: 0;
   }
-  /* line 471, ../sass/org_structure.scss */
+  /* line 512, ../sass/org_structure.scss */
   .projectColumn.school h2 {
     -webkit-border-top-left-radius: 0px !important;
     border-top-left-radius: 0px !important;
@@ -513,13 +558,13 @@ img, area, map {
   }
 }
 /* Large devices (large desktops, 1200px and up) */
-/* line 485, ../sass/org_structure.scss */
+/* line 526, ../sass/org_structure.scss */
 .projectList {
   margin: 0;
   padding: 2px 4px;
   line-height: 1em;
 }
-/* line 489, ../sass/org_structure.scss */
+/* line 530, ../sass/org_structure.scss */
 .projectList li {
   list-style-type: none;
   display: block;
@@ -532,7 +577,7 @@ img, area, map {
   text-align: center;
   padding: 1px;
 }
-/* line 501, ../sass/org_structure.scss */
+/* line 542, ../sass/org_structure.scss */
 .projectList li .projectLink {
   display: block;
   position: relative;
@@ -552,12 +597,12 @@ img, area, map {
   -webkit-transition: background-color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out;
 }
-/* line 515, ../sass/org_structure.scss */
+/* line 556, ../sass/org_structure.scss */
 .projectList li .projectLink span {
   width: 100%;
   height: 40px;
 }
-/* line 519, ../sass/org_structure.scss */
+/* line 560, ../sass/org_structure.scss */
 .projectList li .projectLink:hover {
   border-color: #eeeeee;
   background-color: #7b7b7b;
@@ -565,31 +610,36 @@ img, area, map {
   -webkit-box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.3);
   box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.3);
 }
-/* line 526, ../sass/org_structure.scss */
+/* line 567, ../sass/org_structure.scss */
 .projectList li .projectLink:active {
   border-color: white;
   -moz-box-shadow: 0px 0px 2px 0px rgba(68, 68, 68, 0.5);
   -webkit-box-shadow: 0px 0px 2px 0px rgba(68, 68, 68, 0.5);
   box-shadow: 0px 0px 2px 0px rgba(68, 68, 68, 0.5);
 }
-/* line 532, ../sass/org_structure.scss */
-.projectList li .projectLink.CC {
+
+/* line 581, ../sass/org_structure.scss */
+.CC {
   background: #bbbbbb url("../images/project_icon_CC.svg") 50% 50% no-repeat;
 }
-/* line 535, ../sass/org_structure.scss */
-.projectList li .projectLink.DD {
+
+/* line 584, ../sass/org_structure.scss */
+.DD {
   background: #bbbbbb url("../images/project_icon_DD.svg") 50% 50% no-repeat;
 }
-/* line 538, ../sass/org_structure.scss */
-.projectList li .projectLink.EE {
+
+/* line 587, ../sass/org_structure.scss */
+.EE {
   background: #bbbbbb url("../images/project_icon_EE.svg") 50% 50% no-repeat;
 }
-/* line 541, ../sass/org_structure.scss */
-.projectList li .projectLink.OL {
+
+/* line 590, ../sass/org_structure.scss */
+.OL {
   background: #bbbbbb url("../images/project_icon_OL.svg") 50% 50% no-repeat;
 }
-/* line 544, ../sass/org_structure.scss */
-.projectList li .projectLink.NG {
+
+/* line 593, ../sass/org_structure.scss */
+.NG {
   background: #bbbbbb url("../images/project_icon_NG.svg") 50% 50% no-repeat;
 }
 

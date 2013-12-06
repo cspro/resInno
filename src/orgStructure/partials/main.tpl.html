@@ -26,65 +26,22 @@
 				</div>
 				<div class="copyWrapper">
 					<a class="copyToggle" ng-click="onCopyToggle()">{{hideCopy ? "+ Expand " + displayBU + " " + displaySubSection : "&ndash; Collapse"}}</a>
-					<div class="copy" ng-hide="hideCopy" ng-switch on="currBU">
+					<div class="copy" ng-hide="hideCopy">
 						<div class="copyRow {{copyClass}}">
-							<div class="copyCell" ng-switch-default>
-								<h1>Research &amp; Innovation Network</h1>
+							<div class="copyCell">
+								<h1>{{displayBU}}</h1>
+								<h2 ng-show="currSubSection">{{displaySubSection}}</h2>
 								<p>Click on the circle graphic to select a business unit and geography. Projects that correspond to your selection will be highlighted below. Projects that share categories highlight in dark gray. Click a project icon to view details of that project.</p>
-							</div>
-							<div class="copyCell" ng-switch-when="professional">
-								<h1>{{displayBU}}</h1>
-								<h2>{{displaySubSection}}</h2>
-								<div ng-switch on="currSubSection">
-									<div ng-switch-when="northAmerica">
-										<p>Professional North America copy lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										<a href="www.google.com">Learn more &raquo;</a>
-									</div>
-									<div ng-switch-when="growthVenture">
-										<p>Professional Growth / Venture copy lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										<a href="www.google.com">Learn more &raquo;</a>
-									</div>
-									<div ng-switch-when="core">
-										<p>Professional Core copy lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										<a href="www.google.com">Learn more &raquo;</a>
-									</div>
+								<div class="iconKey">
+									<li><div><span class="icon DD"></span></div>Digital Data, Analytics &amp; Adaptive Learning</li>
+									<li><div><span class="icon NG"></span></div>NextGen Learning &amp; Assessments</li>
 								</div>
-							</div>
-							<div class="copyCell" ng-switch-when="school">
-								<h1>{{displayBU}}</h1>
-								<h2>{{displaySubSection}}</h2>
-								<div ng-switch on="currSubSection">
-									<div ng-switch-when="northAmerica">
-										<p>School North America copy lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										<a href="www.google.com">Learn more &raquo;</a>
-									</div>
-									<div ng-switch-when="growthVenture">
-										<p>School Growth / Venture copy lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										<a href="www.google.com">Learn more &raquo;</a>
-									</div>
-									<div ng-switch-when="core">
-										<p>School Core copy lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										<a href="www.google.com">Learn more &raquo;</a>
-									</div>
+								<div class="iconKey">
+									<li><div><span class="icon CC"></span></div>College &amp; Career Success</li>
+									<li><div><span class="icon EE"></span></div>Educator Effectiveness</li>
+									<li><div><span class="icon OL"></span></div>Online Learning</li>
 								</div>
-							</div>
-							<div class="copyCell" ng-switch-when="higherEd">
-								<h1>{{displayBU}}</h1>
-								<h2>{{displaySubSection}}</h2>
-								<div ng-switch on="currSubSection">
-									<div ng-switch-when="northAmerica">
-										<p>Higher Ed North America copy lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										<a href="www.google.com">Learn more &raquo;</a>
-									</div>
-									<div ng-switch-when="growthVenture">
-										<p>Higher Ed Growth / Venture copy lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										<a href="www.google.com">Learn more &raquo;</a>
-									</div>
-									<div ng-switch-when="core">
-										<p>Higher Ed Core copy lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										<a href="www.google.com">Learn more &raquo;</a>
-									</div>
-								</div>
+								<p class="counter">Total Projects: {{projectData.length}}</p>
 							</div>
 						</div>
 					</div>
