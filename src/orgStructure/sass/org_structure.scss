@@ -74,13 +74,13 @@ img, area, map {
       top: 0;
       left: 0;
       z-index: 1000;
-      width: 320px;
-      height: 320px;
+      width: 350px;
+      height: 350px;
     }
     #circleContainer {
       position: relative;
-      width: 320px;
-      height: 320px;
+      width: 350px;
+      height: 350px;
       left: 0;
       -webkit-transition: all 0.75s ease-in-out;
       transition: all 0.75s ease-in-out;
@@ -91,8 +91,8 @@ img, area, map {
     }
     .circleMask {
       position: absolute;
-      width: 320px;
-      height: 320px;
+      width: 350px;
+      height: 350px;
       top: 0;
       left: 0;
       z-index: 100;
@@ -175,7 +175,7 @@ img, area, map {
 
 #wrapper.northAmerica {
   .circleMask {
-    background: url('../images/circle_map_mask.png') -320px 0 !important;
+    background: url('../images/circle_map_mask.png') -350px 0 !important;
   }
   .projectLink {
     background-color: lighten($projectButtonBg, 12%);
@@ -223,7 +223,7 @@ img, area, map {
 }
 #wrapper.growthVenture {
   .circleMask {
-    background: url('../images/circle_map_mask.png') -640px 0 !important;
+    background: url('../images/circle_map_mask.png') -700px 0 !important;
   }
   .projectLink {
     background-color: lighten($projectButtonBg, 12%);
@@ -271,7 +271,7 @@ img, area, map {
 }
 #wrapper.core {
   .circleMask {
-    background: url('../images/circle_map_mask.png') -960px 0 !important;
+    background: url('../images/circle_map_mask.png') -1050px 0 !important;
   }
   .projectLink {
     background-color: lighten($projectButtonBg, 12%);

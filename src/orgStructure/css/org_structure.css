@@ -105,14 +105,14 @@ img, area, map {
   top: 0;
   left: 0;
   z-index: 1000;
-  width: 320px;
-  height: 320px;
+  width: 350px;
+  height: 350px;
 }
 /* line 80, ../sass/org_structure.scss */
 #upperContent #circleWrapper #circleContainer {
   position: relative;
-  width: 320px;
-  height: 320px;
+  width: 350px;
+  height: 350px;
   left: 0;
   -webkit-transition: all 0.75s ease-in-out;
   transition: all 0.75s ease-in-out;
@@ -124,8 +124,8 @@ img, area, map {
 /* line 92, ../sass/org_structure.scss */
 #upperContent #circleWrapper .circleMask {
   position: absolute;
-  width: 320px;
-  height: 320px;
+  width: 350px;
+  height: 350px;
   top: 0;
   left: 0;
   z-index: 100;
@@ -212,7 +212,7 @@ img, area, map {
 
 /* line 177, ../sass/org_structure.scss */
 #wrapper.northAmerica .circleMask {
-  background: url("../images/circle_map_mask.png") -320px 0 !important;
+  background: url("../images/circle_map_mask.png") -350px 0 !important;
 }
 /* line 180, ../sass/org_structure.scss */
 #wrapper.northAmerica .projectLink {
@@ -257,7 +257,7 @@ img, area, map {
 
 /* line 225, ../sass/org_structure.scss */
 #wrapper.growthVenture .circleMask {
-  background: url("../images/circle_map_mask.png") -640px 0 !important;
+  background: url("../images/circle_map_mask.png") -700px 0 !important;
 }
 /* line 228, ../sass/org_structure.scss */
 #wrapper.growthVenture .projectLink {
@@ -302,7 +302,7 @@ img, area, map {
 
 /* line 273, ../sass/org_structure.scss */
 #wrapper.core .circleMask {
-  background: url("../images/circle_map_mask.png") -960px 0 !important;
+  background: url("../images/circle_map_mask.png") -1050px 0 !important;
 }
 /* line 276, ../sass/org_structure.scss */
 #wrapper.core .projectLink {
