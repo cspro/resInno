@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CreateJS export from circle_test</title>
+
+<script src="http://code.createjs.com/easeljs-0.6.0.min.js"></script>
+
+<script>
+var canvas, stage, exportRoot;
+
+function init() {
+	canvas = document.getElementById("canvas");
+	exportRoot = new lib.circle_test();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.enableMouseOver(); // Required for cursor changes
+	window.update = true;
+
+	createjs.Ticker.setFPS(30);
+	createjs.Ticker.addEventListener("tick", tick);
+	function tick(event) {
+	// this setup makes it so the stage only re-renders when an event handler indicates a change has happened.
+		if (window.update) {
+			window.update = false; // only update once
+			stage.update(event);
+		};
+	};
+}
+</script>
+<script src="circle_test.js"></script>
+</head>
+
+<body onload="init();" style="background-color:#D4D4D4">
+	<canvas id="canvas" width="960" height="600" style="background-color:#ffffff"></canvas>
+</body>
+</html>
