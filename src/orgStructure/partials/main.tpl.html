@@ -1,0 +1,121 @@
+<div id="wrapper" class="{{currBU}} {{currSubSection}}">
+	
+	<div class="row spaceBelow">
+			<div id="upperContent">
+				<div id="circleWrapper">
+					<img id="mapShim" src="images/spacer.gif" width="320" height="320" usemap="#circle_map" hidefocus="true" />
+					<!-- Numbered clockwise from top right, main then subsections -->
+					<map name="circle_map" id="circle_map">
+						<area shape="poly" id="area00" ng-href="{{circleHrefs[00]}}" ng-click="onMapClick($event, 00)" coords="256,214,262,202,267,188,269,174,270,160,268,138,262,117,252,99,238,82,222,69,203,59,183,52,161,50,161,158,162,160,256,214,256,214" />
+						<area shape="poly" id="area01" ng-href="{{circleHrefs[01]}}" ng-click="onMapClick($event, 01)" coords="160,47,180,48,199,53,217,62,232,73,258,42,237,27,213,16,187,9,160,6,160,47,160,47" />
+						<area shape="poly" id="area02" ng-href="{{circleHrefs[02]}}" ng-click="onMapClick($event, 02)" coords="233,73,247,87,258,103,266,120,272,140,311,133,304,106,293,82,278,61,259,42,233,73,233,73" />
+						<area shape="poly" id="area03" ng-href="{{circleHrefs[03]}}" ng-click="onMapClick($event, 03)" coords="272,140,273,160,272,175,270,190,265,203,259,216,294,237,302,219,309,200,313,181,314,160,312,133,272,140,272,140" />
+						<area shape="poly" id="area04" ng-href="{{circleHrefs[04]}}" ng-click="onMapClick($event, 04)" coords="65,216,73,227,82,238,93,247,104,255,117,262,131,266,145,269,160,270,175,269,189,266,203,262,216,255,227,247,238,238,247,227,255,216,161,161,159,161,65,216,65,216" />
+						<area shape="poly" id="area05" ng-href="{{circleHrefs[05]}}" ng-click="onMapClick($event, 05)" coords="258,217,247,233,233,247,217,258,199,266,213,304,237,293,259,278,278,259,293,237,258,217,258,217" />
+						<area shape="poly" id="area06" ng-href="{{circleHrefs[06]}}" ng-click="onMapClick($event, 06)" coords="199,267,180,272,160,273,140,272,122,267,108,305,133,312,160,314,187,312,212,305,199,267,199,267" />
+						<area shape="poly" id="area07" ng-href="{{circleHrefs[07]}}" ng-click="onMapClick($event, 07)" coords="121,267,103,258,87,247,73,233,62,217,27,237,42,259,61,278,83,293,107,304,121,267,121,267" />
+						<area shape="poly" id="area08" ng-href="{{circleHrefs[08]}}" ng-click="onMapClick($event, 08)" coords="50,160,51,174,53,188,58,202,64,214,158,160,159,158,159,50,137,52,117,59,98,69,82,82,68,99,58,117,52,138,50,160,50,160" />
+						<area shape="poly" id="area09" ng-href="{{circleHrefs[09]}}" ng-click="onMapClick($event, 09)" coords="61,216,55,203,50,189,47,175,47,160,48,140,8,133,6,160,7,180,11,200,18,219,26,236,61,216,61,216" />
+						<area shape="poly" id="area10" ng-href="{{circleHrefs[10]}}" ng-click="onMapClick($event, 10)" coords="48,140,54,120,62,103,73,87,87,73,61,42,42,61,27,83,16,107,9,133,48,140,48,140" />
+						<area shape="poly" id="area11" ng-href="{{circleHrefs[11]}}" ng-click="onMapClick($event, 11)" coords="159,6,132,9,106,16,83,27,61,42,87,73,103,62,120,54,139,48,159,47,159,6,159,6" />
+					</map>
+					<div class="circleMask {{circleMaskClass}}" ng-hide="hideCircleMask" class="no-resize"></div> 
+					<div id="circleContainer">
+						<img src="images/circle_map.png" width="320" height="320" id="circle" class="no-resize" />
+					</div>
+				</div>
+				<div class="copyWrapper">
+					<a class="copyToggle" ng-click="onCopyToggle()">{{hideCopy ? "+ Expand " + displayBU + " " + displaySubSection : "&ndash; Collapse"}}</a>
+					<div class="copy" ng-hide="hideCopy" ng-switch on="currBU">
+						<div class="copyRow {{copyClass}}">
+							<div class="copyCell" ng-switch-default>
+								<h1>Research &amp; Innovation Network</h1>
+								<p>Click on the circle graphic to select a business unit and geography. Projects that correspond to your selection will be highlighted below. Projects that share categories highlight in dark gray. Click a project icon to view details of that project.</p>
+							</div>
+							<div class="copyCell" ng-switch-when="professional">
+								<h1>{{displayBU}}</h1>
+								<h2>{{displaySubSection}}</h2>
+								<div ng-switch on="currSubSection">
+									<div ng-switch-when="northAmerica">
+										<p>Professional North America copy lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<a href="www.google.com">Learn more &raquo;</a>
+									</div>
+									<div ng-switch-when="growthVenture">
+										<p>Professional Growth / Venture copy lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<a href="www.google.com">Learn more &raquo;</a>
+									</div>
+									<div ng-switch-when="core">
+										<p>Professional Core copy lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<a href="www.google.com">Learn more &raquo;</a>
+									</div>
+								</div>
+							</div>
+							<div class="copyCell" ng-switch-when="school">
+								<h1>{{displayBU}}</h1>
+								<h2>{{displaySubSection}}</h2>
+								<div ng-switch on="currSubSection">
+									<div ng-switch-when="northAmerica">
+										<p>School North America copy lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<a href="www.google.com">Learn more &raquo;</a>
+									</div>
+									<div ng-switch-when="growthVenture">
+										<p>School Growth / Venture copy lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<a href="www.google.com">Learn more &raquo;</a>
+									</div>
+									<div ng-switch-when="core">
+										<p>School Core copy lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<a href="www.google.com">Learn more &raquo;</a>
+									</div>
+								</div>
+							</div>
+							<div class="copyCell" ng-switch-when="higherEd">
+								<h1>{{displayBU}}</h1>
+								<h2>{{displaySubSection}}</h2>
+								<div ng-switch on="currSubSection">
+									<div ng-switch-when="northAmerica">
+										<p>Higher Ed North America copy lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<a href="www.google.com">Learn more &raquo;</a>
+									</div>
+									<div ng-switch-when="growthVenture">
+										<p>Higher Ed Growth / Venture copy lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<a href="www.google.com">Learn more &raquo;</a>
+									</div>
+									<div ng-switch-when="core">
+										<p>Higher Ed Core copy lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<a href="www.google.com">Learn more &raquo;</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	<div class="row projectColumns">
+		<div class="col-md-4 col-sm-6 projectColumn professional clearfix">
+			<h2>Professional</h2>
+			<div class="projectList">
+				<li ng-repeat="project in projectData | filter: {businessUnit:'professional'}" class="{{project.businessUnit}}">
+					<a tooltip="{{project.fullTitle}}" ng-click="onProjectClick($event, project.id)" class="projectLink {{project.subSection}} {{project.icon}}">&nbsp;</a>
+				</li>
+			</div>
+		</div> 
+		<div class="col-md-4 col-sm-6 projectColumn higherEd clearfix">
+			<h2>Higher Ed</h2>
+			<div class="projectList">
+				<li ng-repeat="project in projectData | filter: {businessUnit:'higherEd'}" class="{{project.businessUnit}}">
+					<a tooltip="{{project.fullTitle}}" ng-click="onProjectClick($event, project.id)" class="projectLink {{project.subSection}} {{project.icon}}">&nbsp;</a>
+				</li>
+			</div>
+		</div> 
+		<div class="col-md-4 projectColumn school clearfix">
+			<h2>School</h2>
+			<div class="projectList ">
+				<li ng-repeat="project in projectData | filter: {businessUnit:'school'}" class="{{project.businessUnit}}">
+					<a tooltip="{{project.fullTitle}}" ng-click="onProjectClick($event, project.id)" class="projectLink {{project.subSection}} {{project.icon}}">&nbsp;</a>
+				</li>
+			</div>
+		</div> 
+	</div>
+</div>

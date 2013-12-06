@@ -1,0 +1,821 @@
+/* line 10, ../sass/org_structure.scss */
+.container {
+  min-width: 360px;
+}
+
+/* line 14, ../sass/org_structure.scss */
+* {
+  font-family: "Open Sans" !important;
+  font-size: 14px;
+}
+
+/* line 18, ../sass/org_structure.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 21, ../sass/org_structure.scss */
+h1 {
+  font-size: 1.75em;
+}
+
+/* line 22, ../sass/org_structure.scss */
+h2 {
+  font-size: 1.35em;
+}
+
+/* line 23, ../sass/org_structure.scss */
+h3 {
+  font-size: 1.15em;
+}
+
+/* line 25, ../sass/org_structure.scss */
+img.no-resize {
+  max-width: none;
+}
+
+/* line 26, ../sass/org_structure.scss */
+img, area, map {
+  outline: none;
+}
+
+/* line 29, ../sass/org_structure.scss */
+.spaceBelow {
+  margin-bottom: 1em;
+}
+
+/* line 32, ../sass/org_structure.scss */
+.spaceAbove {
+  margin-top: 1em;
+}
+
+/* line 35, ../sass/org_structure.scss */
+.allCaps {
+  text-transform: uppercase;
+}
+
+/* line 38, ../sass/org_structure.scss */
+.tooltip-inner {
+  max-width: 300px;
+  min-width: 150px;
+  font-size: 10px !important;
+}
+
+/* line 44, ../sass/org_structure.scss */
+#upperContent {
+  padding: 2em 1em;
+}
+/* line 46, ../sass/org_structure.scss */
+#upperContent h1, #upperContent h2, #upperContent h3 {
+  text-transform: uppercase;
+}
+/* line 49, ../sass/org_structure.scss */
+#upperContent h1 {
+  margin: 0;
+  color: #205f9f;
+}
+/* line 53, ../sass/org_structure.scss */
+#upperContent h2 {
+  margin-top: 0;
+}
+/* line 56, ../sass/org_structure.scss */
+#upperContent div.copy {
+  display: table;
+  height: 280px;
+  padding: 1em;
+}
+/* line 60, ../sass/org_structure.scss */
+#upperContent div.copy div.copyRow {
+  display: table-row;
+}
+/* line 62, ../sass/org_structure.scss */
+#upperContent div.copy div.copyRow div.copyCell {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 68, ../sass/org_structure.scss */
+#upperContent #circleWrapper {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+/* line 72, ../sass/org_structure.scss */
+#upperContent #circleWrapper #mapShim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 320px;
+  height: 320px;
+}
+/* line 80, ../sass/org_structure.scss */
+#upperContent #circleWrapper #circleContainer {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  left: 0;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+  overflow: hidden;
+  padding: 0;
+}
+/* line 92, ../sass/org_structure.scss */
+#upperContent #circleWrapper .circleMask {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: url("../images/circle_map_mask.png") 0 0;
+}
+/* line 102, ../sass/org_structure.scss */
+#upperContent #circleWrapper .circleMask.ng-hide-add, #upperContent #circleWrapper .circleMask.ng-hide-remove {
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  display: block !important;
+  opacity: 1;
+}
+/* line 108, ../sass/org_structure.scss */
+#upperContent #circleWrapper .circleMask.ng-hide {
+  opacity: 0;
+}
+/* line 111, ../sass/org_structure.scss */
+#upperContent #circleWrapper .circleMask.transitioning {
+  background: url("../images/circle_map_mask.png") 0 0 !important;
+}
+
+/* line 119, ../sass/org_structure.scss */
+#wrapper.professional #circleContainer {
+  -o-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+/* line 128, ../sass/org_structure.scss */
+#wrapper.professional .projectColumn.professional h2 {
+  background-color: #3fa85c;
+}
+/* line 131, ../sass/org_structure.scss */
+#wrapper.professional .projectColumn.higherEd h2 {
+  background-color: #d5a3aa;
+}
+/* line 134, ../sass/org_structure.scss */
+#wrapper.professional .projectColumn.school h2 {
+  background-color: #aacddf;
+}
+
+/* line 138, ../sass/org_structure.scss */
+#wrapper.higherEd #circleContainer {
+  -o-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  ms-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+/* line 147, ../sass/org_structure.scss */
+#wrapper.higherEd .projectColumn.professional h2 {
+  background-color: #b0d0b9;
+}
+/* line 150, ../sass/org_structure.scss */
+#wrapper.higherEd .projectColumn.higherEd h2 {
+  background-color: #c92f44;
+}
+/* line 153, ../sass/org_structure.scss */
+#wrapper.higherEd .projectColumn.school h2 {
+  background-color: #aacddf;
+}
+
+/* line 157, ../sass/org_structure.scss */
+#wrapper.school #circleContainer {
+  -o-transform: rotate(-120deg);
+  -webkit-transform: rotate(-120deg);
+  -ms-transform: rotate(-120deg);
+  ms-transform: rotate(-120deg);
+  transform: rotate(-120deg);
+}
+/* line 166, ../sass/org_structure.scss */
+#wrapper.school .projectColumn.professional h2 {
+  background-color: #b0d0b9;
+}
+/* line 169, ../sass/org_structure.scss */
+#wrapper.school .projectColumn.higherEd h2 {
+  background-color: #d5a3aa;
+}
+/* line 172, ../sass/org_structure.scss */
+#wrapper.school .projectColumn.school h2 {
+  background-color: #006da3;
+}
+
+/* line 177, ../sass/org_structure.scss */
+#wrapper.northAmerica .circleMask {
+  background: url("../images/circle_map_mask.png") -320px 0 !important;
+}
+/* line 180, ../sass/org_structure.scss */
+#wrapper.northAmerica .projectLink {
+  background-color: #dadada;
+}
+/* line 182, ../sass/org_structure.scss */
+#wrapper.northAmerica .projectLink:hover {
+  background-color: #bbbbbb;
+}
+/* line 186, ../sass/org_structure.scss */
+#wrapper.northAmerica .projectLink.northAmerica {
+  background-color: #888888;
+}
+/* line 189, ../sass/org_structure.scss */
+#wrapper.northAmerica .projectLink.northAmerica:hover {
+  background-color: #626262;
+}
+/* line 195, ../sass/org_structure.scss */
+#wrapper.northAmerica.professional .projectColumn.professional .projectLink.northAmerica {
+  background-color: #7cb557;
+}
+/* line 197, ../sass/org_structure.scss */
+#wrapper.northAmerica.professional .projectColumn.professional .projectLink.northAmerica:hover {
+  background-color: #649742;
+}
+/* line 205, ../sass/org_structure.scss */
+#wrapper.northAmerica.higherEd .projectColumn.higherEd .projectLink.northAmerica {
+  background-color: #df4854;
+}
+/* line 207, ../sass/org_structure.scss */
+#wrapper.northAmerica.higherEd .projectColumn.higherEd .projectLink.northAmerica:hover {
+  background-color: #d02432;
+}
+/* line 215, ../sass/org_structure.scss */
+#wrapper.northAmerica.school .projectColumn.school .projectLink.northAmerica {
+  background-color: #0088b7;
+}
+/* line 217, ../sass/org_structure.scss */
+#wrapper.northAmerica.school .projectColumn.school .projectLink.northAmerica:hover {
+  background-color: #006284;
+}
+
+/* line 225, ../sass/org_structure.scss */
+#wrapper.growthVenture .circleMask {
+  background: url("../images/circle_map_mask.png") -640px 0 !important;
+}
+/* line 228, ../sass/org_structure.scss */
+#wrapper.growthVenture .projectLink {
+  background-color: #dadada;
+}
+/* line 230, ../sass/org_structure.scss */
+#wrapper.growthVenture .projectLink:hover {
+  background-color: #bbbbbb;
+}
+/* line 234, ../sass/org_structure.scss */
+#wrapper.growthVenture .projectLink.growthVenture {
+  background-color: #888888;
+}
+/* line 237, ../sass/org_structure.scss */
+#wrapper.growthVenture .projectLink.growthVenture:hover {
+  background-color: #626262;
+}
+/* line 243, ../sass/org_structure.scss */
+#wrapper.growthVenture.professional .projectColumn.professional .projectLink.growthVenture {
+  background-color: #7cb557;
+}
+/* line 245, ../sass/org_structure.scss */
+#wrapper.growthVenture.professional .projectColumn.professional .projectLink.growthVenture:hover {
+  background-color: #649742;
+}
+/* line 253, ../sass/org_structure.scss */
+#wrapper.growthVenture.higherEd .projectColumn.higherEd .projectLink.growthVenture {
+  background-color: #df4854;
+}
+/* line 255, ../sass/org_structure.scss */
+#wrapper.growthVenture.higherEd .projectColumn.higherEd .projectLink.growthVenture:hover {
+  background-color: #d02432;
+}
+/* line 263, ../sass/org_structure.scss */
+#wrapper.growthVenture.school .projectColumn.school .projectLink.growthVenture {
+  background-color: #0088b7;
+}
+/* line 265, ../sass/org_structure.scss */
+#wrapper.growthVenture.school .projectColumn.school .projectLink.growthVenture:hover {
+  background-color: #006284;
+}
+
+/* line 273, ../sass/org_structure.scss */
+#wrapper.core .circleMask {
+  background: url("../images/circle_map_mask.png") -960px 0 !important;
+}
+/* line 276, ../sass/org_structure.scss */
+#wrapper.core .projectLink {
+  background-color: #dadada;
+}
+/* line 278, ../sass/org_structure.scss */
+#wrapper.core .projectLink:hover {
+  background-color: #bbbbbb;
+}
+/* line 282, ../sass/org_structure.scss */
+#wrapper.core .projectLink.core {
+  background-color: #888888;
+}
+/* line 285, ../sass/org_structure.scss */
+#wrapper.core .projectLink.core:hover {
+  background-color: #626262;
+}
+/* line 291, ../sass/org_structure.scss */
+#wrapper.core.professional .projectColumn.professional .projectLink.core {
+  background-color: #7cb557;
+}
+/* line 293, ../sass/org_structure.scss */
+#wrapper.core.professional .projectColumn.professional .projectLink.core:hover {
+  background-color: #649742;
+}
+/* line 301, ../sass/org_structure.scss */
+#wrapper.core.higherEd .projectColumn.higherEd .projectLink.core {
+  background-color: #df4854;
+}
+/* line 303, ../sass/org_structure.scss */
+#wrapper.core.higherEd .projectColumn.higherEd .projectLink.core:hover {
+  background-color: #d02432;
+}
+/* line 311, ../sass/org_structure.scss */
+#wrapper.core.school .projectColumn.school .projectLink.core {
+  background-color: #0088b7;
+}
+/* line 313, ../sass/org_structure.scss */
+#wrapper.core.school .projectColumn.school .projectLink.core:hover {
+  background-color: #006284;
+}
+
+/* line 322, ../sass/org_structure.scss */
+.projectColumns h2 {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+/* line 334, ../sass/org_structure.scss */
+.projectColumns .projectColumn.professional h2 {
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #3fa85c;
+}
+/* line 343, ../sass/org_structure.scss */
+.projectColumns .projectColumn.higherEd h2 {
+  background-color: #c92f44;
+}
+/* line 348, ../sass/org_structure.scss */
+.projectColumns .projectColumn.school h2 {
+  background-color: #006da3;
+}
+
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+/* line 356, ../sass/org_structure.scss */
+.copyWrapper {
+  clear: both;
+  position: relative;
+}
+/* line 359, ../sass/org_structure.scss */
+.copyWrapper .copyToggle {
+  position: relative;
+  font-size: 10px;
+  padding: 2px 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  float: right;
+  border: 1px solid #fff;
+  background: #bbbbbb;
+  -moz-box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.3);
+  -webkit-box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.3);
+  box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.3);
+  color: #fff;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+/* line 375, ../sass/org_structure.scss */
+.copyWrapper .copyToggle:hover {
+  background: #7b7b7b;
+}
+/* line 379, ../sass/org_structure.scss */
+.copyWrapper .copy {
+  display: none;
+  position: relative;
+  clear: left;
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
+
+@media (min-width: 600px) {
+  /* line 396, ../sass/org_structure.scss */
+  #circleWrapper {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 2em;
+  }
+
+  /* line 402, ../sass/org_structure.scss */
+  .copyWrapper {
+    clear: none;
+  }
+  /* line 404, ../sass/org_structure.scss */
+  .copyWrapper .copyToggle {
+    display: none !important;
+  }
+  /* line 407, ../sass/org_structure.scss */
+  .copyWrapper .copy {
+    display: table !important;
+    clear: none;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* line 417, ../sass/org_structure.scss */
+  .projectColumns h2 {
+    padding: 6px;
+    font-size: 1.15em;
+  }
+
+  /* line 422, ../sass/org_structure.scss */
+  .projectColumn.professional {
+    padding-right: 0;
+  }
+  /* line 424, ../sass/org_structure.scss */
+  .projectColumn.professional h2 {
+    -webkit-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+  }
+
+  /* line 431, ../sass/org_structure.scss */
+  .projectColumn.higherEd {
+    padding-left: 0;
+  }
+  /* line 433, ../sass/org_structure.scss */
+  .projectColumn.higherEd h2 {
+    -webkit-border-top-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    -webkit-border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
+/* Medium devices (desktops and up) */
+@media (min-width: 992px) {
+  /* line 445, ../sass/org_structure.scss */
+  .projectColumns h2 {
+    padding: 10px;
+    font-size: 1.25em;
+  }
+
+  /* line 450, ../sass/org_structure.scss */
+  .projectColumn.professional {
+    padding-right: 0;
+  }
+  /* line 452, ../sass/org_structure.scss */
+  .projectColumn.professional h2 {
+    -webkit-border-top-left-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+    -webkit-border-top-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+  }
+
+  /* line 459, ../sass/org_structure.scss */
+  .projectColumn.higherEd {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* line 462, ../sass/org_structure.scss */
+  .projectColumn.higherEd h2 {
+    -webkit-border-top-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    -webkit-border-top-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+  }
+
+  /* line 469, ../sass/org_structure.scss */
+  .projectColumn.school {
+    padding-left: 0;
+  }
+  /* line 471, ../sass/org_structure.scss */
+  .projectColumn.school h2 {
+    -webkit-border-top-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    -webkit-border-top-right-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+/* line 485, ../sass/org_structure.scss */
+.projectList {
+  margin: 0;
+  padding: 2px 4px;
+  line-height: 1em;
+}
+/* line 489, ../sass/org_structure.scss */
+.projectList li {
+  list-style-type: none;
+  display: block;
+  position: relative;
+  float: left;
+  font-size: 10px;
+  width: 12.5%;
+  min-width: 29px;
+  max-width: 45px;
+  text-align: center;
+  padding: 1px;
+}
+/* line 501, ../sass/org_structure.scss */
+.projectList li .projectLink {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 30px;
+  font-size: 1000px;
+  line-height: 30px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 0px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #bbbbbb;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+/* line 515, ../sass/org_structure.scss */
+.projectList li .projectLink span {
+  width: 100%;
+  height: 40px;
+}
+/* line 519, ../sass/org_structure.scss */
+.projectList li .projectLink:hover {
+  border-color: #eeeeee;
+  background-color: #7b7b7b;
+  -moz-box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.3);
+  -webkit-box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.3);
+  box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.3);
+}
+/* line 526, ../sass/org_structure.scss */
+.projectList li .projectLink:active {
+  border-color: white;
+  -moz-box-shadow: 0px 0px 2px 0px rgba(68, 68, 68, 0.5);
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(68, 68, 68, 0.5);
+  box-shadow: 0px 0px 2px 0px rgba(68, 68, 68, 0.5);
+}
+/* line 532, ../sass/org_structure.scss */
+.projectList li .projectLink.CC {
+  background: #bbbbbb url("../images/project_icon_CC.svg") 50% 50% no-repeat;
+}
+/* line 535, ../sass/org_structure.scss */
+.projectList li .projectLink.DD {
+  background: #bbbbbb url("../images/project_icon_DD.svg") 50% 50% no-repeat;
+}
+/* line 538, ../sass/org_structure.scss */
+.projectList li .projectLink.EE {
+  background: #bbbbbb url("../images/project_icon_EE.svg") 50% 50% no-repeat;
+}
+/* line 541, ../sass/org_structure.scss */
+.projectList li .projectLink.OL {
+  background: #bbbbbb url("../images/project_icon_OL.svg") 50% 50% no-repeat;
+}
+/* line 544, ../sass/org_structure.scss */
+.projectList li .projectLink.NG {
+  background: #bbbbbb url("../images/project_icon_NG.svg") 50% 50% no-repeat;
+}
+
+/* line 4, ../sass/_modal.scss */
+.modal {
+  display: block;
+  height: 0;
+  position: absolute;
+  overflow: visible;
+}
+
+/* ==================================
+ * Override Bootstrap styles 
+ * ================================ */
+@media screen and (min-width: 768px) {
+  /* line 16, ../sass/_modal.scss */
+  .modal-dialog {
+    width: auto;
+    padding: 1em 3em;
+    margin-bottom: 1em;
+  }
+}
+/* line 23, ../sass/_modal.scss */
+.modal-backdrop.in {
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+}
+
+/* line 28, ../sass/_modal.scss */
+.modal-header {
+  min-height: 16.428571429px;
+  padding: 1.5em;
+}
+
+/* line 34, ../sass/_modal.scss */
+.modal-header .close {
+  margin-top: -2px;
+}
+
+/* line 37, ../sass/_modal.scss */
+.modal-body {
+  background-color: #f1f1f1;
+  padding: 0 1.5em;
+}
+
+/* line 41, ../sass/_modal.scss */
+.modal-footer {
+  margin-top: 0;
+  padding: 0.5em;
+}
+
+/* ================================== */
+/* line 49, ../sass/_modal.scss */
+.modal-header .icon {
+  display: none;
+  width: 55px;
+  height: 48px;
+  float: left;
+  margin-left: 20px;
+}
+/* line 55, ../sass/_modal.scss */
+.modal-header .icon.CC {
+  background: url("../images/project_icons_lg.png") 0 0;
+}
+/* line 58, ../sass/_modal.scss */
+.modal-header .icon.DD {
+  background: url("../images/project_icons_lg.png") -55px 0;
+}
+/* line 61, ../sass/_modal.scss */
+.modal-header .icon.EE {
+  background: url("../images/project_icons_lg.png") -110px 0;
+}
+/* line 64, ../sass/_modal.scss */
+.modal-header .icon.OL {
+  background: url("../images/project_icons_lg.png") -165px 0;
+}
+/* line 67, ../sass/_modal.scss */
+.modal-header .icon.NG {
+  background: url("../images/project_icons_lg.png") -220px 0;
+}
+/* line 72, ../sass/_modal.scss */
+.modal-header h2 {
+  font-size: 1.65em;
+  color: #205f9f;
+  margin: 0 0 0.25em 0;
+}
+/* line 77, ../sass/_modal.scss */
+.modal-header h3 {
+  font-size: 1.25em;
+  color: #323232;
+  margin: 0 0 0 0;
+}
+
+/* line 84, ../sass/_modal.scss */
+.modalRow {
+  clear: both;
+  background: url("../images/modal_divider.png") top left no-repeat;
+  background-size: 100% 6px;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+/* line 90, ../sass/_modal.scss */
+.modalRow.footerRow {
+  background-color: #d7d7d7;
+}
+/* line 93, ../sass/_modal.scss */
+.modalRow .icon {
+  display: none;
+  float: left;
+  width: 105px;
+  height: 87px;
+  margin-left: 1em;
+  background: url("../images/modal_divider_icon_bg.png") top left no-repeat;
+}
+/* line 100, ../sass/_modal.scss */
+.modalRow .icon div {
+  width: 105px;
+  height: 87px;
+}
+/* line 103, ../sass/_modal.scss */
+.modalRow .icon div.goals {
+  background: url("../images/modal_divider_icons.png") 0 0 no-repeat;
+}
+/* line 106, ../sass/_modal.scss */
+.modalRow .icon div.results {
+  background: url("../images/modal_divider_icons.png") -105px 0 no-repeat;
+}
+/* line 109, ../sass/_modal.scss */
+.modalRow .icon div.partners {
+  background: url("../images/modal_divider_icons.png") -210px 0 no-repeat;
+}
+
+/* line 115, ../sass/_modal.scss */
+.modalRowContent {
+  display: block;
+  padding: 1.5em 4em 1.5em 1.5em;
+}
+/* line 118, ../sass/_modal.scss */
+.modalRowContent h4 {
+  margin: 0 0 0.5em 0;
+  padding-top: 0.5em;
+  text-transform: uppercase;
+  color: #205f9f;
+}
+/* line 123, ../sass/_modal.scss */
+.modalRowContent h4:first-child {
+  padding-top: 0;
+}
+/* line 126, ../sass/_modal.scss */
+.modalRowContent h4 span {
+  font-size: inherit;
+}
+/* line 130, ../sass/_modal.scss */
+.modalRowContent section {
+  padding-left: 1.5em;
+}
+/* line 133, ../sass/_modal.scss */
+.modalRowContent .sectionContent, .modalRowContent p {
+  margin-bottom: 0.5em;
+}
+/* line 135, ../sass/_modal.scss */
+.modalRowContent .sectionContent ol, .modalRowContent .sectionContent ul, .modalRowContent p ol, .modalRowContent p ul {
+  padding-left: 1.5em;
+}
+/* line 137, ../sass/_modal.scss */
+.modalRowContent .sectionContent ol li, .modalRowContent .sectionContent ul li, .modalRowContent p ol li, .modalRowContent p ul li {
+  margin-bottom: 0.5em;
+}
+/* line 141, ../sass/_modal.scss */
+.modalRowContent .sectionContent:last-child, .modalRowContent p:last-child {
+  margin-bottom: 0;
+}
+/* line 145, ../sass/_modal.scss */
+.modalRowContent .indent {
+  margin-left: 1.5em;
+}
+/* line 148, ../sass/_modal.scss */
+.modalRowContent .tableWrapper {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+/* line 151, ../sass/_modal.scss */
+.modalRowContent .tableWrapper .table {
+  display: table;
+  width: auto !important;
+}
+/* line 155, ../sass/_modal.scss */
+.modalRowContent .tableWrapper .table.indent .td:first-child {
+  padding-left: 1.5em;
+}
+/* line 160, ../sass/_modal.scss */
+.modalRowContent .tableWrapper .tr {
+  display: table-row;
+}
+/* line 163, ../sass/_modal.scss */
+.modalRowContent .tableWrapper .td {
+  display: table-cell;
+}
+/* line 165, ../sass/_modal.scss */
+.modalRowContent .tableWrapper .td:first-child {
+  padding: 0 0.5em 0 0;
+}
+/* line 168, ../sass/_modal.scss */
+.modalRowContent .tableWrapper .td:last-child {
+  padding: 0 0 0 0.5em;
+}
+/* line 171, ../sass/_modal.scss */
+.modalRowContent .tableWrapper .td.tableVerticalDivider {
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  background-color: #b1b1b1;
+  width: 1px;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 184, ../sass/_modal.scss */
+  .modal-dialog .icon {
+    display: block !important;
+  }
+  /* line 188, ../sass/_modal.scss */
+  .modal-dialog .modal-header h2, .modal-dialog .modal-header h3 {
+    margin-left: 110px !important;
+  }
+  /* line 192, ../sass/_modal.scss */
+  .modal-dialog .modalRowContent {
+    margin-left: 110px !important;
+  }
+}
