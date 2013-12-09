@@ -43,6 +43,7 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 				value['related'] = value['related'] != "" ? value['related'].split(',') : [];
 				value['businessUnitDisplay'] = formatBU(value['businessUnit']);
 				value['subSectionDisplay'] = formatSubSection(value['subSection']);
+				value['selectionClass'] = "";
 				$rootScope.projectDataMap[value.id] = value;
 			});
 		}).error(function(result) {
@@ -74,9 +75,22 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 		$scope.currSubSection = ($location.search()).subSection;
 		$scope.displaySubSection = formatSubSection($scope.currSubSection);
 	};
-	$scope.getLocation();
-	setSections($scope.currBU ? businessUnits.indexOf($scope.currBU) : 1);
-	$scope.hideCircleMask = ($scope.currBU == undefined);
+	
+	var init = function() {
+		$scope.getLocation();
+		setSections($scope.currBU ? businessUnits.indexOf($scope.currBU) : 1);
+		$scope.hideCircleMask = ($scope.currBU == undefined);
+	};
+	
+	init();
+	
+	$scope.reset = function($event) {
+		$event.preventDefault();
+		// $scope.currBU = "";
+		// $scope.currSubSection = "";
+		$location.search("");
+		init();
+	};
 	
 	$scope.onMapClick = function($event, id) {
 		$event.preventDefault();
@@ -86,13 +100,17 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 		var oldBU = $scope.currBU;
 		$scope.getLocation();
 		setSections($scope.currBU ? businessUnits.indexOf($scope.currBU) : 0);
-		if (oldBU != $scope.currBU) {
-			$scope.hideCircleMask = true;
-			$scope.circleMaskClass = "transitioning"; 
-			$timeout(function() {
-				$scope.circleMaskClass = ""; 
-				$scope.hideCircleMask = false;
-			}, 850);
+		if (($scope.currBU == 'professional') && (oldBU == undefined)) {
+			$scope.hideCircleMask = false;
+		} else {
+			if (oldBU != $scope.currBU ) {
+				$scope.hideCircleMask = true;
+				$scope.circleMaskClass = "transitioning"; 
+				$timeout(function() {
+					$scope.circleMaskClass = ""; 
+					$scope.hideCircleMask = false;
+				}, 850);
+			}
 		}
 	};
 	
@@ -120,6 +138,22 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 		$event.preventDefault();
 		$rootScope.project = $rootScope.projectDataMap[id];
 		$scope.openDialog();
+	};
+	
+	$scope.onProjectMouseOver = function($event, id) {
+		angular.forEach($scope.projectData, function(value, key) {
+			if (value.id == id) {
+				value.selectionState = "selected";
+			} else {
+				value.selectionState = "";
+			}
+		});
+	};
+	
+	$scope.onProjectMouseLeave = function($event, id) {
+		angular.forEach($scope.projectData, function(value, key) {
+			value.selectionState = "";
+		});
 	};
 	
 	// handle showing/hiding section copy

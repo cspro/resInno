@@ -4,7 +4,7 @@ $professionalColor1: #7cb557;
 $professionalColor2: #3fa85c;
 $schoolColor1: #0088b7;
 $schoolColor2: #006da3;
-$projectButtonBg: #bbbbbb;
+$neutralBg: #bbbbbb;
 $accentColor: #205F9F;
 
 .container {
@@ -42,6 +42,7 @@ img, area, map {
 }
 
 #upperContent {
+  position: relative;
   padding: 2em 1em;
   h1, h2, h3 {
    text-transform: uppercase;
@@ -52,6 +53,28 @@ img, area, map {
   }
   h2 {
     margin-top: 0;
+  }
+  #resetButton {
+    display: block;
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    z-index: 1001;
+    width: 50px;
+    height: 50px;
+    background: url('../images/reset.png') no-repeat;
+    opacity: 0.15;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.25;
+    }
+    &.ng-hide {
+      opacity: 0;
+    }
+    &.ng-hide-add, &.ng-hide-remove {
+      transition:0.25s ease-in-out all;
+      display:block!important;
+    }
   }
   div.copy {
     display: table;
@@ -178,16 +201,16 @@ img, area, map {
     background: url('../images/circle_map_mask.png') -350px 0 !important;
   }
   .projectLink {
-    background-color: lighten($projectButtonBg, 12%);
+    background-color: lighten($neutralBg, 12%);
     &:hover { 
-      background-color: darken($projectButtonBg, 0%); 
+      background-color: darken($neutralBg, 0%); 
     } 
   }
   .projectLink.northAmerica {
-    // border-color: darken($projectButtonBg, 50%);
-    background-color: darken($projectButtonBg, 20%);
+    // border-color: darken($neutralBg, 50%);
+    background-color: darken($neutralBg, 20%);
     &:hover { 
-      background-color: darken($projectButtonBg, 35%); 
+      background-color: darken($neutralBg, 35%); 
     } 
   }
   &.professional {
@@ -226,16 +249,16 @@ img, area, map {
     background: url('../images/circle_map_mask.png') -700px 0 !important;
   }
   .projectLink {
-    background-color: lighten($projectButtonBg, 12%);
+    background-color: lighten($neutralBg, 12%);
     &:hover { 
-      background-color: darken($projectButtonBg, 0%); 
+      background-color: darken($neutralBg, 0%); 
     } 
   }
   .projectLink.growthVenture {
-    // border-color: darken($projectButtonBg, 50%);
-    background-color: darken($projectButtonBg, 20%);
+    // border-color: darken($neutralBg, 50%);
+    background-color: darken($neutralBg, 20%);
     &:hover { 
-      background-color: darken($projectButtonBg, 35%); 
+      background-color: darken($neutralBg, 35%); 
     } 
   }
   &.professional {
@@ -274,16 +297,16 @@ img, area, map {
     background: url('../images/circle_map_mask.png') -1050px 0 !important;
   }
   .projectLink {
-    background-color: lighten($projectButtonBg, 12%);
+    background-color: lighten($neutralBg, 12%);
     &:hover { 
-      background-color: darken($projectButtonBg, 0%); 
+      background-color: darken($neutralBg, 0%); 
     } 
   }
   .projectLink.core {
-    // border-color: darken($projectButtonBg, 50%);
-    background-color: darken($projectButtonBg, 20%);
+    // border-color: darken($neutralBg, 50%);
+    background-color: darken($neutralBg, 20%);
     &:hover { 
-      background-color: darken($projectButtonBg, 35%); 
+      background-color: darken($neutralBg, 35%); 
     } 
   }
   &.professional {
@@ -319,34 +342,51 @@ img, area, map {
 }
 
 .projectColumns {
-  h2 {
-    display: block;
-    margin: 0;
-    padding: 10px;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    border: 1px solid #fff;
-    -webkit-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out;
-  }
-  .projectColumn.professional {
+  margin-right: -1px;
+  margin-left: -1px;
+  background: lighten($neutralBg, 21%);
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;    
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+  // overflow: hidden;
+  .projectColumn {
+    padding-right: 0;
+    padding-left: 0;
     h2 {
-      -webkit-border-top-left-radius: 8px;
-      border-top-left-radius: 8px;    
-      -webkit-border-top-right-radius: 8px;
-      border-top-right-radius: 8px;    
-      background-color: $professionalColor2;
+      display: block;
+      margin: 0;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      -webkit-transition: all 0.15s ease-in-out;
+      transition: all 0.15s ease-in-out;
+      border-right: 1px solid #fff;
     }
-  }
-  .projectColumn.higherEd {
-    h2 {
-      background-color: $higherEdColor2;
+    &:last-child {
+      h2 {
+        border-right: none;
+        margin-right: -1px;
+      }
     }
-  }
-  .projectColumn.school {
-    h2 {
-      background-color: $schoolColor2;
+    &.professional {
+      h2 {
+        background-color: $professionalColor2;
+      }
+    }
+    &.higherEd {
+      h2 {
+        background-color: $higherEdColor2;
+      }
+    }
+    &.school {
+      h2 {
+        background-color: $schoolColor2;
+      }
+    }
+    .projectList {
+      padding: 0.33em 0.33em 1em 0.33em;
     }
   }
 }
@@ -365,7 +405,7 @@ img, area, map {
     cursor: pointer;
     float: right;
     border: 1px solid #fff;
-    background: $projectButtonBg;
+    background: $neutralBg;
     -moz-box-shadow:    0px 1px 3px 2px rgba(68,68,68,0.3);
     -webkit-box-shadow: 0px 1px 3px 2px rgba(68,68,68,0.3);
     box-shadow:         0px 1px 3px 2px rgba(68,68,68,0.3);
@@ -373,7 +413,7 @@ img, area, map {
     -webkit-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;
     &:hover {
-      background: darken($projectButtonBg, 25%);
+      background: darken($neutralBg, 25%);
     }
   }
   .copy {
@@ -397,7 +437,7 @@ img, area, map {
         line-height: 20px;
         vertical-align: top;
         font-size: 0.75em;
-        background-color: lighten($projectButtonBg, 15%);
+        background-color: lighten($neutralBg, 15%);
         border-radius: 3px;
         div {
           display: inline-block;
@@ -407,7 +447,7 @@ img, area, map {
           margin: 0 3px -6px 0;
           width: 24px;
           height: 21px;
-          background-color: darken($projectButtonBg, 15%);
+          background-color: darken($neutralBg, 15%);
           span {
             display: block;
             width: 18px;
@@ -552,23 +592,33 @@ img, area, map {
       padding: 0px;
       cursor: pointer;
       text-align: center;
-      background-color: $projectButtonBg;
+      background-color: $neutralBg;
       span {
         width: 100%;
         height: 40px;
       }
+      &.selected {
+        border-color: lighten($neutralBg, 30%);
+        background-color: darken($neutralBg, 25%);
+        -moz-box-shadow:    0px 1px 3px 2px rgba(68,68,68,0.5);
+        -webkit-box-shadow: 0px 1px 3px 2px rgba(68,68,68,0.5);
+        box-shadow:         0px 1px 3px 2px rgba(68,68,68,0.5);
+        z-index: 900;
+      }
       &:hover {
-        border-color: lighten($projectButtonBg, 20%);
-        background-color: darken($projectButtonBg, 25%);
-        -moz-box-shadow:    0px 1px 3px 2px rgba(68,68,68,0.3);
-        -webkit-box-shadow: 0px 1px 3px 2px rgba(68,68,68,0.3);
-        box-shadow:         0px 1px 3px 2px rgba(68,68,68,0.3);
+        border-color: lighten($neutralBg, 30%);
+        background-color: darken($neutralBg, 25%);
+        -moz-box-shadow:    0px 1px 3px 2px rgba(68,68,68,0.5);
+        -webkit-box-shadow: 0px 1px 3px 2px rgba(68,68,68,0.5);
+        box-shadow:         0px 1px 3px 2px rgba(68,68,68,0.5);
+        z-index: 900;
       }
       &:active {
-        border-color: lighten($projectButtonBg, 100%);
+        border-color: lighten($neutralBg, 100%);
         -moz-box-shadow:    0px 0px 2px 0px rgba(68,68,68,0.5);
         -webkit-box-shadow: 0px 0px 2px 0px rgba(68,68,68,0.5);
         box-shadow:         0px 0px 2px 0px rgba(68,68,68,0.5);
+        z-index: 900;
       }
       -webkit-transition: all 0.15s ease-in-out;
       transition: all 0.15s ease-in-out;
@@ -579,19 +629,31 @@ img, area, map {
 }
 
 .CC {
-  background:$projectButtonBg url('../images/project_icon_CC.svg')  50% 50% no-repeat;
+  background:$neutralBg url('../images/project_icon_CC.png')  50% 50% no-repeat;
 }
 .DD {
-  background:$projectButtonBg url('../images/project_icon_DD.svg')  50% 50% no-repeat;
+  background:$neutralBg url('../images/project_icon_DD.png')  50% 50% no-repeat;
 }
 .EE {
-  background:$projectButtonBg url('../images/project_icon_EE.svg')  50% 50% no-repeat;
+  background:$neutralBg url('../images/project_icon_EE.png')  50% 50% no-repeat;
 }
 .OL {
-  background:$projectButtonBg url('../images/project_icon_OL.svg')  50% 50% no-repeat;
+  background:$neutralBg url('../images/project_icon_OL.png')  50% 50% no-repeat;
 }
 .NG {
-  background:$projectButtonBg url('../images/project_icon_NG.svg')  50% 50% no-repeat;
+  background:$neutralBg url('../images/project_icon_NG.png')  50% 50% no-repeat;
 }
 
 @import 'modal';
+
+.footer {
+  background-color: lighten($neutralBg, 15%);
+  text-align: center;
+  padding: 0.75em;
+  margin: 0 -1px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  a {
+    font-size: 0.85em;
+  }
+}
