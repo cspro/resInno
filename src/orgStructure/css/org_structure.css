@@ -61,25 +61,25 @@ img, area, map {
   font-size: 10px !important;
 }
 
-/* line 44, ../sass/org_structure.scss */
+/* line 1, ../sass/_upper_content.scss */
 #upperContent {
   position: relative;
   padding: 2em 1em;
 }
-/* line 47, ../sass/org_structure.scss */
+/* line 4, ../sass/_upper_content.scss */
 #upperContent h1, #upperContent h2, #upperContent h3 {
   text-transform: uppercase;
 }
-/* line 50, ../sass/org_structure.scss */
+/* line 7, ../sass/_upper_content.scss */
 #upperContent h1 {
   margin: 0;
   color: #205f9f;
 }
-/* line 54, ../sass/org_structure.scss */
+/* line 11, ../sass/_upper_content.scss */
 #upperContent h2 {
   margin-top: 0;
 }
-/* line 57, ../sass/org_structure.scss */
+/* line 14, ../sass/_upper_content.scss */
 #upperContent #resetButton {
   display: block;
   position: absolute;
@@ -92,343 +92,41 @@ img, area, map {
   opacity: 0.15;
   cursor: pointer;
 }
-/* line 68, ../sass/org_structure.scss */
+/* line 25, ../sass/_upper_content.scss */
 #upperContent #resetButton:hover {
   opacity: 0.25;
 }
-/* line 71, ../sass/org_structure.scss */
+/* line 28, ../sass/_upper_content.scss */
 #upperContent #resetButton.ng-hide {
   opacity: 0;
 }
-/* line 74, ../sass/org_structure.scss */
+/* line 31, ../sass/_upper_content.scss */
 #upperContent #resetButton.ng-hide-add, #upperContent #resetButton.ng-hide-remove {
   transition: 0.25s ease-in-out all;
   display: block !important;
 }
-/* line 79, ../sass/org_structure.scss */
+/* line 36, ../sass/_upper_content.scss */
 #upperContent div.copy {
   display: table;
   height: 280px;
   padding: 1em;
 }
-/* line 83, ../sass/org_structure.scss */
+/* line 40, ../sass/_upper_content.scss */
 #upperContent div.copy div.copyRow {
   display: table-row;
 }
-/* line 85, ../sass/org_structure.scss */
+/* line 42, ../sass/_upper_content.scss */
 #upperContent div.copy div.copyRow div.copyCell {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 91, ../sass/org_structure.scss */
-#upperContent #circleWrapper {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-}
-/* line 95, ../sass/org_structure.scss */
-#upperContent #circleWrapper #mapShim {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  width: 350px;
-  height: 350px;
-}
-/* line 103, ../sass/org_structure.scss */
-#upperContent #circleWrapper #circleContainer {
-  position: relative;
-  width: 350px;
-  height: 350px;
-  left: 0;
-  -webkit-transition: all 0.75s ease-in-out;
-  transition: all 0.75s ease-in-out;
-  -webkit-transition-delay: 0.15s;
-  transition-delay: 0.15s;
-  overflow: hidden;
-  padding: 0;
-}
-/* line 115, ../sass/org_structure.scss */
-#upperContent #circleWrapper .circleMask {
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  background: url("../images/circle_map_mask.png") 0 0;
-}
-/* line 125, ../sass/org_structure.scss */
-#upperContent #circleWrapper .circleMask.ng-hide-add, #upperContent #circleWrapper .circleMask.ng-hide-remove {
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
-  display: block !important;
-  opacity: 1;
-}
-/* line 131, ../sass/org_structure.scss */
-#upperContent #circleWrapper .circleMask.ng-hide {
-  opacity: 0;
-}
-/* line 134, ../sass/org_structure.scss */
-#upperContent #circleWrapper .circleMask.transitioning {
-  background: url("../images/circle_map_mask.png") 0 0 !important;
-}
 
-/* line 142, ../sass/org_structure.scss */
-#wrapper.professional #circleContainer {
-  -o-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-/* line 151, ../sass/org_structure.scss */
-#wrapper.professional .projectColumn.professional h2 {
-  background-color: #3fa85c;
-}
-/* line 154, ../sass/org_structure.scss */
-#wrapper.professional .projectColumn.higherEd h2 {
-  background-color: #d5a3aa;
-}
-/* line 157, ../sass/org_structure.scss */
-#wrapper.professional .projectColumn.school h2 {
-  background-color: #aacddf;
-}
-
-/* line 161, ../sass/org_structure.scss */
-#wrapper.higherEd #circleContainer {
-  -o-transform: rotate(120deg);
-  -webkit-transform: rotate(120deg);
-  -ms-transform: rotate(120deg);
-  ms-transform: rotate(120deg);
-  transform: rotate(120deg);
-}
-/* line 170, ../sass/org_structure.scss */
-#wrapper.higherEd .projectColumn.professional h2 {
-  background-color: #b0d0b9;
-}
-/* line 173, ../sass/org_structure.scss */
-#wrapper.higherEd .projectColumn.higherEd h2 {
-  background-color: #c92f44;
-}
-/* line 176, ../sass/org_structure.scss */
-#wrapper.higherEd .projectColumn.school h2 {
-  background-color: #aacddf;
-}
-
-/* line 180, ../sass/org_structure.scss */
-#wrapper.school #circleContainer {
-  -o-transform: rotate(-120deg);
-  -webkit-transform: rotate(-120deg);
-  -ms-transform: rotate(-120deg);
-  ms-transform: rotate(-120deg);
-  transform: rotate(-120deg);
-}
-/* line 189, ../sass/org_structure.scss */
-#wrapper.school .projectColumn.professional h2 {
-  background-color: #b0d0b9;
-}
-/* line 192, ../sass/org_structure.scss */
-#wrapper.school .projectColumn.higherEd h2 {
-  background-color: #d5a3aa;
-}
-/* line 195, ../sass/org_structure.scss */
-#wrapper.school .projectColumn.school h2 {
-  background-color: #006da3;
-}
-
-/* line 200, ../sass/org_structure.scss */
-#wrapper.northAmerica .circleMask {
-  background: url("../images/circle_map_mask.png") -350px 0 !important;
-}
-/* line 203, ../sass/org_structure.scss */
-#wrapper.northAmerica .projectLink {
-  background-color: #dadada;
-}
-/* line 205, ../sass/org_structure.scss */
-#wrapper.northAmerica .projectLink:hover {
-  background-color: #bbbbbb;
-}
-/* line 209, ../sass/org_structure.scss */
-#wrapper.northAmerica .projectLink.northAmerica {
-  background-color: #888888;
-}
-/* line 212, ../sass/org_structure.scss */
-#wrapper.northAmerica .projectLink.northAmerica:hover {
-  background-color: #626262;
-}
-/* line 218, ../sass/org_structure.scss */
-#wrapper.northAmerica.professional .projectColumn.professional .projectLink.northAmerica {
-  background-color: #7cb557;
-}
-/* line 220, ../sass/org_structure.scss */
-#wrapper.northAmerica.professional .projectColumn.professional .projectLink.northAmerica:hover {
-  background-color: #649742;
-}
-/* line 228, ../sass/org_structure.scss */
-#wrapper.northAmerica.higherEd .projectColumn.higherEd .projectLink.northAmerica {
-  background-color: #df4854;
-}
-/* line 230, ../sass/org_structure.scss */
-#wrapper.northAmerica.higherEd .projectColumn.higherEd .projectLink.northAmerica:hover {
-  background-color: #d02432;
-}
-/* line 238, ../sass/org_structure.scss */
-#wrapper.northAmerica.school .projectColumn.school .projectLink.northAmerica {
-  background-color: #0088b7;
-}
-/* line 240, ../sass/org_structure.scss */
-#wrapper.northAmerica.school .projectColumn.school .projectLink.northAmerica:hover {
-  background-color: #006284;
-}
-
-/* line 248, ../sass/org_structure.scss */
-#wrapper.growthVenture .circleMask {
-  background: url("../images/circle_map_mask.png") -700px 0 !important;
-}
-/* line 251, ../sass/org_structure.scss */
-#wrapper.growthVenture .projectLink {
-  background-color: #dadada;
-}
-/* line 253, ../sass/org_structure.scss */
-#wrapper.growthVenture .projectLink:hover {
-  background-color: #bbbbbb;
-}
-/* line 257, ../sass/org_structure.scss */
-#wrapper.growthVenture .projectLink.growthVenture {
-  background-color: #888888;
-}
-/* line 260, ../sass/org_structure.scss */
-#wrapper.growthVenture .projectLink.growthVenture:hover {
-  background-color: #626262;
-}
-/* line 266, ../sass/org_structure.scss */
-#wrapper.growthVenture.professional .projectColumn.professional .projectLink.growthVenture {
-  background-color: #7cb557;
-}
-/* line 268, ../sass/org_structure.scss */
-#wrapper.growthVenture.professional .projectColumn.professional .projectLink.growthVenture:hover {
-  background-color: #649742;
-}
-/* line 276, ../sass/org_structure.scss */
-#wrapper.growthVenture.higherEd .projectColumn.higherEd .projectLink.growthVenture {
-  background-color: #df4854;
-}
-/* line 278, ../sass/org_structure.scss */
-#wrapper.growthVenture.higherEd .projectColumn.higherEd .projectLink.growthVenture:hover {
-  background-color: #d02432;
-}
-/* line 286, ../sass/org_structure.scss */
-#wrapper.growthVenture.school .projectColumn.school .projectLink.growthVenture {
-  background-color: #0088b7;
-}
-/* line 288, ../sass/org_structure.scss */
-#wrapper.growthVenture.school .projectColumn.school .projectLink.growthVenture:hover {
-  background-color: #006284;
-}
-
-/* line 296, ../sass/org_structure.scss */
-#wrapper.core .circleMask {
-  background: url("../images/circle_map_mask.png") -1050px 0 !important;
-}
-/* line 299, ../sass/org_structure.scss */
-#wrapper.core .projectLink {
-  background-color: #dadada;
-}
-/* line 301, ../sass/org_structure.scss */
-#wrapper.core .projectLink:hover {
-  background-color: #bbbbbb;
-}
-/* line 305, ../sass/org_structure.scss */
-#wrapper.core .projectLink.core {
-  background-color: #888888;
-}
-/* line 308, ../sass/org_structure.scss */
-#wrapper.core .projectLink.core:hover {
-  background-color: #626262;
-}
-/* line 314, ../sass/org_structure.scss */
-#wrapper.core.professional .projectColumn.professional .projectLink.core {
-  background-color: #7cb557;
-}
-/* line 316, ../sass/org_structure.scss */
-#wrapper.core.professional .projectColumn.professional .projectLink.core:hover {
-  background-color: #649742;
-}
-/* line 324, ../sass/org_structure.scss */
-#wrapper.core.higherEd .projectColumn.higherEd .projectLink.core {
-  background-color: #df4854;
-}
-/* line 326, ../sass/org_structure.scss */
-#wrapper.core.higherEd .projectColumn.higherEd .projectLink.core:hover {
-  background-color: #d02432;
-}
-/* line 334, ../sass/org_structure.scss */
-#wrapper.core.school .projectColumn.school .projectLink.core {
-  background-color: #0088b7;
-}
-/* line 336, ../sass/org_structure.scss */
-#wrapper.core.school .projectColumn.school .projectLink.core:hover {
-  background-color: #006284;
-}
-
-/* line 344, ../sass/org_structure.scss */
-.projectColumns {
-  margin-right: -1px;
-  margin-left: -1px;
-  background: #f1f1f1;
-  -webkit-border-top-left-radius: 8px;
-  border-top-left-radius: 8px;
-  -webkit-border-top-right-radius: 8px;
-  border-top-right-radius: 8px;
-}
-/* line 353, ../sass/org_structure.scss */
-.projectColumns .projectColumn {
-  padding-right: 0;
-  padding-left: 0;
-}
-/* line 356, ../sass/org_structure.scss */
-.projectColumns .projectColumn h2 {
-  display: block;
-  margin: 0;
-  padding: 10px;
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-  -webkit-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
-  border-right: 1px solid #fff;
-}
-/* line 368, ../sass/org_structure.scss */
-.projectColumns .projectColumn:last-child h2 {
-  border-right: none;
-  margin-right: -1px;
-}
-/* line 374, ../sass/org_structure.scss */
-.projectColumns .projectColumn.professional h2 {
-  background-color: #3fa85c;
-}
-/* line 379, ../sass/org_structure.scss */
-.projectColumns .projectColumn.higherEd h2 {
-  background-color: #c92f44;
-}
-/* line 384, ../sass/org_structure.scss */
-.projectColumns .projectColumn.school h2 {
-  background-color: #006da3;
-}
-/* line 388, ../sass/org_structure.scss */
-.projectColumns .projectColumn .projectList {
-  padding: 0.33em 0.33em 1em 0.33em;
-}
-
-/* Extra small devices (phones, up to 480px) */
-/* No media query since this is the default in Bootstrap */
-/* line 396, ../sass/org_structure.scss */
+/* line 50, ../sass/_upper_content.scss */
 .copyWrapper {
   clear: both;
   position: relative;
 }
-/* line 399, ../sass/org_structure.scss */
+/* line 53, ../sass/_upper_content.scss */
 .copyWrapper .copyToggle {
   position: relative;
   font-size: 10px;
@@ -446,11 +144,11 @@ img, area, map {
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 415, ../sass/org_structure.scss */
+/* line 69, ../sass/_upper_content.scss */
 .copyWrapper .copyToggle:hover {
   background: #7b7b7b;
 }
-/* line 419, ../sass/org_structure.scss */
+/* line 73, ../sass/_upper_content.scss */
 .copyWrapper .copy {
   display: none;
   position: relative;
@@ -458,15 +156,15 @@ img, area, map {
   -webkit-transition: 0.5s linear all;
   transition: 0.5s linear all;
 }
-/* line 425, ../sass/org_structure.scss */
+/* line 79, ../sass/_upper_content.scss */
 .copyWrapper .copy h1, .copyWrapper .copy h2 {
   margin-bottom: 0;
 }
-/* line 428, ../sass/org_structure.scss */
+/* line 82, ../sass/_upper_content.scss */
 .copyWrapper .copy p {
   margin-top: 1em;
 }
-/* line 432, ../sass/org_structure.scss */
+/* line 86, ../sass/_upper_content.scss */
 .copyWrapper .copy .iconKey li {
   display: inline-block;
   margin: 0 0 3px 0;
@@ -478,7 +176,7 @@ img, area, map {
   background-color: #e1e1e1;
   border-radius: 3px;
 }
-/* line 442, ../sass/org_structure.scss */
+/* line 96, ../sass/_upper_content.scss */
 .copyWrapper .copy .iconKey li div {
   display: inline-block;
   padding: 1px;
@@ -489,7 +187,7 @@ img, area, map {
   height: 21px;
   background-color: #959595;
 }
-/* line 451, ../sass/org_structure.scss */
+/* line 105, ../sass/_upper_content.scss */
 .copyWrapper .copy .iconKey li div span {
   display: block;
   width: 18px;
@@ -499,13 +197,147 @@ img, area, map {
   background-size: 100%;
   background-color: transparent;
 }
-/* line 463, ../sass/org_structure.scss */
+/* line 117, ../sass/_upper_content.scss */
 .copyWrapper .copy .counter {
   font-size: 0.85em;
 }
 
+/* line 46, ../sass/org_structure.scss */
+#circleWrapper {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+/* line 50, ../sass/org_structure.scss */
+#circleWrapper #mapShim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 350px;
+  height: 350px;
+}
+/* line 58, ../sass/org_structure.scss */
+#circleWrapper #circleContainer {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  left: 0;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+  overflow: hidden;
+  padding: 0;
+}
+/* line 70, ../sass/org_structure.scss */
+#circleWrapper .circleMask {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: url("../images/circle_map_mask.png") 0 0;
+}
+/* line 80, ../sass/org_structure.scss */
+#circleWrapper .circleMask.ng-hide-add, #circleWrapper .circleMask.ng-hide-remove {
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  display: block !important;
+  opacity: 1;
+}
+/* line 86, ../sass/org_structure.scss */
+#circleWrapper .circleMask.ng-hide {
+  opacity: 0;
+}
+/* line 89, ../sass/org_structure.scss */
+#circleWrapper .circleMask.transitioning {
+  background: url("../images/circle_map_mask.png") 0 0 !important;
+}
+
+/* line 97, ../sass/org_structure.scss */
+#wrapper.professional #circleContainer {
+  -o-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+/* line 106, ../sass/org_structure.scss */
+#wrapper.professional .projectColumn.professional h2 {
+  background-color: #3fa85c;
+}
+/* line 109, ../sass/org_structure.scss */
+#wrapper.professional .projectColumn.higherEd h2 {
+  background-color: #d5a3aa;
+}
+/* line 112, ../sass/org_structure.scss */
+#wrapper.professional .projectColumn.school h2 {
+  background-color: #aacddf;
+}
+
+/* line 116, ../sass/org_structure.scss */
+#wrapper.higherEd #circleContainer {
+  -o-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  ms-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+/* line 125, ../sass/org_structure.scss */
+#wrapper.higherEd .projectColumn.professional h2 {
+  background-color: #b0d0b9;
+}
+/* line 128, ../sass/org_structure.scss */
+#wrapper.higherEd .projectColumn.higherEd h2 {
+  background-color: #c92f44;
+}
+/* line 131, ../sass/org_structure.scss */
+#wrapper.higherEd .projectColumn.school h2 {
+  background-color: #aacddf;
+}
+
+/* line 135, ../sass/org_structure.scss */
+#wrapper.school #circleContainer {
+  -o-transform: rotate(-120deg);
+  -webkit-transform: rotate(-120deg);
+  -ms-transform: rotate(-120deg);
+  ms-transform: rotate(-120deg);
+  transform: rotate(-120deg);
+}
+/* line 144, ../sass/org_structure.scss */
+#wrapper.school .projectColumn.professional h2 {
+  background-color: #b0d0b9;
+}
+/* line 147, ../sass/org_structure.scss */
+#wrapper.school .projectColumn.higherEd h2 {
+  background-color: #d5a3aa;
+}
+/* line 150, ../sass/org_structure.scss */
+#wrapper.school .projectColumn.school h2 {
+  background-color: #006da3;
+}
+
+/* line 155, ../sass/org_structure.scss */
+#wrapper.northAmerica .circleMask {
+  background: url("../images/circle_map_mask.png") -350px 0 !important;
+}
+
+/* line 160, ../sass/org_structure.scss */
+#wrapper.growthVenture .circleMask {
+  background: url("../images/circle_map_mask.png") -700px 0 !important;
+}
+
+/* line 165, ../sass/org_structure.scss */
+#wrapper.core .circleMask {
+  background: url("../images/circle_map_mask.png") -1050px 0 !important;
+}
+
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
 @media (min-width: 600px) {
-  /* line 477, ../sass/org_structure.scss */
+  /* line 175, ../sass/org_structure.scss */
   #circleWrapper {
     position: relative;
     display: block;
@@ -513,15 +345,15 @@ img, area, map {
     margin-right: 2em;
   }
 
-  /* line 483, ../sass/org_structure.scss */
+  /* line 181, ../sass/org_structure.scss */
   .copyWrapper {
     clear: none;
   }
-  /* line 485, ../sass/org_structure.scss */
+  /* line 183, ../sass/org_structure.scss */
   .copyWrapper .copyToggle {
     display: none !important;
   }
-  /* line 488, ../sass/org_structure.scss */
+  /* line 186, ../sass/org_structure.scss */
   .copyWrapper .copy {
     display: table !important;
     clear: none;
@@ -529,17 +361,17 @@ img, area, map {
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /* line 498, ../sass/org_structure.scss */
+  /* line 196, ../sass/org_structure.scss */
   .projectColumns h2 {
     padding: 6px;
     font-size: 1.15em;
   }
 
-  /* line 503, ../sass/org_structure.scss */
+  /* line 201, ../sass/org_structure.scss */
   .projectColumn.professional {
     padding-right: 0;
   }
-  /* line 505, ../sass/org_structure.scss */
+  /* line 203, ../sass/org_structure.scss */
   .projectColumn.professional h2 {
     -webkit-border-top-left-radius: 8px;
     border-top-left-radius: 8px;
@@ -547,11 +379,11 @@ img, area, map {
     border-top-right-radius: 0px !important;
   }
 
-  /* line 512, ../sass/org_structure.scss */
+  /* line 210, ../sass/org_structure.scss */
   .projectColumn.higherEd {
     padding-left: 0;
   }
-  /* line 514, ../sass/org_structure.scss */
+  /* line 212, ../sass/org_structure.scss */
   .projectColumn.higherEd h2 {
     -webkit-border-top-left-radius: 0px !important;
     border-top-left-radius: 0px !important;
@@ -561,17 +393,17 @@ img, area, map {
 }
 /* Medium devices (desktops and up) */
 @media (min-width: 992px) {
-  /* line 526, ../sass/org_structure.scss */
+  /* line 224, ../sass/org_structure.scss */
   .projectColumns h2 {
     padding: 10px;
     font-size: 1.25em;
   }
 
-  /* line 531, ../sass/org_structure.scss */
+  /* line 229, ../sass/org_structure.scss */
   .projectColumn.professional {
     padding-right: 0;
   }
-  /* line 533, ../sass/org_structure.scss */
+  /* line 231, ../sass/org_structure.scss */
   .projectColumn.professional h2 {
     -webkit-border-top-left-radius: 10px !important;
     border-top-left-radius: 10px !important;
@@ -579,12 +411,12 @@ img, area, map {
     border-top-right-radius: 0px !important;
   }
 
-  /* line 540, ../sass/org_structure.scss */
+  /* line 238, ../sass/org_structure.scss */
   .projectColumn.higherEd {
     padding-right: 0;
     padding-left: 0;
   }
-  /* line 543, ../sass/org_structure.scss */
+  /* line 241, ../sass/org_structure.scss */
   .projectColumn.higherEd h2 {
     -webkit-border-top-right-radius: 0px !important;
     border-top-right-radius: 0px !important;
@@ -592,26 +424,81 @@ img, area, map {
     border-top-left-radius: 0px !important;
   }
 
-  /* line 550, ../sass/org_structure.scss */
+  /* line 248, ../sass/org_structure.scss */
   .projectColumn.school {
     padding-left: 0;
   }
-  /* line 552, ../sass/org_structure.scss */
+  /* line 250, ../sass/org_structure.scss */
   .projectColumn.school h2 {
     -webkit-border-top-left-radius: 0px !important;
     border-top-left-radius: 0px !important;
     -webkit-border-top-right-radius: 10px !important;
     border-top-right-radius: 10px !important;
   }
+
+  /* line 257, ../sass/org_structure.scss */
+  .hiddenAtLarge {
+    /* Fix for IE10 clearing issue */
+    display: none !important;
+  }
 }
 /* Large devices (large desktops, 1200px and up) */
-/* line 566, ../sass/org_structure.scss */
+/* line 1, ../sass/_project_list.scss */
+.projectColumns {
+  margin-right: -1px;
+  margin-left: -1px;
+  background: #f1f1f1;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+/* line 10, ../sass/_project_list.scss */
+.projectColumns .projectColumn {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* line 13, ../sass/_project_list.scss */
+.projectColumns .projectColumn h2 {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  border-right: 1px solid #fff;
+}
+/* line 25, ../sass/_project_list.scss */
+.projectColumns .projectColumn:last-child h2 {
+  border-right: none;
+  margin-right: -1px;
+}
+/* line 31, ../sass/_project_list.scss */
+.projectColumns .projectColumn.professional h2 {
+  background-color: #3fa85c;
+}
+/* line 36, ../sass/_project_list.scss */
+.projectColumns .projectColumn.higherEd h2 {
+  background-color: #c92f44;
+}
+/* line 41, ../sass/_project_list.scss */
+.projectColumns .projectColumn.school h2 {
+  background-color: #006da3;
+}
+/* line 45, ../sass/_project_list.scss */
+.projectColumns .projectColumn .projectList {
+  padding: 0.33em 0.33em 1em 0.33em;
+}
+
+/* line 52, ../sass/_project_list.scss */
 .projectList {
   margin: 0;
   padding: 2px 4px;
   line-height: 1em;
 }
-/* line 570, ../sass/org_structure.scss */
+/* line 56, ../sass/_project_list.scss */
 .projectList li {
   list-style-type: none;
   display: block;
@@ -624,7 +511,7 @@ img, area, map {
   text-align: center;
   padding: 1px;
 }
-/* line 582, ../sass/org_structure.scss */
+/* line 68, ../sass/_project_list.scss */
 .projectList li .projectLink {
   display: block;
   position: relative;
@@ -644,12 +531,12 @@ img, area, map {
   -webkit-transition: background-color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out;
 }
-/* line 596, ../sass/org_structure.scss */
+/* line 82, ../sass/_project_list.scss */
 .projectList li .projectLink span {
   width: 100%;
   height: 40px;
 }
-/* line 600, ../sass/org_structure.scss */
+/* line 86, ../sass/_project_list.scss */
 .projectList li .projectLink.selected {
   border-color: white;
   background-color: #7b7b7b;
@@ -658,7 +545,7 @@ img, area, map {
   box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.5);
   z-index: 900;
 }
-/* line 608, ../sass/org_structure.scss */
+/* line 94, ../sass/_project_list.scss */
 .projectList li .projectLink:hover {
   border-color: white;
   background-color: #7b7b7b;
@@ -667,7 +554,7 @@ img, area, map {
   box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.5);
   z-index: 900;
 }
-/* line 616, ../sass/org_structure.scss */
+/* line 102, ../sass/_project_list.scss */
 .projectList li .projectLink:active {
   border-color: white;
   -moz-box-shadow: 0px 0px 2px 0px rgba(68, 68, 68, 0.5);
@@ -676,29 +563,152 @@ img, area, map {
   z-index: 900;
 }
 
-/* line 631, ../sass/org_structure.scss */
+/* line 117, ../sass/_project_list.scss */
 .CC {
   background: #bbbbbb url("../images/project_icon_CC.png") 50% 50% no-repeat;
 }
 
-/* line 634, ../sass/org_structure.scss */
+/* line 120, ../sass/_project_list.scss */
 .DD {
   background: #bbbbbb url("../images/project_icon_DD.png") 50% 50% no-repeat;
 }
 
-/* line 637, ../sass/org_structure.scss */
+/* line 123, ../sass/_project_list.scss */
 .EE {
   background: #bbbbbb url("../images/project_icon_EE.png") 50% 50% no-repeat;
 }
 
-/* line 640, ../sass/org_structure.scss */
+/* line 126, ../sass/_project_list.scss */
 .OL {
   background: #bbbbbb url("../images/project_icon_OL.png") 50% 50% no-repeat;
 }
 
-/* line 643, ../sass/org_structure.scss */
+/* line 129, ../sass/_project_list.scss */
 .NG {
   background: #bbbbbb url("../images/project_icon_NG.png") 50% 50% no-repeat;
+}
+
+/* line 134, ../sass/_project_list.scss */
+#wrapper.northAmerica .projectLink {
+  background-color: #dadada;
+}
+/* line 136, ../sass/_project_list.scss */
+#wrapper.northAmerica .projectLink:hover, #wrapper.northAmerica .projectLink.selected {
+  background-color: #bbbbbb;
+}
+/* line 140, ../sass/_project_list.scss */
+#wrapper.northAmerica .projectLink.northAmerica {
+  background-color: #888888;
+}
+/* line 143, ../sass/_project_list.scss */
+#wrapper.northAmerica .projectLink.northAmerica:hover, #wrapper.northAmerica .projectLink.northAmerica.selected {
+  background-color: #626262;
+}
+/* line 149, ../sass/_project_list.scss */
+#wrapper.northAmerica.professional .projectColumn.professional .projectLink.northAmerica {
+  background-color: #7cb557;
+}
+/* line 151, ../sass/_project_list.scss */
+#wrapper.northAmerica.professional .projectColumn.professional .projectLink.northAmerica:hover, #wrapper.northAmerica.professional .projectColumn.professional .projectLink.northAmerica.selected {
+  background-color: #649742;
+}
+/* line 159, ../sass/_project_list.scss */
+#wrapper.northAmerica.higherEd .projectColumn.higherEd .projectLink.northAmerica {
+  background-color: #df4854;
+}
+/* line 161, ../sass/_project_list.scss */
+#wrapper.northAmerica.higherEd .projectColumn.higherEd .projectLink.northAmerica:hover, #wrapper.northAmerica.higherEd .projectColumn.higherEd .projectLink.northAmerica.selected {
+  background-color: #d02432;
+}
+/* line 169, ../sass/_project_list.scss */
+#wrapper.northAmerica.school .projectColumn.school .projectLink.northAmerica {
+  background-color: #0088b7;
+}
+/* line 171, ../sass/_project_list.scss */
+#wrapper.northAmerica.school .projectColumn.school .projectLink.northAmerica:hover, #wrapper.northAmerica.school .projectColumn.school .projectLink.northAmerica.selected {
+  background-color: #006284;
+}
+
+/* line 179, ../sass/_project_list.scss */
+#wrapper.growthVenture .projectLink {
+  background-color: #dadada;
+}
+/* line 181, ../sass/_project_list.scss */
+#wrapper.growthVenture .projectLink:hover, #wrapper.growthVenture .projectLink.selected {
+  background-color: #bbbbbb;
+}
+/* line 185, ../sass/_project_list.scss */
+#wrapper.growthVenture .projectLink.growthVenture {
+  background-color: #888888;
+}
+/* line 188, ../sass/_project_list.scss */
+#wrapper.growthVenture .projectLink.growthVenture:hover, #wrapper.growthVenture .projectLink.growthVenture.selected {
+  background-color: #626262;
+}
+/* line 194, ../sass/_project_list.scss */
+#wrapper.growthVenture.professional .projectColumn.professional .projectLink.growthVenture {
+  background-color: #7cb557;
+}
+/* line 196, ../sass/_project_list.scss */
+#wrapper.growthVenture.professional .projectColumn.professional .projectLink.growthVenture:hover, #wrapper.growthVenture.professional .projectColumn.professional .projectLink.growthVenture.selected {
+  background-color: #649742;
+}
+/* line 204, ../sass/_project_list.scss */
+#wrapper.growthVenture.higherEd .projectColumn.higherEd .projectLink.growthVenture {
+  background-color: #df4854;
+}
+/* line 206, ../sass/_project_list.scss */
+#wrapper.growthVenture.higherEd .projectColumn.higherEd .projectLink.growthVenture:hover, #wrapper.growthVenture.higherEd .projectColumn.higherEd .projectLink.growthVenture.selected {
+  background-color: #d02432;
+}
+/* line 214, ../sass/_project_list.scss */
+#wrapper.growthVenture.school .projectColumn.school .projectLink.growthVenture {
+  background-color: #0088b7;
+}
+/* line 216, ../sass/_project_list.scss */
+#wrapper.growthVenture.school .projectColumn.school .projectLink.growthVenture:hover, #wrapper.growthVenture.school .projectColumn.school .projectLink.growthVenture.selected {
+  background-color: #006284;
+}
+
+/* line 224, ../sass/_project_list.scss */
+#wrapper.core .projectLink {
+  background-color: #dadada;
+}
+/* line 226, ../sass/_project_list.scss */
+#wrapper.core .projectLink:hover, #wrapper.core .projectLink.selected {
+  background-color: #bbbbbb;
+}
+/* line 230, ../sass/_project_list.scss */
+#wrapper.core .projectLink.core {
+  background-color: #888888;
+}
+/* line 233, ../sass/_project_list.scss */
+#wrapper.core .projectLink.core:hover, #wrapper.core .projectLink.core.selected {
+  background-color: #626262;
+}
+/* line 239, ../sass/_project_list.scss */
+#wrapper.core.professional .projectColumn.professional .projectLink.core {
+  background-color: #7cb557;
+}
+/* line 241, ../sass/_project_list.scss */
+#wrapper.core.professional .projectColumn.professional .projectLink.core:hover, #wrapper.core.professional .projectColumn.professional .projectLink.core.selected {
+  background-color: #649742;
+}
+/* line 249, ../sass/_project_list.scss */
+#wrapper.core.higherEd .projectColumn.higherEd .projectLink.core {
+  background-color: #df4854;
+}
+/* line 251, ../sass/_project_list.scss */
+#wrapper.core.higherEd .projectColumn.higherEd .projectLink.core:hover, #wrapper.core.higherEd .projectColumn.higherEd .projectLink.core.selected {
+  background-color: #d02432;
+}
+/* line 259, ../sass/_project_list.scss */
+#wrapper.core.school .projectColumn.school .projectLink.core {
+  background-color: #0088b7;
+}
+/* line 261, ../sass/_project_list.scss */
+#wrapper.core.school .projectColumn.school .projectLink.core:hover, #wrapper.core.school .projectColumn.school .projectLink.core.selected {
+  background-color: #006284;
 }
 
 /* line 4, ../sass/_modal.scss */
@@ -927,7 +937,7 @@ img, area, map {
     margin-left: 110px !important;
   }
 }
-/* line 649, ../sass/org_structure.scss */
+/* line 272, ../sass/org_structure.scss */
 .footer {
   background-color: #e1e1e1;
   text-align: center;
@@ -936,7 +946,7 @@ img, area, map {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-/* line 656, ../sass/org_structure.scss */
+/* line 279, ../sass/org_structure.scss */
 .footer a {
   font-size: 0.85em;
 }

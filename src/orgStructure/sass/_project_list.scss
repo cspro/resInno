@@ -1,0 +1,267 @@
+.projectColumns {
+  margin-right: -1px;
+  margin-left: -1px;
+  background: lighten($neutralBg, 21%);
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;    
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+  // overflow: hidden;
+  .projectColumn {
+    padding-right: 0;
+    padding-left: 0;
+    h2 {
+      display: block;
+      margin: 0;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      -webkit-transition: all 0.15s ease-in-out;
+      transition: all 0.15s ease-in-out;
+      border-right: 1px solid #fff;
+    }
+    &:last-child {
+      h2 {
+        border-right: none;
+        margin-right: -1px;
+      }
+    }
+    &.professional {
+      h2 {
+        background-color: $professionalColor2;
+      }
+    }
+    &.higherEd {
+      h2 {
+        background-color: $higherEdColor2;
+      }
+    }
+    &.school {
+      h2 {
+        background-color: $schoolColor2;
+      }
+    }
+    .projectList {
+      padding: 0.33em 0.33em 1em 0.33em;
+    }
+  }
+}
+
+
+.projectList {
+  margin: 0;
+  padding: 2px 4px;
+  line-height: 1em;
+  li {
+    list-style-type: none;
+    display: block;
+    position: relative;
+    // overflow: hidden;
+    float: left;
+    font-size: 10px;
+    width: 12.5%;
+    min-width: 29px;
+    max-width: 45px;
+    text-align: center;
+    padding: 1px;
+    .projectLink {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 30px;
+      font-size: 1000px;
+      line-height: 30px;
+      border: 1px solid #fff;
+      border-radius: 8px;
+      padding: 0px;
+      cursor: pointer;
+      text-align: center;
+      background-color: $neutralBg;
+      span {
+        width: 100%;
+        height: 40px;
+      }
+      &.selected {
+        border-color: lighten($neutralBg, 30%);
+        background-color: darken($neutralBg, 25%);
+        -moz-box-shadow:    0px 1px 3px 2px rgba(68,68,68,0.5);
+        -webkit-box-shadow: 0px 1px 3px 2px rgba(68,68,68,0.5);
+        box-shadow:         0px 1px 3px 2px rgba(68,68,68,0.5);
+        z-index: 900;
+      }
+      &:hover {
+        border-color: lighten($neutralBg, 30%);
+        background-color: darken($neutralBg, 25%);
+        -moz-box-shadow:    0px 1px 3px 2px rgba(68,68,68,0.5);
+        -webkit-box-shadow: 0px 1px 3px 2px rgba(68,68,68,0.5);
+        box-shadow:         0px 1px 3px 2px rgba(68,68,68,0.5);
+        z-index: 900;
+      }
+      &:active {
+        border-color: lighten($neutralBg, 100%);
+        -moz-box-shadow:    0px 0px 2px 0px rgba(68,68,68,0.5);
+        -webkit-box-shadow: 0px 0px 2px 0px rgba(68,68,68,0.5);
+        box-shadow:         0px 0px 2px 0px rgba(68,68,68,0.5);
+        z-index: 900;
+      }
+      -webkit-transition: all 0.15s ease-in-out;
+      transition: all 0.15s ease-in-out;
+      -webkit-transition: background-color 0.25s ease-in-out;
+      transition: background-color 0.25s ease-in-out;
+    }
+  }
+}
+
+.CC {
+  background:$neutralBg url('../images/project_icon_CC.png')  50% 50% no-repeat;
+}
+.DD {
+  background:$neutralBg url('../images/project_icon_DD.png')  50% 50% no-repeat;
+}
+.EE {
+  background:$neutralBg url('../images/project_icon_EE.png')  50% 50% no-repeat;
+}
+.OL {
+  background:$neutralBg url('../images/project_icon_OL.png')  50% 50% no-repeat;
+}
+.NG {
+  background:$neutralBg url('../images/project_icon_NG.png')  50% 50% no-repeat;
+}
+
+#wrapper.northAmerica {
+  .projectLink {
+    background-color: lighten($neutralBg, 12%);
+    &:hover, &.selected { 
+      background-color: darken($neutralBg, 0%); 
+    } 
+  }
+  .projectLink.northAmerica {
+    // border-color: darken($neutralBg, 50%);
+    background-color: darken($neutralBg, 20%);
+    &:hover, &.selected { 
+      background-color: darken($neutralBg, 35%); 
+    } 
+  }
+  &.professional {
+    .projectColumn.professional {
+      .projectLink.northAmerica { 
+        background-color: lighten($professionalColor1, 0%);
+        &:hover, &.selected { 
+          background-color: darken($professionalColor1, 10%); 
+        } 
+      }
+    }
+  }
+  &.higherEd {
+    .projectColumn.higherEd {
+      .projectLink.northAmerica {
+        background-color: lighten($higherEdColor1, 0%);
+        &:hover, &.selected { 
+          background-color: darken($higherEdColor1, 10%); 
+        } 
+      }
+    }
+  }
+  &.school {
+    .projectColumn.school {
+      .projectLink.northAmerica {
+        background-color: lighten($schoolColor1, 0%);
+        &:hover, &.selected { 
+          background-color: darken($schoolColor1, 10%); 
+        } 
+      }
+    }
+  }
+}
+#wrapper.growthVenture {
+  .projectLink {
+    background-color: lighten($neutralBg, 12%);
+    &:hover, &.selected { 
+      background-color: darken($neutralBg, 0%); 
+    } 
+  }
+  .projectLink.growthVenture {
+    // border-color: darken($neutralBg, 50%);
+    background-color: darken($neutralBg, 20%);
+    &:hover, &.selected { 
+      background-color: darken($neutralBg, 35%); 
+    } 
+  }
+  &.professional {
+    .projectColumn.professional {
+      .projectLink.growthVenture {
+        background-color: lighten($professionalColor1, 0%);
+        &:hover, &.selected { 
+          background-color: darken($professionalColor1, 10%); 
+        } 
+      }
+    }
+  }
+  &.higherEd {
+    .projectColumn.higherEd {
+      .projectLink.growthVenture {
+        background-color: lighten($higherEdColor1, 0%);
+        &:hover, &.selected { 
+          background-color: darken($higherEdColor1, 10%); 
+        } 
+      }
+    }
+  }
+  &.school {
+    .projectColumn.school {
+      .projectLink.growthVenture {
+        background-color: lighten($schoolColor1, 0%);
+        &:hover, &.selected { 
+          background-color: darken($schoolColor1, 10%); 
+        } 
+      }
+    }
+  }
+}
+#wrapper.core {
+  .projectLink {
+    background-color: lighten($neutralBg, 12%);
+    &:hover, &.selected { 
+      background-color: darken($neutralBg, 0%); 
+    } 
+  }
+  .projectLink.core {
+    // border-color: darken($neutralBg, 50%);
+    background-color: darken($neutralBg, 20%);
+    &:hover, &.selected { 
+      background-color: darken($neutralBg, 35%); 
+    } 
+  }
+  &.professional {
+    .projectColumn.professional {
+      .projectLink.core {
+        background-color: lighten($professionalColor1, 0%);
+        &:hover, &.selected { 
+          background-color: darken($professionalColor1, 10%); 
+        } 
+      }
+    }
+  }
+  &.higherEd {
+    .projectColumn.higherEd {
+      .projectLink.core {
+        background-color: lighten($higherEdColor1, 0%);
+        &:hover, &.selected { 
+          background-color: darken($higherEdColor1, 10%); 
+        } 
+      }
+    }
+  }
+  &.school {
+    .projectColumn.school {
+      .projectLink.core {
+        background-color: lighten($schoolColor1, 0%);
+        &:hover, &.selected { 
+          background-color: darken($schoolColor1, 10%); 
+        } 
+      }
+    }
+  }
+}

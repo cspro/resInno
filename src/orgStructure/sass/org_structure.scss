@@ -41,102 +41,57 @@ img, area, map {
   font-size: 10px !important;
 }
 
-#upperContent {
+@import 'upper_content';
+
+#circleWrapper {
   position: relative;
-  padding: 2em 1em;
-  h1, h2, h3 {
-   text-transform: uppercase;
-  }
-  h1 {
-    margin: 0;
-    color: $accentColor; 
-  }
-  h2 {
-    margin-top: 0;
-  }
-  #resetButton {
-    display: block;
+  display: block;
+  margin: 0 auto;
+  #mapShim {
     position: absolute;
-    top: 1.5em;
-    left: 1.5em;
-    z-index: 1001;
-    width: 50px;
-    height: 50px;
-    background: url('../images/reset.png') no-repeat;
-    opacity: 0.15;
-    cursor: pointer;
-    &:hover {
-      opacity: 0.25;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 350px;
+    height: 350px;
+  }
+  #circleContainer {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    left: 0;
+    -webkit-transition: all 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out;
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+    overflow: hidden;
+    padding: 0;
+  }
+  .circleMask {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: url('../images/circle_map_mask.png') 0 0;
+    // pointer-events: none;
+    &.ng-hide-add,
+    &.ng-hide-remove {
+      -webkit-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out;
+      display: block !important;
+      opacity: 1;
     }
     &.ng-hide {
       opacity: 0;
     }
-    &.ng-hide-add, &.ng-hide-remove {
-      transition:0.25s ease-in-out all;
-      display:block!important;
-    }
-  }
-  div.copy {
-    display: table;
-    height: 280px;
-    padding: 1em;
-    div.copyRow {
-      display: table-row;
-      div.copyCell {
-        display: table-cell;
-        vertical-align: middle;
-      }
-    }
-  }
-  #circleWrapper {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    #mapShim {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-      width: 350px;
-      height: 350px;
-    }
-    #circleContainer {
-      position: relative;
-      width: 350px;
-      height: 350px;
-      left: 0;
-      -webkit-transition: all 0.75s ease-in-out;
-      transition: all 0.75s ease-in-out;
-      -webkit-transition-delay: 0.15s;
-      transition-delay: 0.15s;
-      overflow: hidden;
-      padding: 0;
-    }
-    .circleMask {
-      position: absolute;
-      width: 350px;
-      height: 350px;
-      top: 0;
-      left: 0;
-      z-index: 100;
-      background: url('../images/circle_map_mask.png') 0 0;
-      // pointer-events: none;
-      &.ng-hide-add,
-      &.ng-hide-remove {
-        -webkit-transition: all 0.25s ease-out;
-        transition: all 0.25s ease-out;
-        display: block !important;
-        opacity: 1;
-      }
-      &.ng-hide {
-        opacity: 0;
-      }
-      &.transitioning {
-        background: url('../images/circle_map_mask.png') 0 0 !important;
-      }
+    &.transitioning {
+      background: url('../images/circle_map_mask.png') 0 0 !important;
     }
   }
 }
+
 
 #wrapper.professional {
   #circleContainer {
@@ -200,278 +155,21 @@ img, area, map {
   .circleMask {
     background: url('../images/circle_map_mask.png') -350px 0 !important;
   }
-  .projectLink {
-    background-color: lighten($neutralBg, 12%);
-    &:hover { 
-      background-color: darken($neutralBg, 0%); 
-    } 
-  }
-  .projectLink.northAmerica {
-    // border-color: darken($neutralBg, 50%);
-    background-color: darken($neutralBg, 20%);
-    &:hover { 
-      background-color: darken($neutralBg, 35%); 
-    } 
-  }
-  &.professional {
-    .projectColumn.professional {
-      .projectLink.northAmerica { 
-        background-color: lighten($professionalColor1, 0%);
-        &:hover { 
-          background-color: darken($professionalColor1, 10%); 
-        } 
-      }
-    }
-  }
-  &.higherEd {
-    .projectColumn.higherEd {
-      .projectLink.northAmerica {
-        background-color: lighten($higherEdColor1, 0%);
-        &:hover { 
-          background-color: darken($higherEdColor1, 10%); 
-        } 
-      }
-    }
-  }
-  &.school {
-    .projectColumn.school {
-      .projectLink.northAmerica {
-        background-color: lighten($schoolColor1, 0%);
-        &:hover { 
-          background-color: darken($schoolColor1, 10%); 
-        } 
-      }
-    }
-  }
 }
 #wrapper.growthVenture {
   .circleMask {
     background: url('../images/circle_map_mask.png') -700px 0 !important;
-  }
-  .projectLink {
-    background-color: lighten($neutralBg, 12%);
-    &:hover { 
-      background-color: darken($neutralBg, 0%); 
-    } 
-  }
-  .projectLink.growthVenture {
-    // border-color: darken($neutralBg, 50%);
-    background-color: darken($neutralBg, 20%);
-    &:hover { 
-      background-color: darken($neutralBg, 35%); 
-    } 
-  }
-  &.professional {
-    .projectColumn.professional {
-      .projectLink.growthVenture {
-        background-color: lighten($professionalColor1, 0%);
-        &:hover { 
-          background-color: darken($professionalColor1, 10%); 
-        } 
-      }
-    }
-  }
-  &.higherEd {
-    .projectColumn.higherEd {
-      .projectLink.growthVenture {
-        background-color: lighten($higherEdColor1, 0%);
-        &:hover { 
-          background-color: darken($higherEdColor1, 10%); 
-        } 
-      }
-    }
-  }
-  &.school {
-    .projectColumn.school {
-      .projectLink.growthVenture {
-        background-color: lighten($schoolColor1, 0%);
-        &:hover { 
-          background-color: darken($schoolColor1, 10%); 
-        } 
-      }
-    }
   }
 }
 #wrapper.core {
   .circleMask {
     background: url('../images/circle_map_mask.png') -1050px 0 !important;
   }
-  .projectLink {
-    background-color: lighten($neutralBg, 12%);
-    &:hover { 
-      background-color: darken($neutralBg, 0%); 
-    } 
-  }
-  .projectLink.core {
-    // border-color: darken($neutralBg, 50%);
-    background-color: darken($neutralBg, 20%);
-    &:hover { 
-      background-color: darken($neutralBg, 35%); 
-    } 
-  }
-  &.professional {
-    .projectColumn.professional {
-      .projectLink.core {
-        background-color: lighten($professionalColor1, 0%);
-        &:hover { 
-          background-color: darken($professionalColor1, 10%); 
-        } 
-      }
-    }
-  }
-  &.higherEd {
-    .projectColumn.higherEd {
-      .projectLink.core {
-        background-color: lighten($higherEdColor1, 0%);
-        &:hover { 
-          background-color: darken($higherEdColor1, 10%); 
-        } 
-      }
-    }
-  }
-  &.school {
-    .projectColumn.school {
-      .projectLink.core {
-        background-color: lighten($schoolColor1, 0%);
-        &:hover { 
-          background-color: darken($schoolColor1, 10%); 
-        } 
-      }
-    }
-  }
 }
 
-.projectColumns {
-  margin-right: -1px;
-  margin-left: -1px;
-  background: lighten($neutralBg, 21%);
-  -webkit-border-top-left-radius: 8px;
-  border-top-left-radius: 8px;    
-  -webkit-border-top-right-radius: 8px;
-  border-top-right-radius: 8px;
-  // overflow: hidden;
-  .projectColumn {
-    padding-right: 0;
-    padding-left: 0;
-    h2 {
-      display: block;
-      margin: 0;
-      padding: 10px;
-      color: #fff;
-      text-align: center;
-      text-transform: uppercase;
-      -webkit-transition: all 0.15s ease-in-out;
-      transition: all 0.15s ease-in-out;
-      border-right: 1px solid #fff;
-    }
-    &:last-child {
-      h2 {
-        border-right: none;
-        margin-right: -1px;
-      }
-    }
-    &.professional {
-      h2 {
-        background-color: $professionalColor2;
-      }
-    }
-    &.higherEd {
-      h2 {
-        background-color: $higherEdColor2;
-      }
-    }
-    &.school {
-      h2 {
-        background-color: $schoolColor2;
-      }
-    }
-    .projectList {
-      padding: 0.33em 0.33em 1em 0.33em;
-    }
-  }
-}
 
 /* Extra small devices (phones, up to 480px) */
 /* No media query since this is the default in Bootstrap */
-.copyWrapper {
-  clear: both;
-  position: relative;
-  .copyToggle {
-    position: relative;
-    font-size: 10px;
-    padding: 2px 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    float: right;
-    border: 1px solid #fff;
-    background: $neutralBg;
-    -moz-box-shadow:    0px 1px 3px 2px rgba(68,68,68,0.3);
-    -webkit-box-shadow: 0px 1px 3px 2px rgba(68,68,68,0.3);
-    box-shadow:         0px 1px 3px 2px rgba(68,68,68,0.3);
-    color: #fff;
-    -webkit-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out;
-    &:hover {
-      background: darken($neutralBg, 25%);
-    }
-  }
-  .copy {
-    display: none;
-    position: relative;
-    clear: left;
-    -webkit-transition:0.5s linear all;
-    transition:0.5s linear all;
-    h1, h2 {
-      margin-bottom: 0;
-    }
-    p {
-      margin-top: 1em;
-    }
-    .iconKey {
-      li {
-        display: inline-block;
-        margin: 0 0 3px 0;
-        padding: 0 1em 0 0;
-        list-style-type: none;
-        line-height: 20px;
-        vertical-align: top;
-        font-size: 0.75em;
-        background-color: lighten($neutralBg, 15%);
-        border-radius: 3px;
-        div {
-          display: inline-block;
-          padding: 1px;
-          border-radius: 3px;
-          overflow: hidden;
-          margin: 0 3px -6px 0;
-          width: 24px;
-          height: 21px;
-          background-color: darken($neutralBg, 15%);
-          span {
-            display: block;
-            width: 18px;
-            height: 15px;
-            float: left;
-            margin: 2px;
-            background-size: 100%;
-            background-color: transparent;
-          }
-        }
-      }
-    }
-    .counter {
-      font-size: 0.85em;
-    }
-    // &.ng-hide {}
-    // &.ng-hide-add, &.ng-hide-remove {
-      // /* this needs to be here to make it visible during the animation
-       // since the .ng-hide class is already on the element rendering
-       // it as hidden. */
-      // display:block!important;
-    // }
-  }
-}
 
 @media (min-width: 600px) {
   #circleWrapper {
@@ -556,6 +254,10 @@ img, area, map {
       border-top-right-radius: 10px !important;    
     }
   }
+  .hiddenAtLarge {
+    /* Fix for IE10 clearing issue */
+    display: none !important;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -563,86 +265,7 @@ img, area, map {
   
 }
 
-.projectList {
-  margin: 0;
-  padding: 2px 4px;
-  line-height: 1em;
-  li {
-    list-style-type: none;
-    display: block;
-    position: relative;
-    // overflow: hidden;
-    float: left;
-    font-size: 10px;
-    width: 12.5%;
-    min-width: 29px;
-    max-width: 45px;
-    text-align: center;
-    padding: 1px;
-    .projectLink {
-      display: block;
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      height: 30px;
-      font-size: 1000px;
-      line-height: 30px;
-      border: 1px solid #fff;
-      border-radius: 8px;
-      padding: 0px;
-      cursor: pointer;
-      text-align: center;
-      background-color: $neutralBg;
-      span {
-        width: 100%;
-        height: 40px;
-      }
-      &.selected {
-        border-color: lighten($neutralBg, 30%);
-        background-color: darken($neutralBg, 25%);
-        -moz-box-shadow:    0px 1px 3px 2px rgba(68,68,68,0.5);
-        -webkit-box-shadow: 0px 1px 3px 2px rgba(68,68,68,0.5);
-        box-shadow:         0px 1px 3px 2px rgba(68,68,68,0.5);
-        z-index: 900;
-      }
-      &:hover {
-        border-color: lighten($neutralBg, 30%);
-        background-color: darken($neutralBg, 25%);
-        -moz-box-shadow:    0px 1px 3px 2px rgba(68,68,68,0.5);
-        -webkit-box-shadow: 0px 1px 3px 2px rgba(68,68,68,0.5);
-        box-shadow:         0px 1px 3px 2px rgba(68,68,68,0.5);
-        z-index: 900;
-      }
-      &:active {
-        border-color: lighten($neutralBg, 100%);
-        -moz-box-shadow:    0px 0px 2px 0px rgba(68,68,68,0.5);
-        -webkit-box-shadow: 0px 0px 2px 0px rgba(68,68,68,0.5);
-        box-shadow:         0px 0px 2px 0px rgba(68,68,68,0.5);
-        z-index: 900;
-      }
-      -webkit-transition: all 0.15s ease-in-out;
-      transition: all 0.15s ease-in-out;
-      -webkit-transition: background-color 0.25s ease-in-out;
-      transition: background-color 0.25s ease-in-out;
-    }
-  }
-}
-
-.CC {
-  background:$neutralBg url('../images/project_icon_CC.png')  50% 50% no-repeat;
-}
-.DD {
-  background:$neutralBg url('../images/project_icon_DD.png')  50% 50% no-repeat;
-}
-.EE {
-  background:$neutralBg url('../images/project_icon_EE.png')  50% 50% no-repeat;
-}
-.OL {
-  background:$neutralBg url('../images/project_icon_OL.png')  50% 50% no-repeat;
-}
-.NG {
-  background:$neutralBg url('../images/project_icon_NG.png')  50% 50% no-repeat;
-}
+@import 'project_list';
 
 @import 'modal';
 
