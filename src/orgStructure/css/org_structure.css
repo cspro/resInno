@@ -452,13 +452,14 @@ img, area, map {
   border-top-left-radius: 8px;
   -webkit-border-top-right-radius: 8px;
   border-top-right-radius: 8px;
+  padding-bottom: 4px;
 }
-/* line 10, ../sass/_project_list.scss */
+/* line 11, ../sass/_project_list.scss */
 .projectColumns .projectColumn {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 13, ../sass/_project_list.scss */
+/* line 14, ../sass/_project_list.scss */
 .projectColumns .projectColumn h2 {
   display: block;
   margin: 0;
@@ -470,35 +471,31 @@ img, area, map {
   transition: all 0.15s ease-in-out;
   border-right: 1px solid #fff;
 }
-/* line 25, ../sass/_project_list.scss */
+/* line 26, ../sass/_project_list.scss */
 .projectColumns .projectColumn:last-child h2 {
   border-right: none;
   margin-right: -1px;
 }
-/* line 31, ../sass/_project_list.scss */
+/* line 32, ../sass/_project_list.scss */
 .projectColumns .projectColumn.professional h2 {
   background-color: #3fa85c;
 }
-/* line 36, ../sass/_project_list.scss */
+/* line 37, ../sass/_project_list.scss */
 .projectColumns .projectColumn.higherEd h2 {
   background-color: #c92f44;
 }
-/* line 41, ../sass/_project_list.scss */
+/* line 42, ../sass/_project_list.scss */
 .projectColumns .projectColumn.school h2 {
   background-color: #006da3;
 }
-/* line 45, ../sass/_project_list.scss */
-.projectColumns .projectColumn .projectList {
-  padding: 0.33em 0.33em 1em 0.33em;
-}
 
-/* line 52, ../sass/_project_list.scss */
+/* line 50, ../sass/_project_list.scss */
 .projectList {
   margin: 0;
-  padding: 2px 4px;
+  padding: 4px;
   line-height: 1em;
 }
-/* line 56, ../sass/_project_list.scss */
+/* line 54, ../sass/_project_list.scss */
 .projectList li {
   list-style-type: none;
   display: block;
@@ -511,7 +508,7 @@ img, area, map {
   text-align: center;
   padding: 1px;
 }
-/* line 68, ../sass/_project_list.scss */
+/* line 66, ../sass/_project_list.scss */
 .projectList li .projectLink {
   display: block;
   position: relative;
@@ -531,13 +528,13 @@ img, area, map {
   -webkit-transition: background-color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out;
 }
-/* line 82, ../sass/_project_list.scss */
+/* line 80, ../sass/_project_list.scss */
 .projectList li .projectLink span {
   width: 100%;
   height: 40px;
 }
-/* line 86, ../sass/_project_list.scss */
-.projectList li .projectLink.selected {
+/* line 84, ../sass/_project_list.scss */
+.projectList li .projectLink:hover, .projectList li .projectLink.selected {
   border-color: white;
   background-color: #7b7b7b;
   -moz-box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.5);
@@ -545,16 +542,7 @@ img, area, map {
   box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.5);
   z-index: 900;
 }
-/* line 94, ../sass/_project_list.scss */
-.projectList li .projectLink:hover {
-  border-color: white;
-  background-color: #7b7b7b;
-  -moz-box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.5);
-  -webkit-box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.5);
-  box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.5);
-  z-index: 900;
-}
-/* line 102, ../sass/_project_list.scss */
+/* line 92, ../sass/_project_list.scss */
 .projectList li .projectLink:active {
   border-color: white;
   -moz-box-shadow: 0px 0px 2px 0px rgba(68, 68, 68, 0.5);
@@ -563,150 +551,150 @@ img, area, map {
   z-index: 900;
 }
 
-/* line 117, ../sass/_project_list.scss */
+/* line 107, ../sass/_project_list.scss */
 .CC {
   background: #bbbbbb url("../images/project_icon_CC.png") 50% 50% no-repeat;
 }
 
-/* line 120, ../sass/_project_list.scss */
+/* line 110, ../sass/_project_list.scss */
 .DD {
   background: #bbbbbb url("../images/project_icon_DD.png") 50% 50% no-repeat;
 }
 
-/* line 123, ../sass/_project_list.scss */
+/* line 113, ../sass/_project_list.scss */
 .EE {
   background: #bbbbbb url("../images/project_icon_EE.png") 50% 50% no-repeat;
 }
 
-/* line 126, ../sass/_project_list.scss */
+/* line 116, ../sass/_project_list.scss */
 .OL {
   background: #bbbbbb url("../images/project_icon_OL.png") 50% 50% no-repeat;
 }
 
-/* line 129, ../sass/_project_list.scss */
+/* line 119, ../sass/_project_list.scss */
 .NG {
   background: #bbbbbb url("../images/project_icon_NG.png") 50% 50% no-repeat;
 }
 
-/* line 134, ../sass/_project_list.scss */
+/* line 124, ../sass/_project_list.scss */
 #wrapper.northAmerica .projectLink {
   background-color: #dadada;
 }
-/* line 136, ../sass/_project_list.scss */
+/* line 126, ../sass/_project_list.scss */
 #wrapper.northAmerica .projectLink:hover, #wrapper.northAmerica .projectLink.selected {
   background-color: #bbbbbb;
 }
-/* line 140, ../sass/_project_list.scss */
+/* line 130, ../sass/_project_list.scss */
 #wrapper.northAmerica .projectLink.northAmerica {
   background-color: #888888;
 }
-/* line 143, ../sass/_project_list.scss */
+/* line 133, ../sass/_project_list.scss */
 #wrapper.northAmerica .projectLink.northAmerica:hover, #wrapper.northAmerica .projectLink.northAmerica.selected {
   background-color: #626262;
 }
-/* line 149, ../sass/_project_list.scss */
+/* line 139, ../sass/_project_list.scss */
 #wrapper.northAmerica.professional .projectColumn.professional .projectLink.northAmerica {
   background-color: #7cb557;
 }
-/* line 151, ../sass/_project_list.scss */
+/* line 141, ../sass/_project_list.scss */
 #wrapper.northAmerica.professional .projectColumn.professional .projectLink.northAmerica:hover, #wrapper.northAmerica.professional .projectColumn.professional .projectLink.northAmerica.selected {
   background-color: #649742;
 }
-/* line 159, ../sass/_project_list.scss */
+/* line 149, ../sass/_project_list.scss */
 #wrapper.northAmerica.higherEd .projectColumn.higherEd .projectLink.northAmerica {
   background-color: #df4854;
 }
-/* line 161, ../sass/_project_list.scss */
+/* line 151, ../sass/_project_list.scss */
 #wrapper.northAmerica.higherEd .projectColumn.higherEd .projectLink.northAmerica:hover, #wrapper.northAmerica.higherEd .projectColumn.higherEd .projectLink.northAmerica.selected {
   background-color: #d02432;
 }
-/* line 169, ../sass/_project_list.scss */
+/* line 159, ../sass/_project_list.scss */
 #wrapper.northAmerica.school .projectColumn.school .projectLink.northAmerica {
   background-color: #0088b7;
 }
-/* line 171, ../sass/_project_list.scss */
+/* line 161, ../sass/_project_list.scss */
 #wrapper.northAmerica.school .projectColumn.school .projectLink.northAmerica:hover, #wrapper.northAmerica.school .projectColumn.school .projectLink.northAmerica.selected {
   background-color: #006284;
 }
 
-/* line 179, ../sass/_project_list.scss */
+/* line 169, ../sass/_project_list.scss */
 #wrapper.growthVenture .projectLink {
   background-color: #dadada;
 }
-/* line 181, ../sass/_project_list.scss */
+/* line 171, ../sass/_project_list.scss */
 #wrapper.growthVenture .projectLink:hover, #wrapper.growthVenture .projectLink.selected {
   background-color: #bbbbbb;
 }
-/* line 185, ../sass/_project_list.scss */
+/* line 175, ../sass/_project_list.scss */
 #wrapper.growthVenture .projectLink.growthVenture {
   background-color: #888888;
 }
-/* line 188, ../sass/_project_list.scss */
+/* line 178, ../sass/_project_list.scss */
 #wrapper.growthVenture .projectLink.growthVenture:hover, #wrapper.growthVenture .projectLink.growthVenture.selected {
   background-color: #626262;
 }
-/* line 194, ../sass/_project_list.scss */
+/* line 184, ../sass/_project_list.scss */
 #wrapper.growthVenture.professional .projectColumn.professional .projectLink.growthVenture {
   background-color: #7cb557;
 }
-/* line 196, ../sass/_project_list.scss */
+/* line 186, ../sass/_project_list.scss */
 #wrapper.growthVenture.professional .projectColumn.professional .projectLink.growthVenture:hover, #wrapper.growthVenture.professional .projectColumn.professional .projectLink.growthVenture.selected {
   background-color: #649742;
 }
-/* line 204, ../sass/_project_list.scss */
+/* line 194, ../sass/_project_list.scss */
 #wrapper.growthVenture.higherEd .projectColumn.higherEd .projectLink.growthVenture {
   background-color: #df4854;
 }
-/* line 206, ../sass/_project_list.scss */
+/* line 196, ../sass/_project_list.scss */
 #wrapper.growthVenture.higherEd .projectColumn.higherEd .projectLink.growthVenture:hover, #wrapper.growthVenture.higherEd .projectColumn.higherEd .projectLink.growthVenture.selected {
   background-color: #d02432;
 }
-/* line 214, ../sass/_project_list.scss */
+/* line 204, ../sass/_project_list.scss */
 #wrapper.growthVenture.school .projectColumn.school .projectLink.growthVenture {
   background-color: #0088b7;
 }
-/* line 216, ../sass/_project_list.scss */
+/* line 206, ../sass/_project_list.scss */
 #wrapper.growthVenture.school .projectColumn.school .projectLink.growthVenture:hover, #wrapper.growthVenture.school .projectColumn.school .projectLink.growthVenture.selected {
   background-color: #006284;
 }
 
-/* line 224, ../sass/_project_list.scss */
+/* line 214, ../sass/_project_list.scss */
 #wrapper.core .projectLink {
   background-color: #dadada;
 }
-/* line 226, ../sass/_project_list.scss */
+/* line 216, ../sass/_project_list.scss */
 #wrapper.core .projectLink:hover, #wrapper.core .projectLink.selected {
   background-color: #bbbbbb;
 }
-/* line 230, ../sass/_project_list.scss */
+/* line 220, ../sass/_project_list.scss */
 #wrapper.core .projectLink.core {
   background-color: #888888;
 }
-/* line 233, ../sass/_project_list.scss */
+/* line 223, ../sass/_project_list.scss */
 #wrapper.core .projectLink.core:hover, #wrapper.core .projectLink.core.selected {
   background-color: #626262;
 }
-/* line 239, ../sass/_project_list.scss */
+/* line 229, ../sass/_project_list.scss */
 #wrapper.core.professional .projectColumn.professional .projectLink.core {
   background-color: #7cb557;
 }
-/* line 241, ../sass/_project_list.scss */
+/* line 231, ../sass/_project_list.scss */
 #wrapper.core.professional .projectColumn.professional .projectLink.core:hover, #wrapper.core.professional .projectColumn.professional .projectLink.core.selected {
   background-color: #649742;
 }
-/* line 249, ../sass/_project_list.scss */
+/* line 239, ../sass/_project_list.scss */
 #wrapper.core.higherEd .projectColumn.higherEd .projectLink.core {
   background-color: #df4854;
 }
-/* line 251, ../sass/_project_list.scss */
+/* line 241, ../sass/_project_list.scss */
 #wrapper.core.higherEd .projectColumn.higherEd .projectLink.core:hover, #wrapper.core.higherEd .projectColumn.higherEd .projectLink.core.selected {
   background-color: #d02432;
 }
-/* line 259, ../sass/_project_list.scss */
+/* line 249, ../sass/_project_list.scss */
 #wrapper.core.school .projectColumn.school .projectLink.core {
   background-color: #0088b7;
 }
-/* line 261, ../sass/_project_list.scss */
+/* line 251, ../sass/_project_list.scss */
 #wrapper.core.school .projectColumn.school .projectLink.core:hover, #wrapper.core.school .projectColumn.school .projectLink.core.selected {
   background-color: #006284;
 }
