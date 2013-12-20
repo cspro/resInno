@@ -27,7 +27,7 @@ $iconIndent: 110px;
 
 .modal-header {
   min-height: 16.428571429px;
-  padding: 1.5em;
+  padding: 1em 1.5em;
   // border-bottom: 1px solid #e5e5e5;
 }
 
@@ -72,12 +72,9 @@ $iconIndent: 110px;
   h2 {
     font-size: 1.65em;
     color: $accentColor;
-    margin: 0 0 0.25em 0;
-  }
-  h3 {
-    font-size: 1.25em;
-    color: darken($modalBgColor, 75%);
-    margin: 0 0 0 0;
+    line-height: 48px;
+    vertical-align: middle;
+    margin: 0;
   }
 }
 
@@ -100,7 +97,7 @@ $iconIndent: 110px;
     div {
       width: 105px;
       height: 87px;
-      &.goals {
+      &.lead {
         background: url("../images/modal_divider_icons.png") 0 0 no-repeat;
       }
       &.results {
@@ -108,6 +105,12 @@ $iconIndent: 110px;
       }
       &.partners {
         background: url("../images/modal_divider_icons.png") -210px 0 no-repeat;
+      }
+      &.goals {
+        background: url("../images/modal_divider_icons.png") -315px 0 no-repeat;
+      }
+      &.resources {
+        background: url("../images/modal_divider_icons.png") -420px 0 no-repeat;
       }
     }
   }

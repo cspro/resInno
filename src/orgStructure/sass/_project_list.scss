@@ -73,7 +73,7 @@
       line-height: 30px;
       border: 1px solid #fff;
       border-radius: 8px;
-      padding: 0px;
+      padding: 1px;
       cursor: pointer;
       text-align: center;
       background-color: $neutralBg;
@@ -83,11 +83,16 @@
       }
       &:hover, &.selected {
         border-color: lighten($neutralBg, 30%);
-        background-color: darken($neutralBg, 25%);
+        background-color: lighten($neutralBg, 12%);
         -moz-box-shadow:    0px 1px 3px 2px rgba(68,68,68,0.5);
         -webkit-box-shadow: 0px 1px 3px 2px rgba(68,68,68,0.5);
         box-shadow:         0px 1px 3px 2px rgba(68,68,68,0.5);
         z-index: 900;
+      }
+      &.selected {
+        border-width: 2px;
+        border-color: lighten($neutralBg, 50%);
+        padding: 0;
       }
       &:active {
         border-color: lighten($neutralBg, 100%);
@@ -120,26 +125,42 @@
   background:$neutralBg url('../images/project_icon_NG.png')  50% 50% no-repeat;
 }
 
+.projectColumn.professional {
+  .projectLink.selected {
+    border-color: saturate(lighten($professionalColor2, 5%), 5%);
+  }
+} 
+.projectColumn.higherEd {
+  .projectLink.selected {
+    border-color: saturate(lighten($higherEdColor2, 10%), 0%);
+  }
+} 
+.projectColumn.school {
+  .projectLink.selected {
+    border-color: saturate(lighten($schoolColor2, 10%), 0%);
+  }
+} 
+
+
 #wrapper.northAmerica {
   .projectLink {
     background-color: lighten($neutralBg, 12%);
     &:hover, &.selected { 
-      background-color: darken($neutralBg, 0%); 
+      background-color: lighten($neutralBg, 13%); 
     } 
   }
   .projectLink.northAmerica {
-    // border-color: darken($neutralBg, 50%);
-    background-color: darken($neutralBg, 20%);
+    background-color: darken($neutralBg, 13%);
     &:hover, &.selected { 
-      background-color: darken($neutralBg, 35%); 
-    } 
+      background-color: lighten($neutralBg, 2%); 
+    }
   }
   &.professional {
     .projectColumn.professional {
       .projectLink.northAmerica { 
         background-color: lighten($professionalColor1, 0%);
         &:hover, &.selected { 
-          background-color: darken($professionalColor1, 10%); 
+          background-color: desaturate(lighten($professionalColor1, 26%), 10%); 
         } 
       }
     }
@@ -149,7 +170,7 @@
       .projectLink.northAmerica {
         background-color: lighten($higherEdColor1, 0%);
         &:hover, &.selected { 
-          background-color: darken($higherEdColor1, 10%); 
+          background-color: desaturate(lighten($higherEdColor1, 19%), 10%); 
         } 
       }
     }
@@ -159,7 +180,7 @@
       .projectLink.northAmerica {
         background-color: lighten($schoolColor1, 0%);
         &:hover, &.selected { 
-          background-color: darken($schoolColor1, 10%); 
+          background-color: desaturate(lighten($schoolColor1, 17%), 27%); 
         } 
       }
     }
@@ -169,14 +190,14 @@
   .projectLink {
     background-color: lighten($neutralBg, 12%);
     &:hover, &.selected { 
-      background-color: darken($neutralBg, 0%); 
+      background-color: lighten($neutralBg, 13%); 
     } 
   }
   .projectLink.growthVenture {
     // border-color: darken($neutralBg, 50%);
-    background-color: darken($neutralBg, 20%);
+    background-color: darken($neutralBg, 13%);
     &:hover, &.selected { 
-      background-color: darken($neutralBg, 35%); 
+      background-color: lighten($neutralBg, 2%); 
     } 
   }
   &.professional {
@@ -184,7 +205,7 @@
       .projectLink.growthVenture {
         background-color: lighten($professionalColor1, 0%);
         &:hover, &.selected { 
-          background-color: darken($professionalColor1, 10%); 
+          background-color: desaturate(lighten($professionalColor1, 26%), 10%); 
         } 
       }
     }
@@ -194,7 +215,7 @@
       .projectLink.growthVenture {
         background-color: lighten($higherEdColor1, 0%);
         &:hover, &.selected { 
-          background-color: darken($higherEdColor1, 10%); 
+          background-color: desaturate(lighten($higherEdColor1, 19%), 10%); 
         } 
       }
     }
@@ -204,7 +225,7 @@
       .projectLink.growthVenture {
         background-color: lighten($schoolColor1, 0%);
         &:hover, &.selected { 
-          background-color: darken($schoolColor1, 10%); 
+          background-color: desaturate(lighten($schoolColor1, 17%), 27%); 
         } 
       }
     }
@@ -214,14 +235,13 @@
   .projectLink {
     background-color: lighten($neutralBg, 12%);
     &:hover, &.selected { 
-      background-color: darken($neutralBg, 0%); 
+      background-color: lighten($neutralBg, 13%); 
     } 
   }
   .projectLink.core {
-    // border-color: darken($neutralBg, 50%);
-    background-color: darken($neutralBg, 20%);
+    background-color: darken($neutralBg, 13%);
     &:hover, &.selected { 
-      background-color: darken($neutralBg, 35%); 
+      background-color: lighten($neutralBg, 2%); 
     } 
   }
   &.professional {
@@ -229,7 +249,7 @@
       .projectLink.core {
         background-color: lighten($professionalColor1, 0%);
         &:hover, &.selected { 
-          background-color: darken($professionalColor1, 10%); 
+          background-color: desaturate(lighten($professionalColor1, 26%), 10%); 
         } 
       }
     }
@@ -239,7 +259,7 @@
       .projectLink.core {
         background-color: lighten($higherEdColor1, 0%);
         &:hover, &.selected { 
-          background-color: darken($higherEdColor1, 10%); 
+          background-color: desaturate(lighten($higherEdColor1, 19%), 10%); 
         } 
       }
     }
@@ -249,7 +269,7 @@
       .projectLink.core {
         background-color: lighten($schoolColor1, 0%);
         &:hover, &.selected { 
-          background-color: darken($schoolColor1, 10%); 
+          background-color: desaturate(lighten($schoolColor1, 17%), 27%); 
         } 
       }
     }

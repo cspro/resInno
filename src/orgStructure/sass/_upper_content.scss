@@ -82,6 +82,10 @@
     p {
       margin-top: 1em;
     }
+    ul {
+      margin: 0;
+      padding: 0 1.5em;
+    }
     .iconKey {
       li {
         display: inline-block;
@@ -113,9 +117,6 @@
           }
         }
       }
-    }
-    .counter {
-      font-size: 0.85em;
     }
   }
 }

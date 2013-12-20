@@ -1,7 +1,7 @@
-$higherEdColor1: #df4854;
-$higherEdColor2: #c92f44;
-$professionalColor1: #7cb557;
-$professionalColor2: #3fa85c;
+$higherEdColor1: darken(#df4854, 3%);
+$higherEdColor2: darken(#c92f44, 1%);
+$professionalColor1: darken(#7cb557, 8%);
+$professionalColor2: darken(#3fa85c, 5%);
 $schoolColor1: #0088b7;
 $schoolColor2: #006da3;
 $neutralBg: #bbbbbb;
@@ -276,7 +276,14 @@ img, area, map {
   margin: 0 -1px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  p {
+    margin-bottom: 0;
+  }
   a {
     font-size: 0.85em;
   }
+  .counter {
+    font-size: 0.85em;
+  }
+
 }
