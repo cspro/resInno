@@ -1,6 +1,7 @@
 #upperContent {
   position: relative;
-  padding: 2em 1em;
+  padding: 2em 1em 0;
+  text-align: center;
   h1, h2, h3 {
    text-transform: uppercase;
   }
@@ -40,6 +41,7 @@
     div.copyRow {
       display: table-row;
       div.copyCell {
+        text-align: left;
         display: table-cell;
         vertical-align: middle;
       }
@@ -76,6 +78,7 @@
     clear: left;
     -webkit-transition:0.5s linear all;
     transition:0.5s linear all;
+    min-width: 300px;
     h1, h2 {
       margin-bottom: 0;
     }
@@ -85,6 +88,7 @@
     ul {
       margin: 0;
       padding: 0 1.5em;
+      max-width: 600px;
     }
     .iconKey {
       li {

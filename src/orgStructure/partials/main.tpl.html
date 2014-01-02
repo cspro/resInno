@@ -26,17 +26,18 @@
 					</div>
 				</div>
 				<div class="copyWrapper">
-					<a class="copyToggle" ng-click="onCopyToggle()">{{hideCopy ? "+ Expand " + displayBU + " " + displaySubSection : "&ndash; Collapse"}}</a>
+					<a class="copyToggle" ng-click="onCopyToggle()">{{hideCopy ? "+ Show Key" : "&ndash; Hide Key"}}</a>
 					<div class="copy" ng-hide="hideCopy">
 						<div class="copyRow {{copyClass}}">
 							<div class="copyCell">
 								<h1>{{displayBU}}</h1>
-								<h2 ng-show="currSubSection">{{displaySubSection}}</h2>
+								<h2>{{displaySubSection}}&nbsp;</h2>
 								<p>Click on the circle graphic to select a business unit and geography. 
 									<ul>
 										<li>Projects that correspond to your selection will be highlighted below.</li>
-										<li>Projects that share categories highlight in dark gray.</li> 
-										<li>Click a project icon to view details of that project.</li>
+										<li>Projects that share relevance across business units highlight in dark gray.</li> 
+										<li>Hover over a project to see the title and watch for color highlighting, of that project, in other business units.</li>
+										<li>Click a project to view details and contact information for that project.</li>
 									</ul>
 								</p>
 								<div class="iconKey">

@@ -89,6 +89,9 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 		// $scope.currBU = "";
 		// $scope.currSubSection = "";
 		$location.search("");
+		angular.forEach($scope.projectData, function(value, key) {
+			value.selectionState = "";
+		});
 		init();
 	};
 	

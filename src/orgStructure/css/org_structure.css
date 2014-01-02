@@ -64,22 +64,23 @@ img, area, map {
 /* line 1, ../sass/_upper_content.scss */
 #upperContent {
   position: relative;
-  padding: 2em 1em;
+  padding: 2em 1em 0;
+  text-align: center;
 }
-/* line 4, ../sass/_upper_content.scss */
+/* line 5, ../sass/_upper_content.scss */
 #upperContent h1, #upperContent h2, #upperContent h3 {
   text-transform: uppercase;
 }
-/* line 7, ../sass/_upper_content.scss */
+/* line 8, ../sass/_upper_content.scss */
 #upperContent h1 {
   margin: 0;
   color: #205f9f;
 }
-/* line 11, ../sass/_upper_content.scss */
+/* line 12, ../sass/_upper_content.scss */
 #upperContent h2 {
   margin-top: 0;
 }
-/* line 14, ../sass/_upper_content.scss */
+/* line 15, ../sass/_upper_content.scss */
 #upperContent #resetButton {
   display: block;
   position: absolute;
@@ -92,41 +93,42 @@ img, area, map {
   opacity: 0.15;
   cursor: pointer;
 }
-/* line 25, ../sass/_upper_content.scss */
+/* line 26, ../sass/_upper_content.scss */
 #upperContent #resetButton:hover {
   opacity: 0.25;
 }
-/* line 28, ../sass/_upper_content.scss */
+/* line 29, ../sass/_upper_content.scss */
 #upperContent #resetButton.ng-hide {
   opacity: 0;
 }
-/* line 31, ../sass/_upper_content.scss */
+/* line 32, ../sass/_upper_content.scss */
 #upperContent #resetButton.ng-hide-add, #upperContent #resetButton.ng-hide-remove {
   transition: 0.25s ease-in-out all;
   display: block !important;
 }
-/* line 36, ../sass/_upper_content.scss */
+/* line 37, ../sass/_upper_content.scss */
 #upperContent div.copy {
   display: table;
   height: 280px;
   padding: 1em;
 }
-/* line 40, ../sass/_upper_content.scss */
+/* line 41, ../sass/_upper_content.scss */
 #upperContent div.copy div.copyRow {
   display: table-row;
 }
-/* line 42, ../sass/_upper_content.scss */
+/* line 43, ../sass/_upper_content.scss */
 #upperContent div.copy div.copyRow div.copyCell {
+  text-align: left;
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 50, ../sass/_upper_content.scss */
+/* line 52, ../sass/_upper_content.scss */
 .copyWrapper {
   clear: both;
   position: relative;
 }
-/* line 53, ../sass/_upper_content.scss */
+/* line 55, ../sass/_upper_content.scss */
 .copyWrapper .copyToggle {
   position: relative;
   font-size: 10px;
@@ -144,32 +146,34 @@ img, area, map {
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 69, ../sass/_upper_content.scss */
+/* line 71, ../sass/_upper_content.scss */
 .copyWrapper .copyToggle:hover {
   background: #7b7b7b;
 }
-/* line 73, ../sass/_upper_content.scss */
+/* line 75, ../sass/_upper_content.scss */
 .copyWrapper .copy {
   display: none;
   position: relative;
   clear: left;
   -webkit-transition: 0.5s linear all;
   transition: 0.5s linear all;
+  min-width: 300px;
 }
-/* line 79, ../sass/_upper_content.scss */
+/* line 82, ../sass/_upper_content.scss */
 .copyWrapper .copy h1, .copyWrapper .copy h2 {
   margin-bottom: 0;
 }
-/* line 82, ../sass/_upper_content.scss */
+/* line 85, ../sass/_upper_content.scss */
 .copyWrapper .copy p {
   margin-top: 1em;
 }
-/* line 85, ../sass/_upper_content.scss */
+/* line 88, ../sass/_upper_content.scss */
 .copyWrapper .copy ul {
   margin: 0;
   padding: 0 1.5em;
+  max-width: 600px;
 }
-/* line 90, ../sass/_upper_content.scss */
+/* line 94, ../sass/_upper_content.scss */
 .copyWrapper .copy .iconKey li {
   display: inline-block;
   margin: 0 0 3px 0;
@@ -181,7 +185,7 @@ img, area, map {
   background-color: #e1e1e1;
   border-radius: 3px;
 }
-/* line 100, ../sass/_upper_content.scss */
+/* line 104, ../sass/_upper_content.scss */
 .copyWrapper .copy .iconKey li div {
   display: inline-block;
   padding: 1px;
@@ -192,7 +196,7 @@ img, area, map {
   height: 21px;
   background-color: #959595;
 }
-/* line 109, ../sass/_upper_content.scss */
+/* line 113, ../sass/_upper_content.scss */
 .copyWrapper .copy .iconKey li div span {
   display: block;
   width: 18px;
@@ -208,8 +212,9 @@ img, area, map {
   position: relative;
   display: block;
   margin: 0 auto;
+  width: 350px;
 }
-/* line 50, ../sass/org_structure.scss */
+/* line 51, ../sass/org_structure.scss */
 #circleWrapper #mapShim {
   position: absolute;
   top: 0;
@@ -218,7 +223,7 @@ img, area, map {
   width: 350px;
   height: 350px;
 }
-/* line 58, ../sass/org_structure.scss */
+/* line 59, ../sass/org_structure.scss */
 #circleWrapper #circleContainer {
   position: relative;
   width: 350px;
@@ -231,7 +236,7 @@ img, area, map {
   overflow: hidden;
   padding: 0;
 }
-/* line 70, ../sass/org_structure.scss */
+/* line 71, ../sass/org_structure.scss */
 #circleWrapper .circleMask {
   position: absolute;
   width: 350px;
@@ -241,23 +246,23 @@ img, area, map {
   z-index: 100;
   background: url("../images/circle_map_mask.png") 0 0;
 }
-/* line 80, ../sass/org_structure.scss */
+/* line 81, ../sass/org_structure.scss */
 #circleWrapper .circleMask.ng-hide-add, #circleWrapper .circleMask.ng-hide-remove {
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
   display: block !important;
   opacity: 1;
 }
-/* line 86, ../sass/org_structure.scss */
+/* line 87, ../sass/org_structure.scss */
 #circleWrapper .circleMask.ng-hide {
   opacity: 0;
 }
-/* line 89, ../sass/org_structure.scss */
+/* line 90, ../sass/org_structure.scss */
 #circleWrapper .circleMask.transitioning {
   background: url("../images/circle_map_mask.png") 0 0 !important;
 }
 
-/* line 97, ../sass/org_structure.scss */
+/* line 98, ../sass/org_structure.scss */
 #wrapper.professional #circleContainer {
   -o-transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
@@ -265,20 +270,20 @@ img, area, map {
   ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
-/* line 106, ../sass/org_structure.scss */
+/* line 107, ../sass/org_structure.scss */
 #wrapper.professional .projectColumn.professional h2 {
   background-color: #389552;
 }
-/* line 109, ../sass/org_structure.scss */
+/* line 110, ../sass/org_structure.scss */
 #wrapper.professional .projectColumn.higherEd h2 {
   background-color: #d39fa6;
 }
-/* line 112, ../sass/org_structure.scss */
+/* line 113, ../sass/org_structure.scss */
 #wrapper.professional .projectColumn.school h2 {
   background-color: #aacddf;
 }
 
-/* line 116, ../sass/org_structure.scss */
+/* line 117, ../sass/org_structure.scss */
 #wrapper.higherEd #circleContainer {
   -o-transform: rotate(120deg);
   -webkit-transform: rotate(120deg);
@@ -286,20 +291,20 @@ img, area, map {
   ms-transform: rotate(120deg);
   transform: rotate(120deg);
 }
-/* line 125, ../sass/org_structure.scss */
+/* line 126, ../sass/org_structure.scss */
 #wrapper.higherEd .projectColumn.professional h2 {
   background-color: #a0c7ab;
 }
-/* line 128, ../sass/org_structure.scss */
+/* line 129, ../sass/org_structure.scss */
 #wrapper.higherEd .projectColumn.higherEd h2 {
   background-color: #c52e43;
 }
-/* line 131, ../sass/org_structure.scss */
+/* line 132, ../sass/org_structure.scss */
 #wrapper.higherEd .projectColumn.school h2 {
   background-color: #aacddf;
 }
 
-/* line 135, ../sass/org_structure.scss */
+/* line 136, ../sass/org_structure.scss */
 #wrapper.school #circleContainer {
   -o-transform: rotate(-120deg);
   -webkit-transform: rotate(-120deg);
@@ -307,38 +312,38 @@ img, area, map {
   ms-transform: rotate(-120deg);
   transform: rotate(-120deg);
 }
-/* line 144, ../sass/org_structure.scss */
+/* line 145, ../sass/org_structure.scss */
 #wrapper.school .projectColumn.professional h2 {
   background-color: #a0c7ab;
 }
-/* line 147, ../sass/org_structure.scss */
+/* line 148, ../sass/org_structure.scss */
 #wrapper.school .projectColumn.higherEd h2 {
   background-color: #d39fa6;
 }
-/* line 150, ../sass/org_structure.scss */
+/* line 151, ../sass/org_structure.scss */
 #wrapper.school .projectColumn.school h2 {
   background-color: #006da3;
 }
 
-/* line 155, ../sass/org_structure.scss */
+/* line 156, ../sass/org_structure.scss */
 #wrapper.northAmerica .circleMask {
   background: url("../images/circle_map_mask.png") -350px 0 !important;
 }
 
-/* line 160, ../sass/org_structure.scss */
+/* line 161, ../sass/org_structure.scss */
 #wrapper.growthVenture .circleMask {
   background: url("../images/circle_map_mask.png") -700px 0 !important;
 }
 
-/* line 165, ../sass/org_structure.scss */
+/* line 166, ../sass/org_structure.scss */
 #wrapper.core .circleMask {
   background: url("../images/circle_map_mask.png") -1050px 0 !important;
 }
 
 /* Extra small devices (phones, up to 480px) */
 /* No media query since this is the default in Bootstrap */
-@media (min-width: 600px) {
-  /* line 175, ../sass/org_structure.scss */
+@media (min-width: 721px) {
+  /* line 179, ../sass/org_structure.scss */
   #circleWrapper {
     position: relative;
     display: block;
@@ -346,15 +351,15 @@ img, area, map {
     margin-right: 2em;
   }
 
-  /* line 181, ../sass/org_structure.scss */
+  /* line 185, ../sass/org_structure.scss */
   .copyWrapper {
     clear: none;
   }
-  /* line 183, ../sass/org_structure.scss */
+  /* line 187, ../sass/org_structure.scss */
   .copyWrapper .copyToggle {
     display: none !important;
   }
-  /* line 186, ../sass/org_structure.scss */
+  /* line 190, ../sass/org_structure.scss */
   .copyWrapper .copy {
     display: table !important;
     clear: none;
@@ -362,17 +367,17 @@ img, area, map {
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /* line 196, ../sass/org_structure.scss */
+  /* line 200, ../sass/org_structure.scss */
   .projectColumns h2 {
     padding: 6px;
     font-size: 1.15em;
   }
 
-  /* line 201, ../sass/org_structure.scss */
+  /* line 205, ../sass/org_structure.scss */
   .projectColumn.professional {
     padding-right: 0;
   }
-  /* line 203, ../sass/org_structure.scss */
+  /* line 207, ../sass/org_structure.scss */
   .projectColumn.professional h2 {
     -webkit-border-top-left-radius: 8px;
     border-top-left-radius: 8px;
@@ -380,11 +385,11 @@ img, area, map {
     border-top-right-radius: 0px !important;
   }
 
-  /* line 210, ../sass/org_structure.scss */
+  /* line 214, ../sass/org_structure.scss */
   .projectColumn.higherEd {
     padding-left: 0;
   }
-  /* line 212, ../sass/org_structure.scss */
+  /* line 216, ../sass/org_structure.scss */
   .projectColumn.higherEd h2 {
     -webkit-border-top-left-radius: 0px !important;
     border-top-left-radius: 0px !important;
@@ -394,17 +399,17 @@ img, area, map {
 }
 /* Medium devices (desktops and up) */
 @media (min-width: 992px) {
-  /* line 224, ../sass/org_structure.scss */
+  /* line 228, ../sass/org_structure.scss */
   .projectColumns h2 {
     padding: 10px;
     font-size: 1.25em;
   }
 
-  /* line 229, ../sass/org_structure.scss */
+  /* line 233, ../sass/org_structure.scss */
   .projectColumn.professional {
     padding-right: 0;
   }
-  /* line 231, ../sass/org_structure.scss */
+  /* line 235, ../sass/org_structure.scss */
   .projectColumn.professional h2 {
     -webkit-border-top-left-radius: 10px !important;
     border-top-left-radius: 10px !important;
@@ -412,12 +417,12 @@ img, area, map {
     border-top-right-radius: 0px !important;
   }
 
-  /* line 238, ../sass/org_structure.scss */
+  /* line 242, ../sass/org_structure.scss */
   .projectColumn.higherEd {
     padding-right: 0;
     padding-left: 0;
   }
-  /* line 241, ../sass/org_structure.scss */
+  /* line 245, ../sass/org_structure.scss */
   .projectColumn.higherEd h2 {
     -webkit-border-top-right-radius: 0px !important;
     border-top-right-radius: 0px !important;
@@ -425,11 +430,11 @@ img, area, map {
     border-top-left-radius: 0px !important;
   }
 
-  /* line 248, ../sass/org_structure.scss */
+  /* line 252, ../sass/org_structure.scss */
   .projectColumn.school {
     padding-left: 0;
   }
-  /* line 250, ../sass/org_structure.scss */
+  /* line 254, ../sass/org_structure.scss */
   .projectColumn.school h2 {
     -webkit-border-top-left-radius: 0px !important;
     border-top-left-radius: 0px !important;
@@ -437,7 +442,7 @@ img, area, map {
     border-top-right-radius: 10px !important;
   }
 
-  /* line 257, ../sass/org_structure.scss */
+  /* line 261, ../sass/org_structure.scss */
   .hiddenAtLarge {
     /* Fix for IE10 clearing issue */
     display: none !important;
@@ -951,7 +956,7 @@ img, area, map {
     margin-left: 110px !important;
   }
 }
-/* line 272, ../sass/org_structure.scss */
+/* line 276, ../sass/org_structure.scss */
 .footer {
   background-color: #e1e1e1;
   text-align: center;
@@ -960,15 +965,15 @@ img, area, map {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-/* line 279, ../sass/org_structure.scss */
+/* line 283, ../sass/org_structure.scss */
 .footer p {
   margin-bottom: 0;
 }
-/* line 282, ../sass/org_structure.scss */
+/* line 286, ../sass/org_structure.scss */
 .footer a {
   font-size: 0.85em;
 }
-/* line 285, ../sass/org_structure.scss */
+/* line 289, ../sass/org_structure.scss */
 .footer .counter {
   font-size: 0.85em;
 }

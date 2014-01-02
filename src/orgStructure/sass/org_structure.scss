@@ -47,6 +47,7 @@ img, area, map {
   position: relative;
   display: block;
   margin: 0 auto;
+  width: 350px;
   #mapShim {
     position: absolute;
     top: 0;
@@ -172,6 +173,9 @@ img, area, map {
 /* No media query since this is the default in Bootstrap */
 
 @media (min-width: 600px) {
+}
+
+@media (min-width: 721px) {
   #circleWrapper {
     position: relative;
     display: block;
