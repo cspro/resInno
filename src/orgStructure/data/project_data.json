@@ -13,8 +13,25 @@
         "internalPartners": "",
         "externalPartners": "Gwinnett County Public Schools, Atlanta Public Schools",
         "related": "",
-        "projectGoal": "<ol><li>Develop an algorithm that can be used in middle school to predict college readiness by the end of high school.</li> <li>The overall algorithm will have six sub-components, and students can receive an overall indicator as well as indicators for each sub-component.</li></ol>",
-        "projectResults": "<ol><li>We have found the behavior and motivation factors in 8th grade students contribute almost as much to college readiness as achievement. </li> <li>We are able to identify categories of students in 8th grade who are on- and off-track for college readiness and be correct more than 90% of the time. </li> <li>Using a national dataset, we have developed the overall algorithm and weights for each sub-component.</li></ol>"
+        "projectGoal": "<ol><li>Develop an algorithm that can be used in middle school to predict college readiness by the end of high school. </li><li>The index will have six sub-components, corresponding to six factors that influence college readiness--academic achievement, motivation, behavior, social engagement, family circumstances, and school characteristics. </li><li>Students will receive an overall indicator as well as indicators for each sub-component.</li></ol>",
+        "projectResults": "<ol><li>Using a national dataset, developed the overall algorithm and weights for each factor. Results suggest academic achievement is important to college readiness, but motivation and behavior are critical as well. Together, motivation and behavior exert more influence on college readiness than achievement does. </li><li>Divided both the overall index and its sub-components into successive categories of college readiness. Each category has a conceptual definition, which makes these college readiness levels more interpretable for end users than raw index values. </li><li>The next step is to apply this analysis and standard-setting process to district-level data for district partners.</li></ol>"
+    },
+    {
+        "id": "3CCS",
+        "icon": "CC",
+        "businessUnit": "school higherEd",
+        "subSection": "northAmerica core growthVenture",
+        "researchType": "Research to Practice",
+        "shortTitle": "21st Century Skills",
+        "fullTitle": "21st Century Skills",
+        "stage": "E",
+        "projectLeads": "Maryam Tager",
+        "leadEmail": "maryam.tager@pearson.com",
+        "internalPartners": "",
+        "externalPartners": "",
+        "related": "",
+        "projectGoal": "",
+        "projectResults": ""
     },
     {
         "id": "4CCS",
@@ -27,9 +44,9 @@
         "stage": "E",
         "projectLeads": "Matt Gaertner",
         "leadEmail": "matthew.gaertner@pearson.com",
-        "internalPartners": "",
+        "internalPartners": "Higher Education",
         "externalPartners": "University of Colorado Boulder",
-        "related": "",
+        "related": "http://www.insidehighered.com/news/2013/05/15/study-suggests-class-based-affirmative-action-could-increase-racial-diversity, http://www.theatlantic.com/education/archive/2013/10/what-if-colleges-embraced-affirmative-action-for-class-instead-of-race/280733/, http://www.insidehighered.com/audio/2013/07/22/race-class-and-fisher-ruling, http://www.huffingtonpost.com/2013/07/02/cu-boulder-affirmative-action-alternative_n_3536039.html",
         "projectGoal": "<ul>Develop, implement, and evaluate the impact of class-conscious college admissions policies on institutional diversity and student outcomes.</ul>",
         "projectResults": "<ol><li>Indices provide additional consideration in the admissions process for students who have faced obstacles to higher education enrollment and achieved beyond their circumstances.</li> <li>Using these indices increased socioeconomic diversity and maintained racial diversity in admissions. </li> <li> Initial research suggests class-based admits may perform reasonably well in college, particularly those identified by the Overachievement Indices. </li> <li>Project complete, paper published in <em>Harvard Law Review</em>, communication plan in exectuion mode.</li></ol>"
     },
@@ -40,15 +57,15 @@
         "subSection": "northAmerica core",
         "researchType": "Research",
         "shortTitle": "Learning Progressions",
-        "fullTitle": "Learning Progressions",
+        "fullTitle": "Learning Progressions Modeling and Reporting",
         "stage": "B",
         "projectLeads": "Jennifer Kobrin",
         "leadEmail": "jennifer.kobrin@pearson.com",
         "internalPartners": "",
         "externalPartners": "Dr. Alicia Alonzo, Michigan State University; Dr. Derek Briggs, University of Colorado at Boulder",
         "related": "",
-        "projectGoal": "<ol><li>Conduct psychometric modeling research of learning progressions to determine which methods produce the most reliable and valid placement of students on an LP.</li> <li>Conduct interviews and studies with teachers to engage with them on the concept of LP and gather data about the inferences they make from assessment reports that are linked to LP.</li></ol>",
-        "projectResults": "The fit of the Attribute Hierarchy Method (AHM) model has been evaluated and teacher interviews related to score reports and student performance on assessments have led to identifications of refinements needed to the learning progression, assessments, and reporting tool."
+        "projectGoal": "<ol><li>Conduct research on the psychometric modeling of learning progressions to determine which methods produce the most reliable and valid placement of students on a learning progression.</li><li>Work with teachers to understand how they make sense of learning progressions and what inferences they make from assessments that are linked to learning progressions.</li></ol>",
+        "projectResults": "<ol><li>Used the Attribute Hierarchy Method (AHM) to model assessment data linked to a learning progression on force and motion, and the fit of the model was evaluated.</li><li>Teachers' think-aloud interviews as they interacted with score reports of students' performance on assessments linked to the learning progression provided insight into their understanding and inferences regarding students' level of conceptual knowledge of force and motion, and what refinements to the learning progression, assessments, and reporting tool are needed.</li></ol>"
     },
     {
         "id": "6CCS",
@@ -65,7 +82,24 @@
         "externalPartners": "Dr. Stephen DesJardins, University of Michigan",
         "related": "",
         "projectGoal": "<ol><li>What is the effect of taking Algebra II on college and career outcomes?</li> <li>Is taking Algebra II as important for careers as it is for college?</li></ol>",
-        "projectResults": "<ol><li>Algebra II has a strong impact on success in college but weaker effects for those entering the workforce directly after high school.</li> <li>The effect of Algebra II also seems to be diminishing over time. </li> <li>Results should be published in <em>Research in Higher Education</em></li></ol>"
+        "projectResults": "<ol><li>Algebra II has a strong impact on success in college but weaker effects for those entering the workforce directly after high school. </li><li>The effect of Algebra II also seems to be diminishing over time, suggesting the course has been watered down to avoid high failure rates.</li><li>Results will be pubished in <em>Research in Higher Education in March 2014</em>.</li></ol>"
+    },
+    {
+        "id": "8CCS",
+        "icon": "CC",
+        "businessUnit": "higherEd",
+        "subSection": "northAmerica",
+        "researchType": "Thought Leadership",
+        "shortTitle": "Dev Ed Reform Review",
+        "fullTitle": "Developmental Education Reform Literature Review",
+        "stage": "E",
+        "projectLeads": "Peter Conforti",
+        "leadEmail": "peter.conforti@pearson.com",
+        "internalPartners": "Jonell Sanchez, College and Career Readiness",
+        "externalPartners": "",
+        "related": "",
+        "projectGoal": "Review the current research literature on developmental education reform efforts including descriptions of program features, examples of implementation, and evidence of efficacy.",
+        "projectResults": "The most recent paper reviews key features of reform efforts including accelerated and individualized instruction, co-requisite models, contextualized instruction, supplemental advising and counseling, and the Emporium model; concluding with recommendations for developmental education improvement."
     },
     {
         "id": "NGLA_AS",
@@ -74,15 +108,15 @@
         "subSection": "northAmerica",
         "researchType": "Research & Research to Practice",
         "shortTitle": "Text Cmplx & Careers",
-        "fullTitle": "Text Complexity & Careers (NextGen L&A)",
+        "fullTitle": "Text Complexity & Careers",
         "stage": "E",
         "projectLeads": "Hua Wei",
         "leadEmail": "hua.wei@pearson.com",
         "internalPartners": "",
         "externalPartners": "",
         "related": "",
-        "projectGoal": "The purpose of the study is to systematically evaluate text complexity levels across a wide range of careers and to investigate the relationship between the amount of preparation necessary for the career and the complexity of career texts.",
-        "projectResults": "Analysis is complete and a manuscript based on the project has been submitted to the peer-reviewed journal, <em>Education Researcher</em>, for publication."
+        "projectGoal": "Systematically evaluate text complexity levels across a wide range of careers and to investigate the relationship between the amount of preparation necessary for the career and the complexity of career texts.",
+        "projectResults": "Submitted manuscript for peer-review publication."
     },
     {
         "id": "7CCS",
@@ -115,8 +149,25 @@
         "internalPartners": "Poptropica",
         "externalPartners": "GlassLab (EA, Institute of Play, ETS)",
         "related": "",
-        "projectGoal": "Demonstrate methods of using data from rich learning environments to understand what learners know and can do.",
-        "projectResults": "<ol><li>Peer-reviewed journal articles accepted in <em>Journal of Educational Technology & Society and Information Sciences</em></li> <li>White Paper for Gordon Commission on future of assessment</li> <li>White Paper for the Gates Foundation-sponsored Learning Analytics Working Group</li> <li>White Paper for Pearson Office of Chief Education Advisor</li> <li>Press coverage in <em>USA Today</em>, <em>Wall Street Journal</em>, and <em>T.H.E. Journal</em></li> <li>Presentation on games & assessment at the Gates Foundation</li> <li>Scholarly presentations at ETS, the National Council for Measurement in Education, American Educational Research Association, the Games, Learning, and Society Conference, Learning Analytics Summer Institute, Educational Data Mining, Association of Test Publishers, and Society for Industrial and Organizational Psychology conferences</li> <li>Participation in workshop on technology and education by White House Office of Science Technology Policy</li> <li>SimCityEdu released for General Availability Nov. 7</li></ol>"
+        "projectGoal": "<ol><li>Generate a report summarizing policies and initiatives, globally and in the U.S., focused on developing career trajectories/continuums of practice models for improving the teaching profession by attracting high quality candidates and retaining effective teachers. </li><li> Collect case study data on 5-7 promising continuum models and generate a report that summarizes/documents useful practices for implementing and sustaining. </li><li> Develop a continuum model framework in collaboration with NNSTOY and Public Impact.</li></ol>",
+        "projectResults": "<ol><li>Literature review released in December 201</li><li> Collected data for one model in Modesto, CA and collected data for second model on in Knox County, TN.</li></ol>"
+    },
+    {
+        "id": "1EE",
+        "icon": "EE",
+        "businessUnit": "school higherEd",
+        "subSection": "northAmerica core growthVenture",
+        "researchType": "Research, Thought Leadership",
+        "shortTitle": "Teacher/Expert Partnerships",
+        "fullTitle": "Evaluating Teacher Partnerships with Outside Experts",
+        "stage": "M",
+        "projectLeads": "Brad Ermeling",
+        "leadEmail": "brad.ermeling@pearson.com",
+        "internalPartners": "",
+        "externalPartners": "National Commission on Teaching and Americas Future (NCTAF)",
+        "related": "http://nctaf.org/learning-studios/",
+        "projectGoal": "Explore the potential of collaborative partnerships with outside content experts (scientist, engineers, and industry professionals) as a means for infusing new resources and perspectives that might help teacher teams move beyond persistent images of traditional practice.",
+        "projectResults": "<ol><li>Established parntership with NCTAF.</li><li>Identified parntership cases with NCTAF Learning Studios particpants and obtained consent for research.</li><li>Completed summer and fall data collection.</li><li>Completed design of focus group and interview protocols as well as survey questionnaire.</li></ol>"
     },
     {
         "id": "12EE",
@@ -125,7 +176,7 @@
         "subSection": "northAmerica core",
         "researchType": "Thought Leadership & Research to Practice",
         "shortTitle": "Contin. of Teaching Practices",
-        "fullTitle": "Continuums of Teaching Practices",
+        "fullTitle": "Continuums of Teachers Professional Practice",
         "stage": "M",
         "projectLeads": "Kathy McKnight",
         "leadEmail": "kathy.mcknight@pearson.com",
@@ -134,23 +185,6 @@
         "related": "",
         "projectGoal": "<ol><li>Publish a report that identifies policies & initiatives, internationally, focused on developing career paths/continuums of practice  models for teachers, attracting high-quality candidates to the profession, and retaining effective teachers long-term.</li> <li>Perform a case study on 3-5 promising continuum models and generate a report that documents useful practices for implementing and sustaining a career path for effective teachers. </li> <li>Develop a continuum model in collaboration with NNSTOY and Public Impact.</li></ol>",
         "projectResults": "<ol><li><em>Creating Sustainable Teacher Career Trajectories: A 21st Century Imperative</em> was published in December of 2013. </li> <li>Collection of data for goal 2 is in process and more sites for data collection are being identified.</li></ol>"
-    },
-    {
-        "id": "13EE",
-        "icon": "EE",
-        "businessUnit": "professional school higherEd",
-        "subSection": "northAmerica",
-        "researchType": "Research to Practice",
-        "shortTitle": "Teacher Card Sort Eval",
-        "fullTitle": "Card Sort Evaluation",
-        "stage": "M",
-        "projectLeads": "Kathy McKnight",
-        "leadEmail": "kathy.mcknight@pearson.com",
-        "internalPartners": "Digital Content Development",
-        "externalPartners": "National Network of State Teachers of the Year (NNSTOY)",
-        "related": "",
-        "projectGoal": "Using a ranking methodology/model during classroom observations will result in a more valid, reliable and potentially fairer indicator of teacher effectiveness.",
-        "projectResults": "<ol><li>Studies using InTASC standards as the Card Statements have been conducted and psychometric properties have been tested.</li> <li>Data sets for external validation and potential 2 - card sort option are being considered and proposed.</li></ol>"
     },
     {
         "id": "14EE",
@@ -167,7 +201,7 @@
         "externalPartners": "Flipped Learning Network; George Mason University",
         "related": "http://researchnetwork.pearson.com/educator-effectiveness/resources/flipped-learning-resources",
         "projectGoal": "Collaborate with researchers and experts in Flipped Learning to review the literature and publish the most comprehensive report, to date, on this innovative pedagogical approach that is becoming increasingly popular with educators and the media.",
-        "projectResults": "Develop the 1st comprehensive lit review of Flipped Learning, \"A Review of Flipped Learing\", and share it with the education community. "
+        "projectResults": "Developed the first comprehensive literature review of Flipped Learning, <em>A Review of Flipped Learing</em>, and shared it with the education community."
     },
     {
         "id": "15EE",
@@ -175,16 +209,16 @@
         "businessUnit": "school",
         "subSection": "northAmerica core",
         "researchType": "Research to Practice",
-        "shortTitle": "Virtual Mntorshp w/Edu Ldrs",
-        "fullTitle": "Virtual Support for Instructional Improvement",
+        "shortTitle": "Virtual Coaching",
+        "fullTitle": "Virtual Coaching for Instructional Leaders",
         "stage": "E",
         "projectLeads": "Brad Ermeling",
         "leadEmail": "brad.ermeling@pearson.com",
         "internalPartners": "Learning Teams Directors and Advisors at School Achievement Services",
         "externalPartners": "Kent School District, WA",
         "related": "http://www.academia.edu/3188472/Pearson_Learning_Teams_Virtual_Services_Research_Project",
-        "projectGoal": "<ol><li>Conduct a proof-of concept study to evaluate effectiveness of using a virtual interface for mentorship of school leaders participating in school improvement programs vs. a face-to-face engagement.</li> <li>Provide a lower cost alternative to support school leaders without sacrificing the value of the program or quality of mentorship.</li> <li>Increase the participation in the school improvement program by providing a more flexible engagement method for school leaders.</li></ol>",
-        "projectResults": "Completed study and on schedule to submit report and journal article on 12/1 to <em>Education Policy and Analysis Archives</em> (EPAA)."
+        "projectGoal": "Conduct a proof-of-concept study to evaluate potential of virtual implementation support services for collaborative instructional improvement model.",
+        "projectResults": "<ol><li>Completed data collection and analysis.</li><li>Completed project report and submitted journal article for publication.</li></ol>"
     },
     {
         "id": "16EE",
@@ -197,11 +231,113 @@
         "stage": "M",
         "projectLeads": "Kathy McKnight",
         "leadEmail": "kathy.mcknight@pearson.com",
-        "internalPartners": "User Experience",
+        "internalPartners": "User Experience, Psych Assessment",
         "externalPartners": "National Network of State Teachers of the Year (NNSTOY)",
         "related": "",
         "projectGoal": "Conduct \"proof-of-concept\" study to evaluate potential for creating teacher profiles from single composite measure scores of teacher effectiveness (created from multiple indicators). The purpose of the profiles is to provide useable, meaningful feedback to teachers by which they can improve practice. ",
         "projectResults": "<ol><li>Completed Data Analysis (using MET data)</li> <li>Generated 12 profile types</li> <li>Starting to work with User Experience to visualize the profiles in a way that is meaningful and useable for educators</li></ol>"
+    },
+    {
+        "id": "3NGLA_DL",
+        "icon": "NG",
+        "businessUnit": "professional school higherEd",
+        "subSection": "northAmerica core growthVenture",
+        "researchType": "Research, Thought Leadership",
+        "shortTitle": "Global Competence",
+        "fullTitle": "Toward an Understanding and Operationalization of Global Competence",
+        "stage": "M",
+        "projectLeads": "Edynn Sato, Kimberly O'Malley",
+        "leadEmail": "edynn.sato@pearson.com, kimberly.omalley@pearson.com",
+        "internalPartners": "Chris Rozunick - Content Development, Catherine Hayes - Global English, Linda Zimmerman - Assessment & Instruction, Roger Frantz - Assessment & Instruction, John DeJong - Pearson English, David Leach - Schools IBU, Peter Jackson - International Assessment, Chris Noon - Pearson International, Jim Tognolini - Research and Assessment, Michael Young - Assessment & Instruction, Jon Twing - Pearson Assessment Centre",
+        "externalPartners": "Sarah Howie - South Africa, Alicia Cabezudo - Argentina, Bruno Losito - Italy, Peter Franklin - Germany, David Kerr - UK, Veronica Boix Mansilla - US, Tom Franklin - UK, Jim Schriebner - US, Kerry Kennedy - Hong Kong",
+        "related": "",
+        "projectGoal": "Create literature review and discussion of definition/operational definition and measures of global competence.",
+        "projectResults": "Distributed draft of white paper to potential advisory panel members for review and comment."
+    },
+    {
+        "id": "4NGLA_DL",
+        "icon": "NG",
+        "businessUnit": "professional school higherEd",
+        "subSection": "northAmerica core growthVenture",
+        "researchType": "Research, Research to Practice",
+        "shortTitle": "Access & Accommodation",
+        "fullTitle": "Accessibility and Accommodations in Online Instruction and Assessment, Simulations, and Gaming Environments: Research and Implications",
+        "stage": "B",
+        "projectLeads": "Edynn Sato",
+        "leadEmail": "edynn.sato@pearson.com",
+        "internalPartners": "",
+        "externalPartners": "",
+        "related": "",
+        "projectGoal": "Review and analyze literature to address the following: <ol><li>What are the effects of online accessibility and accommodations on the test performance of students with disabilities? </li><li>What are the effects of online accessibility and accommodations on the test performance of English language learners? and </li><li>What evidence is there to support the use of specific types of online test accessibility strategies and accommodations to best facilitate valid score interpretations for specific subgroups of our diverse learners?</li></ol>",
+        "projectResults": "Develop literature."
+    },
+    {
+        "id": "5NGLA_DL",
+        "icon": "NG",
+        "businessUnit": "school",
+        "subSection": "northAmerica core growthVenture",
+        "researchType": "Research",
+        "shortTitle": "ELP Growth Percentile Scores",
+        "fullTitle": "ELP Growth Percentile Scores",
+        "stage": "M",
+        "projectLeads": "Daeryong Seo, Husein Taherbhai",
+        "leadEmail": "daeryong.seo@pearson.com, husein.taherbhai@pearson.com",
+        "internalPartners": "",
+        "externalPartners": "",
+        "related": "",
+        "projectGoal": "Track English language learner's English language proficiency progress over the years.",
+        "projectResults": "<ol><li>Disseminate of results from RIN research projects at conferences.</li><li>Submit to peer-reviewed journal article publication.</li></ol>"
+    },
+    {
+        "id": "6NGLA_DL",
+        "icon": "NG",
+        "businessUnit": "school",
+        "subSection": "northAmerica core growthVenture",
+        "researchType": "Research",
+        "shortTitle": "ELL Motivation and Achievement",
+        "fullTitle": "ELL Motivation and Achievement",
+        "stage": "M",
+        "projectLeads": "Daeryong Seo, Husein Taherbhai",
+        "leadEmail": "daeryong.seo@pearson.com, husein.taherbhai@pearson.com",
+        "internalPartners": "",
+        "externalPartners": "",
+        "related": "",
+        "projectGoal": "Understand English language learner's motivational aspects realted to achievement.",
+        "projectResults": "<ol><li>Disseminate of results from RIN research projects at conferences.</li><li>Submit to peer-reviewed journal article publication.</li></ol>"
+    },
+    {
+        "id": "19NGLA_AS",
+        "icon": "NG",
+        "businessUnit": "school",
+        "subSection": "northAmerica",
+        "researchType": "Research to Practice",
+        "shortTitle": "Automated Math Scoring",
+        "fullTitle": "Automated Math Scoring",
+        "stage": "E",
+        "projectLeads": "Peter Foltz",
+        "leadEmail": "peter.foltz@pearson.com",
+        "internalPartners": "Knowledge Technologies, TestNav, National Services",
+        "externalPartners": "",
+        "related": "",
+        "projectGoal": "Conduct research on a math reasoning engine, equation editor representations, and a math scoring system to be able to score open ended K-Algebra 2 numerical problems.",
+        "projectResults": "<ol><li>Perform research on math reasoning engine and scoring rules.</li><li>Perform research usable equation editor for TestNav </li><li></li><li>Perform test on creation of 521 PARCC field test items.</li></ol>"
+    },
+    {
+        "id": "19NGLA_HS",
+        "icon": "NG",
+        "businessUnit": "school higherEd",
+        "subSection": "northAmerica core growthVenture",
+        "researchType": "Research",
+        "shortTitle": "Human Scoring",
+        "fullTitle": "Human Scoring",
+        "stage": "M",
+        "projectLeads": "Edward Wolfe",
+        "leadEmail": "edward.wolfe@pearson.com",
+        "internalPartners": "Performance Scoring Center, Knowledge Technologies",
+        "externalPartners": "",
+        "related": "https://neo.pearson.com/groups/human-scoring-research",
+        "projectGoal": "<ol><li>Provide intellectual leadership world-wide in the area of modeling rater effects and understanding their connection to rating context, response content, and rater characteristics.</li><li>Forge world-wide partnerships with experts who work in the area of ratings and rater effects.</li><li>Provide actionable research results to guide Pearson efforts to continually improve the quality of human scores.</li></ol>",
+        "projectResults": "<ol><li>Authored 13 peer review journal articles.</li><li>Collaborated with researchers from several notable universities (Oxford University, University of California at Berkeley, University of Georgia, University of Maryland).</li><li>Obtained research grant from the Australian Curriculum, Assessment, and Reporting Authority.</li></ol>"
     },
     {
         "id": "26NGLA_PA",
@@ -217,8 +353,8 @@
         "internalPartners": "Content Support Services",
         "externalPartners": "Gwinnett County Public Schools",
         "related": "",
-        "projectGoal": "",
-        "projectResults": "Phase 1 of Performance Based Task Prototypes have been developed."
+        "projectGoal": "Create proof of concept of potential classroom-based formative assessments and feedback models.",
+        "projectResults": "<ol><li>Completed Phase 1 prototypes.</li><li>Phase 2 prototypes in progress.</li></ol>"
     },
     {
         "id": "27NGLA_PA",
@@ -234,8 +370,25 @@
         "internalPartners": "Center for NextGen Learning & Assessment - Automated Scoring Team",
         "externalPartners": "",
         "related": "",
-        "projectGoal": "",
-        "projectResults": "A storyboard for listening and speaking prototypes has been developed."
+        "projectGoal": "Conduct proof of concept of potential speaking and listening models using automated scoring.",
+        "projectResults": "Completed storyboard for speaking and listening task."
+    },
+    {
+        "id": "29NGLA_PA",
+        "icon": "NG",
+        "businessUnit": "school",
+        "subSection": "northAmerica core growthVenture",
+        "researchType": "Research to Practice",
+        "shortTitle": "Item Difficulty Modeling",
+        "fullTitle": "Item Difficulty Modeling",
+        "stage": "B",
+        "projectLeads": "Steve Ferrara",
+        "leadEmail": "steve.ferrara@pearson.com",
+        "internalPartners": "Center for NextGen Learning & Assessment - Automated Scoring Team",
+        "externalPartners": "",
+        "related": "",
+        "projectGoal": "Identify indicators of items and tasks that predict difficulty levels.",
+        "projectResults": ""
     },
     {
         "id": "30NGLA_PA",
@@ -264,12 +417,46 @@
         "fullTitle": "Sources of Cognitive Complexity in ELA and Mathematics",
         "stage": "E",
         "projectLeads": "Steve Ferrara, Paul Nichols",
-        "leadEmail": "steve.ferrara@pearson.com, paul.nichols@@pearson.com",
+        "leadEmail": "steve.ferrara@pearson.com, paul.nichols@pearson.com",
         "internalPartners": "",
         "externalPartners": "Partnership for Assessment of Readiness for College and Career (PARCC)",
         "related": "",
         "projectGoal": "",
         "projectResults": "Measures are in place and coding has been completed.  Code validation is in progress."
+    },
+    {
+        "id": "33NGLA_PA",
+        "icon": "NG",
+        "businessUnit": "professional school higherEd",
+        "subSection": "northAmerica core growthVenture",
+        "researchType": "Research",
+        "shortTitle": "Principled Q's Rsrch Stdy",
+        "fullTitle": "Principled Questions Research Study",
+        "stage": "E",
+        "projectLeads": "Paul Nichols",
+        "leadEmail": "paul.nichols@pearson.com",
+        "internalPartners": "Content Support Services",
+        "externalPartners": "GED",
+        "related": "",
+        "projectGoal": "Empirically validate that research-based design and development impacts item development quality.",
+        "projectResults": "Held two item writer workshops and an expert review."
+    },
+    {
+        "id": "34NGLA_PA",
+        "icon": "NG",
+        "businessUnit": "professional school higherEd",
+        "subSection": "northAmerica core growthVenture",
+        "researchType": "Research",
+        "shortTitle": "Beneficial Teacher Rpts",
+        "fullTitle": "Beneficial Teacher Report Information Theory",
+        "stage": "B",
+        "projectLeads": "Paul Nichols",
+        "leadEmail": "paul.nichols@pearson.com",
+        "internalPartners": "",
+        "externalPartners": "",
+        "related": "",
+        "projectGoal": "Identify report information that contributes to the meaningful and beneficial use of reports for teachers.",
+        "projectResults": "Conducted teacher interviews and analyzed data."
     },
     {
         "id": "35NGLA_PA",
@@ -282,11 +469,96 @@
         "stage": "E",
         "projectLeads": "Emily Lai",
         "leadEmail": "emily.lai@pearson.com",
+        "internalPartners": "Pearson North America Marketing Programs",
+        "externalPartners": "",
+        "related": "http://researchnetwork.pearson.com/nextgen-learning-and-assessment/performance-assessment_assessing-what-students-can-do-not-just-what-they-know",
+        "projectGoal": "<ol><li>Define performance assessment.</li><li> Identify and describe a continuum of approaches to performance assessment.</li><li>Explore design variations and scoring considerations for each approach.</li><li>Provide state-of-the-art examples drawn from a range of assessment contexts.</li></ol>",
+        "projectResults": "<ol><li>Completed and published the Framework.</li><li>Continue to enhance features, find additional exemplars, and publicize it.</li></ol>"
+    },
+    {
+        "id": "36NGLA_PA",
+        "icon": "NG",
+        "businessUnit": "professional school higherEd",
+        "subSection": "northAmerica core growthVenture",
+        "researchType": "Research",
+        "shortTitle": "Dynamic Sys. Modeling & Sims",
+        "fullTitle": "Dynamic Systems Modeling and Simulations",
+        "stage": "M",
+        "projectLeads": "Paul Nichols",
+        "leadEmail": "paul.nichols@pearson.com",
         "internalPartners": "",
         "externalPartners": "",
-        "related": "http://paframework.csprojecthub.com/?page=home",
-        "projectGoal": "<ol><li>Used by a wide audience, including Pearson sales and customer representatives, to reduce the inconsistency that occurs when disscussing performance tasks across multiple audiences.</li> <li>Research all current definitions and types of performance tasks.</li> <li> Determine overlap and best practices.</li> <li>Create a set of standard definitions with examples and research based explanations.</li></ol>",
-        "projectResults": "The Framework has been published and is being actively publicized."
+        "related": "",
+        "projectGoal": "Create a simulation of the Learning Diamond.",
+        "projectResults": "Completed book chapter."
+    },
+    {
+        "id": "37NGLA_PA",
+        "icon": "NG",
+        "businessUnit": "school",
+        "subSection": "northAmerica",
+        "researchType": "Research to Practice; Thought Leadership",
+        "shortTitle": "Srcs of Cog. Cmplxty in ELA & Mth",
+        "fullTitle": "Sources of Cognitive Complexity in ELA and Mathematics",
+        "stage": "E",
+        "projectLeads": "Steve Ferrara, Paul Nichols",
+        "leadEmail": "steve.ferrara@pearson.com, paul.nichols@pearson.com",
+        "internalPartners": "",
+        "externalPartners": "PARCC",
+        "related": "",
+        "projectGoal": "Identify cognitive complexity measures in ELA and mathematics.",
+        "projectResults": "<ol><li>Created measures.</li><li>Trained coders and coding complete.</li><li>Validate codes.</li></ol>"
+    },
+    {
+        "id": "38NGLA_PA",
+        "icon": "NG",
+        "businessUnit": "professional school higherEd",
+        "subSection": "northAmerica core growthVenture",
+        "researchType": "Research to Practice",
+        "shortTitle": "Principled Q's Process Dev.",
+        "fullTitle": "Principled Questions Process Development",
+        "stage": "M",
+        "projectLeads": "Paul Nichols",
+        "leadEmail": "paul.nichols@pearson.com",
+        "internalPartners": "",
+        "externalPartners": "PARCC",
+        "related": "",
+        "projectGoal": "Create a design and development process as part of our principles, processes, and tools.",
+        "projectResults": "<ol><li>Published a bulletin on this process.</li><li>Used principled questioning on several projects.</li></ol>"
+    },
+    {
+        "id": "39NGLA_PA",
+        "icon": "NG",
+        "businessUnit": "professional school higherEd",
+        "subSection": "northAmerica core growthVenture",
+        "researchType": "Thought Leadership",
+        "shortTitle": "Learning Diamond Development",
+        "fullTitle": "Learning Diamond Development",
+        "stage": "B",
+        "projectLeads": "Paul Nichols",
+        "leadEmail": "paul.nichols@pearson.com",
+        "internalPartners": "",
+        "externalPartners": "",
+        "related": "",
+        "projectGoal": "Create a coneceptual framework for systems thinking around improving learning.",
+        "projectResults": "Published a bulletin on the Learning Diamond."
+    },
+    {
+        "id": "40NGLA_PA",
+        "icon": "NG",
+        "businessUnit": "school",
+        "subSection": "northAmerica core growthVenture",
+        "researchType": "Research to Practice",
+        "shortTitle": "Academic Language",
+        "fullTitle": "ELL Assessments and Reporting: Academic Language",
+        "stage": "M",
+        "projectLeads": "Roger Frantz",
+        "leadEmail": "roger.frantz@pearson.com",
+        "internalPartners": "",
+        "externalPartners": "Alison Bailey, UCLA",
+        "related": "http://researchnetwork.pearson.com/wp-content/uploads/Defining_Academic_Language.pdf",
+        "projectGoal": "<ol><li>Increase general understanding of academic language both Pearson-internally and externally.</li><li>Contribute to the existing body of academic language research.</li><li>Drive academic language research implementation in assessment practice.</li></ol>",
+        "projectResults": "<ol><li>Disseminate general information through webinars and a brief white paper.</li><li>Apply research in development of SELP-</li><li></li><li>Disseminate results from two research projects (using SELP-2 items, NAEP passages) at conferences.</li><li>Submit a peer-reviewed journal article.</li></ol>"
     },
     {
         "id": "38OL",
@@ -302,8 +574,8 @@
         "internalPartners": "eCollege/LTG OpenClass ",
         "externalPartners": "Leyden High School District 212 (Franklin Park, IL)",
         "related": "",
-        "projectGoal": "<ol><li>Measure the change in students' efficacious use of  social media tools once their instructors have completed professional development on incorporating social media into their pedagogical practices.</li> <li>Measure and compare the amount of connections students make with other students, their interactions with the instructor, and their interactions with course content with social media tools versus without.</li></ol>",
-        "projectResults": "Focus groups to determine development parameters for pedagogical professional development have been determined."
+        "projectGoal": "<ol><li>Measure the effect of pedagogical professional development on student social media tool use. </li><li>Measure the relationships between social media tool use and student connections with other students, instructors and course content.</li></ol>",
+        "projectResults": "Developed a working prototype."
     },
     {
         "id": "39OL",
@@ -316,11 +588,28 @@
         "stage": "E",
         "projectLeads": "Rob Kadel",
         "leadEmail": "rob.kadel@pearson.com",
-        "internalPartners": "Central Marketing & Communications",
+        "internalPartners": "Pearson North America Marketing Programs",
         "externalPartners": "",
-        "related": "",
-        "projectGoal": "<ol><li>To provide a vision of the future of learning based on the critical opportunities in education.</li> <li>Spur thinking, debate, and solutions to better connect learners to material and to each other.</li></ol>",
-        "projectResults": "The School of Thought videos have been completed, posted on YouTube and to date have had more than 19,000 views."
+        "related": "http://researchnetwork.pearson/sot",
+        "projectGoal": "<ol><li>Provide a vision of the future of learning.</li><li>Spur thinking and debate over how to better connect learners to material and to each other.</li></ol>",
+        "projectResults": "Videos completed, including an introduction from Pearson CEO John Fallon. To date, they have more than 22,00 views."
+    },
+    {
+        "id": "40OL",
+        "icon": "OL",
+        "businessUnit": "school",
+        "subSection": "northAmerica",
+        "researchType": "Research; Thought Leadership",
+        "shortTitle": "Teaching in a Digital Age",
+        "fullTitle": "Digital Promise",
+        "stage": "M",
+        "projectLeads": "Liane Wardlow",
+        "leadEmail": "liane.wardlow@pearson.com",
+        "internalPartners": "Pearson North America Marketing Programs, Center for Educator Learning & Effectiveness",
+        "externalPartners": "Digital Promise, ASU, University of San Diego, Gallup, NNSTOY, UMass, McAllen School District, Mooresville School District, Meridian School District, Onslow School District, York School District, Vancouver School District, Florida Virtual School, Greater Latrobe School District, Yarmouth School District, Clintondale Community Schools, Rigby High School, Chula Vista High Tech High",
+        "related": "http://researchnetwork.pearson.com/online-learning/teaching-in-a-digital-age",
+        "projectGoal": "<ol><li>Identify, describe, and categorize specific instructional behaviors in digital classrooms.</li><li>Evaluate the relation between categories of teacher behaviors and student outcomes. </li><li>Answer three fundamental questions: a. How do student and teacher outcomes in digitally-rich classrooms compare with those in traditional classrooms? b. What teacher behaviors do digitally-rich classrooms enable that are not typically found in traditional classrooms? c. How do teacher behaviors specific to digitally-rich classrooms relate to student and teacher outcomes, accounting for the alignment of teaching to learning theory?</li></ol>",
+        "projectResults": "<ol><li>Submitted three publications about phase 1.</li><li>Phase 2 in progress with 75 teachers logging their teaching strategies in six districts and collecting pre-test data on 500 students.</li></ol>"
     },
     {
         "id": "41OL",
@@ -336,8 +625,8 @@
         "internalPartners": "Digital Content Development; Online Technology Implementation; State Services",
         "externalPartners": "Virginia Department of Education; Maryland Department of Education; Florida Department of Education; Texas Education Agency",
         "related": "http://researchnetwork.pearson.com/wp-content/uploads/Testing-on-Tablets-PartI.pdf, http://researchnetwork.pearson.com/wp-content/uploads/Testing-on-Tablets-Part-II_formatted.pdf, http://researchnetwork.pearson.com/wp-content/uploads/Positioning.pdf",
-        "projectGoal": "<ol><li>Observe student interactions with tools, navigation, and question components on the tablets and identify specific areas where the interactions on tablets could present challenges</li> <li>Understand the ergonomics of short-term tablet usage in order to identify any areas of concern around fatigue or strain</li> <li>Observe the impact of differing screen sizes and device features across a limited range, using two different devices</li></ol>",
-        "projectResults": "\"Testing on Tablets: Part I of Series of Usability Studies on the use of Tablets for K-12 Assessment Programs\" was published on website."
+        "projectGoal": "<ol><li> Observe student interactions with tools, navigation, and question components on the tablets and identify specific areas where the interactions on tablets could present challenges.</li><li>  Understand the ergonomics of short-term tablet usage in order to identify any areas of concern around fatigue or strain.</li><li>  Observe the impact of differing screen sizes and device features across a limited range, using two different devices.</li></ol>",
+        "projectResults": "Posted white paper describing study results on website."
     },
     {
         "id": "42OL",
@@ -353,8 +642,8 @@
         "internalPartners": "Software & Technology Services; Digital Content Development; Online Technology Implementation",
         "externalPartners": "",
         "related": "http://researchnetwork.pearson.com/tablets, http://researchnetwork.pearson.com/wp-content/uploads/NCSA_Davis_Strain-Seymour_CCSSO2013_table.pdf, http://researchnetwork.pearson.com/wp-content/uploads/QuestionTypes.pdf",
-        "projectGoal": "<ol><li>Determine if stylus or pointer is preferred when using tablet.</li> <li>Determine if portrait or landscape orientation, or rotation between the two, is preferred.</li> <li>Determine if zoom is preferred. Also, determine what happens to interactions with content.</li> <li>Determine ease or difficulty of navigation and usability of information  on test review screen.</li></ol>",
-        "projectResults": "The study results were revealed at CCSSO in 2013 and a white paper is in development."
+        "projectGoal": "<ol><li>Observe student use of and preference for a stylus as a pointer device instead of or in addition to their finger for tablet interactions.</li><li>Observe the impact of screen orientation (portrait vs. landscape) on study ability to view and manipulate content as well as observe student inclination toward rotating the device to different orientations within the study sessions.</li><li>Determine the extent to which students would need or want to magnify content through use of pinch-and-zoom gestures as well as impact of zooming on interactions with content.</li><li>Evaluate the ease or difficulty with which students were able to navigate to the Test Review Screen from various points within the test and the usability of the information within the Test Review Screen for students.</li></ol>",
+        "projectResults": "<ol><li>Described study results in CCSSO 2013 presentation.</li><li>Develop white paper.</li></ol>"
     },
     {
         "id": "43OL",
@@ -370,8 +659,8 @@
         "internalPartners": "Knowledge Technologies; Performance Scoring Center; Digital Content Development; Online Technology Implementation",
         "externalPartners": "Virgnia Department of Education; South Dakota Department of Education",
         "related": "",
-        "projectGoal": "<ol><li>Evaluate and describe the differences in student written composition when generated on tablets vs. laptop.</li> <li>Determine to what degree peripherals (such as external keyboards and styluses) can overcome these differences in goal 1.</li></ol>",
-        "projectResults": "Data collection and the anaylsis of the essays has been completed and performance scoring of the essays is underway."
+        "projectGoal": "<ol><li>Evaluate and describe the differences in student written composition when generated on tablets versus laptop. </li><li>Determine to what degree peripherals (such as external keyboards and styluses) can overcome these differences.</li></ol>",
+        "projectResults": "<ol><li>Data collection completed.</li><li>Performance scoring of essays completed.</li><li>Preliminary analysis shows no differences across study conditions.</li><li>Additional analyses underway.</li><li>Paper to be presented at NCME conference April 2014.</li></ol>"
     },
     {
         "id": "44OL",
@@ -387,8 +676,25 @@
         "internalPartners": "Software & Technology Services; Digital Content Development; Online Technology Implementation",
         "externalPartners": "Virginia Department of Education",
         "related": "",
-        "projectGoal": "Conduct a large scale device comparability study to compare differences in student performance between tablet and computer devices.",
-        "projectResults": "Study content has been identified. Content conversion, forms construction and Virginia student recruitment is underway."
+        "projectGoal": "<ol><li>Quantitatively evaluate to what degree differences in student experience when taking tests using tablets and computers may translate into differences in performance (which impact student test scores). </li><li>Conduct a large-scale device comparability study to compare differences in student performance between tablet and computer devices.</li></ol>",
+        "projectResults": "<ol><li>Converted test form content to TestNav8 and external review by Virginia Department of Education underway.</li><li>Virginia student recruitment occuring January.</li><li>Study execution date is February 2014.</li></ol>"
+    },
+    {
+        "id": "45OL",
+        "icon": "OL",
+        "businessUnit": "school",
+        "subSection": "northAmerica",
+        "researchType": "Research to Practice",
+        "shortTitle": "1:1 Learning Efficacy Proj.",
+        "fullTitle": "1:1 Learning Efficacy Project",
+        "stage": "M",
+        "projectLeads": "Rob Kadel",
+        "leadEmail": "rob.kadel@pearson.com",
+        "internalPartners": "Assessment & Instruction: Program Measurement; 1:1 Sales/Implementation team",
+        "externalPartners": "Huntsville City Schools",
+        "related": "",
+        "projectGoal": "<ol><li>Conduct analyses of student performance at all grades, K-12, in mathematics, English/language arts, and science to determine the impact of the district's digital conversion.</li><li>Evaluate the implementation of the digital conversion in mathematics in grades K-12.</li>/ol>",
+        "projectResults": "<ol><li>Conducting data collection, including surveys of teachers and administrators, classroom observations, and mining of student achievement and demographic data.</li><li>Completed preliminary analyses of site observations, which indicate that schoolwide leadership and consistency of staff/administration are positively related to program success.</li></ol>"
     },
     {
         "id": "46OL",
@@ -404,8 +710,8 @@
         "internalPartners": "Assessment & Instruction",
         "externalPartners": "",
         "related": "",
-        "projectGoal": "Creation of a fully functional prototype of a test delivery system designed exclusively for the blind.",
-        "projectResults": "<ol><li>Prototype with iPad and iOS accessibility features completed</li> <li>Usability study completed </li> <li>Report available</li></ol>"
+        "projectGoal": "<ol><li>Create a fully functional prototype of a test delivery system designed exclusively for the blind prototype based on analysis of how blind users use the iPad and on full utilization of iOS accessibility features.</li><li>Create an entirely gesture-based interface with no need for understanding of spatial location on screen.</li><li>Prototype completed in 2012 with usability study with blind students in 201</li><li></li><li>Take a comparative approach: time on task and access/usability issues compared between prototype and an existing Pearson test delivery system (TestNav 8) on the iPad.</li><li>Research to practice transition expected with threat of NFB lawsuit regarding lack of access to the blind in spring 2014 tests.</li></ol>",
+        "projectResults": "<ol><li>Prototype completed. </li><li>Usability study completed. </li><li>Study report completed.</li></ol>"
     },
     {
         "id": "47OL",
@@ -421,8 +727,8 @@
         "internalPartners": "Assessment & Instruction",
         "externalPartners": "",
         "related": "",
-        "projectGoal": "Make an assessment item of any type that is truly interoperable - usable across any system that supports Portable Custom Interactions - thus preventing software development when items travel from one system to another.<br /> Instead of bringing the recipe and ingredients for bread to the baker, the breadmaking machine, the ingredients, and recipe, and the ability to get the loaf of bread to eat are all delivered in one seamless package that runs by itself.",
-        "projectResults": "The interoperability standard  has been analyzed and item types created as PCIs and have been shared with the interoperability community."
+        "projectGoal": "<ol><li>Became first vendor to implement and analyze feasibility of the new IMS Global specification: Portable Custom Interaction specification.</li><li>Developed several item types  using this interoperability standard and presented at the Learning Impact conference</li><li>Allow brand new item types to be created by one division of Pearson and used within a different division as long as the systems are PCI compliant.</li><li>Research to practice transition expected to begin.</li><li>Next avenue of investigation asks if an item authoring system be designed to output PCIs.</li></ol>",
+        "projectResults": "<ol><li>Became first vendor to implement and analyze feasibility of the new IMS Global specification: Portable Custom Interaction specification.</li><li>Developed several item types  using this interoperability standard and presented at the Learning Impact conference</li><li>Allow brand new item types to be created by one division of Pearson and used within a different division as long as the systems are PCI compliant.</li><li>Research to practice transition expected to begin.</li><li>Next avenue of investigation asks if an item authoring system be designed to output PCIs.</li></ol>"
     },
     {
         "id": "48OL",
@@ -438,9 +744,9 @@
         "internalPartners": "Assessment & Instruction",
         "externalPartners": "",
         "related": "",
-        "projectGoal": "<ol><li>Creation of user personas for English learners and students with disabilities.</li> <li>Creation of a Personal Needs & Preferences data file for each user persona (this is a portion of Race to the Top requirements).  This is like Individual Education Plan (IEP) for assessments.</li> <li>Results of this work will provide user personas to fulfill a request for the World Wide Web Consortium (W3C).</li> <li>Results of this work will be usable by any Accessible Portable Item Protocol (APIP) compliant assessment delivery system.</li> <li>Results of this work will improve Pearson's ability to communicate APIP to customers and content creation personnel.</li></ol>",
-        "projectResults": "User research, creation of user personas and PNPs to match the user personas completed."
-    },
+        "projectGoal": "<ol><li>Create user personas for English learners and students with disabilities.</li><li>Create a Personal Needs & Preferences data file for each user persona (this is a portion of Race to the Top requirements). This is like Individual Education Plan (IEP) for assessments.</li><li>Results of this work will provide user personas to fulfill a request for the World Wide Web Consortium (W3C).</li><li>Results of this work will be usable by any Accessible Portable Item Protocol (APIP) compliant assessment delivery system.</li><li>Results of this work will improve Pearson's ability to communicate APIP to customers and content creation personnel.</li></ol>",
+        "projectResults": "<ol><li>Completed user research. </li><li>Completed creation of user personas. </li><li>Completed creation of PNPs to match the user personas.</li></ol>"
+        },
     {
         "id": "49OL",
         "icon": "OL",
@@ -455,8 +761,8 @@
         "internalPartners": "Assessment & Instruction",
         "externalPartners": "",
         "related": "",
-        "projectGoal": "<ol><li>Dynamic item generation templates for math items.</li> <li>Code for dynamic generation, machine scoring, creation of sequences of items, and item functionality.</li> <li>Methodology for avoidance of invalid use of parameters.</li> <li>Methodology for generating items that could be predicted to have similar difficulty levels (p-values) or to have a range of p-values.</li> <li>Results will allow Pearson to align with PARCC's RFP for dynamically generated math fluency items for diagnostic tests.</li></ol>",
-        "projectResults": "Code, sample items, dynamically generated item sets, scoring routines, and documentation of methodology complete."
+        "projectGoal": "<ol><li>Use the QTI specification (the primary interoperability specification for assessment) to create templates that can then be used to dynamically generate items</li><li>Gain the following outcomes:a. dynamic item generation templates for math itemsb. code for dynamic generation, machine scoring, creation of sequences of items, and item functionalityc. methodology for avoidance of invalid use of parametersd. methodology for generating items that could be predicted to have similar difficulty levels (p-values) or to have a range of p-values</li><li>Align with PARCC's RFP for dynamically generated math fluency items for use in diagnostic tests.</li></ol>",
+        "projectResults": "Completed code, sample items, dynamically generated item sets, scoring routines, and documentation of methodology."
     },
     {
         "id": "50OL",
@@ -472,8 +778,8 @@
         "internalPartners": "Assessment & Instruction",
         "externalPartners": "",
         "related": "",
-        "projectGoal": "<ol><li>Determine the possibility of use of simulations in NGSS assessments.</li> <li>Simulation should measue NGSS processes and investigation skills.</li> <li>Simulation will be tablet-ready.</li> <li>Results should indicate best way to use text-to-speech with simulations.</li> <li>Simulations should work with Accessible Portable Item Protocol (APIP) systems.</li></ol>",
-        "projectResults": "The storyboards and developer specifications have been developed and a vendor has been identified.  Concept art and items to go with the sim are currently in development."
+        "projectGoal": "<ol><li>Overcome challenges of NGSS assessment and possibility of use of simulations.</li><li>Design of simulation to measure NGSS processes and investigation skills and be tablet-ready.</li><li>Use simulation in Digital Devices study in 201</li><li></li><li>Perform cog lab in 2014 to understand measurement properties.</li><li>Subseqent phase in 2014 includes making simulation fully accessible to blind and motor-impaired learners.</li><li>Expected transition from research to practice.</li></ol>",
+        "projectResults": "<ol><li>Developed storyboards and developer specifications.</li><li>Develop concept art.</li><li>Identified vendor.</li><li>Write items to go with sim for inclusion in Digital Devices study.</li><li>Expected completion date for first phase of sim development (tablet-ready but not fully accessible) in December.</li></ol>"
     },
     {
         "id": "51OL",
@@ -489,8 +795,8 @@
         "internalPartners": "Assessment & Instruction",
         "externalPartners": "",
         "related": "",
-        "projectGoal": "<ol><li>Report on the research basis for APIP features (test delivery accessibility tools) and degree of risk of construct violation.</li> <li>Report on the practical issues in assembling PNPs: possible design of a wizard that allows you to construct a PNP for a student by \"trying on\" features and selecting preferences.</li> <li>Report on customization strategy for wizard to include state/consortium policy.</li></ol>",
-        "projectResults": "Collection of reserach has begun."
+        "projectGoal": "<ol><li>Develop research basis for APIP features (test delivery accessibility tools) and degree of risk of construct violation.</li><li>Adapt customization strategy for wizard to include state/consortium policy.</li></ol>",
+        "projectResults": "Begun collection of research basis."
     },
     {
         "id": "52OL",
@@ -506,7 +812,75 @@
         "internalPartners": "Assessment & Instruction",
         "externalPartners": "",
         "related": "",
-        "projectGoal": "<ol><li>Prototype of a speech-to-text solution that could be built into a test delivery system and which is designed to increase accessibility.</li> <li>Research with prototype to understand possible benefit and to compare to assistive technology that includes speech recognition.</li></ol>",
-        "projectResults": "Research goals are currently being developed and the initial research around technology for the prototype is underway."
+        "projectGoal": "<ol><li>Develop prototype of a speech-to-text solution that could be built into a test delivery system and which is designed to increase accessibility.</li><li>Research with prototype to understand possible benefit and to compare to assistive technology that includes speech recognition.</li></ol>",
+        "projectResults": "<ol><li>Write research goals.</li><li>Perform initial research around technology for prototype.</li></ol>"
+    },
+    {
+        "id": "2NGLA",
+        "icon": "NG",
+        "businessUnit": "school",
+        "subSection": "northAmerica core growthVenture",
+        "researchType": "Research, Research to Practice",
+        "shortTitle": "PATL",
+        "fullTitle": "NGLA - Researching Personalized Assessment, Teaching and Learning in the 21st Century Global Classroom ",
+        "stage": "B",
+        "projectLeads": "Paul Nichols",
+        "leadEmail": "paul.nichols@pearson.com",
+        "internalPartners": "Doug McCollum, Learning Services; Diana Bourisaw, Inside Services and Directly Delivery; Jacob Pienaar, Learning Services; Susan Sclafani, Common Core System of Courses",
+        "externalPartners": "Gwinnett County Public Schools",
+        "related": "",
+        "projectGoal": "<ol><li>Address the challenges of the 21st century global classroom and impact the learner by improving our capability to develop data-driven, research-based, integrated systems for student learning and our understanding of teaching and learning across digital and face-to-face classroom contexts and across different countries and cultures.  </li><li>Create a coordinated game, online performance tasks for students as well as teachers, classroom activities, instructional resources, professional development and reporting process we call a Student Profile. </li><li>Coordinate around a common mathematics learning progression at an elementary grade and developed over four iterations.</li></ol>",
+        "projectResults": ""
+    },
+    {
+        "id": "DDAAL",
+        "icon": "DD",
+        "businessUnit": "school",
+        "subSection": "northAmerica core growthVenture",
+        "researchType": "Research, Research to Practice",
+        "shortTitle": "PATL",
+        "fullTitle": "DDAAL - Researching Personalized Assessment, Teaching and Learning in the 21st Century Global Classroom ",
+        "stage": "B",
+        "projectLeads": "Kristen DiCerbo",
+        "leadEmail": "kristen.dicerbo@pearson.com",
+        "internalPartners": "Doug McCollum, Learning Services; Diana Bourisaw, Inside Services and Directly Delivery; Jacob Pienaar, Learning Services; Susan Sclafani, Common Core System of Courses",
+        "externalPartners": "Gwinnett County Public Schools",
+        "related": "",
+        "projectGoal": "<ol><li>Address the challenges of the 21st century global classroom and impact the learner by improving our capability to develop data-driven, research-based, integrated systems for student learning and our understanding of teaching and learning across digital and face-to-face classroom contexts and across different countries and cultures.  </li><li>Create a coordinated game, online performance tasks for students as well as teachers, classroom activities, instructional resources, professional development and reporting process we call a Student Profile. </li><li>Coordinate around a common mathematics learning progression at an elementary grade and developed over four iterations.</li></ol>",
+        "projectResults": ""
+    },
+    {
+        "id": "ELE",
+        "icon": "EE",
+        "businessUnit": "school",
+        "subSection": "northAmerica core growthVenture",
+        "researchType": "Research, Research to Practice",
+        "shortTitle": "PATL",
+        "fullTitle": "ELE - Researching Personalized Assessment, Teaching and Learning in the 21st Century Global Classroom ",
+        "stage": "B",
+        "projectLeads": "Kathy McKnight",
+        "leadEmail": "kathy.mcknight@pearson.com",
+        "internalPartners": "Doug McCollum, Learning Services; Diana Bourisaw, Inside Services and Directly Delivery; Jacob Pienaar, Learning Services; Susan Sclafani, Common Core System of Courses",
+        "externalPartners": "Gwinnett County Public Schools",
+        "related": "",
+        "projectGoal": "<ol><li>Address the challenges of the 21st century global classroom and impact the learner by improving our capability to develop data-driven, research-based, integrated systems for student learning and our understanding of teaching and learning across digital and face-to-face classroom contexts and across different countries and cultures.  </li><li>Create a coordinated game, online performance tasks for students as well as teachers, classroom activities, instructional resources, professional development and reporting process we call a Student Profile. </li><li>Coordinate around a common mathematics learning progression at an elementary grade and developed over four iterations.</li></ol>",
+        "projectResults": ""
+    },
+    {
+        "id": "CCS",
+        "icon": "CC",
+        "businessUnit": "school",
+        "subSection": "northAmerica core growthVenture",
+        "researchType": "Research, Research to Practice",
+        "shortTitle": "PATL",
+        "fullTitle": "CCS - Researching Personalized Assessment, Teaching and Learning in the 21st Century Global Classroom ",
+        "stage": "B",
+        "projectLeads": "Jennifer Kobrin",
+        "leadEmail": "jennifer.kobrin@pearson.com",
+        "internalPartners": "Doug McCollum, Learning Services; Diana Bourisaw, Inside Services and Directly Delivery; Jacob Pienaar, Learning Services; Susan Sclafani, Common Core System of Courses",
+        "externalPartners": "Gwinnett County Public Schools",
+        "related": "",
+        "projectGoal": "<ol><li>Address the challenges of the 21st century global classroom and impact the learner by improving our capability to develop data-driven, research-based, integrated systems for student learning and our understanding of teaching and learning across digital and face-to-face classroom contexts and across different countries and cultures.  </li><li>Create a coordinated game, online performance tasks for students as well as teachers, classroom activities, instructional resources, professional development and reporting process we call a Student Profile. </li><li>Coordinate around a common mathematics learning progression at an elementary grade and developed over four iterations.</li></ol>",
+        "projectResults": ""
     }
 ]
