@@ -38,14 +38,13 @@
 										<li>Projects that share relevance across business units highlight in dark gray.</li> 
 										<li>Hover over a project to see the title and watch for color highlighting, of that project, in other business units.</li>
 										<li>Click a project to view details and contact information for that project.</li>
+										<li>Click the center names below to highlight all projects by center.</li>
 									</ul>
 								</p>
 								<div class="iconKey">
-									<li><div><span class="icon DD"></span></div>Digital Data, Analytics &amp; Adaptive Learning</li><br/>
-									<li><div><span class="icon EE"></span></div>Educator Learning &amp; Effectiveness</li><br/>
-									<li><div><span class="icon NG"></span></div>NextGen Learning &amp; Assessments</li><br/>
-									<li><div><span class="icon CC"></span></div>College &amp; Career Success</li><br/>
-									<li><div><span class="icon OL"></span></div>eLearning</li>
+									<li ng-repeat="center in centers" ng-click="onCenterClick($event, center.id)" ng-class="{selected: currBU == center.id}">
+										<div><span class="icon {{center.id}}"></span></div>{{center.name}}
+									</li>
 								</div>
 							</div>
 						</div>

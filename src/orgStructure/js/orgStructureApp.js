@@ -25,7 +25,7 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 	var formatSubSection = function(s) {
 		return s ? s.split(" ").join(", ").replace("northAmerica", "North America").replace("growthVenture", "Growth / Venture").replace("core", "Core") : "" ;
 	};
-	
+
 	$http.get('data/project_data.json')
 		.success(function(result) {
 			$scope.projectData = result;
@@ -60,6 +60,14 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 		[businessUnits[1], businessUnits[2], businessUnits[0]]
 	];
 	
+	$scope.centers = [
+		{'id': 'DD', 'name': 'Digital Data, Analytics & Adaptive Learning' },
+		{'id': 'CC', 'name': 'College & Career Success' },
+		{'id': 'NG', 'name': 'NextGen Learning & Assessments' },
+		{'id': 'OL', 'name': 'eLearning' },
+		{'id': 'EE', 'name': 'Educator Learning & Effectiveness' }
+	];
+	
 	var setSections = function(pos) {
 		var order = positions[pos];
 		for (var i=0; i < 12; i++) {
@@ -84,18 +92,23 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 	
 	init();
 	
-	$scope.reset = function($event) {
-		$event.preventDefault();
-		// $scope.currBU = "";
-		// $scope.currSubSection = "";
+	$scope.deselectAllProjects = function() {
 		angular.forEach($scope.projectData, function(value, key) {
 			value.selectionState = "";
 		});
+	};
+	
+	$scope.reset = function($event) {
+		if ($event) {
+			$event.preventDefault();
+		}	
+		$scope.deselectAllProjects();
 		$location.search("");
 		init();
 	};
 	
 	$scope.onMapClick = function($event, id) {
+		$scope.deselectAllProjects();
 		$event.preventDefault();
 		$event.target.blur();
 		var href = $scope.circleHrefs[id];
@@ -115,6 +128,18 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 				}, 850);
 			}
 		}
+	};
+	
+	$scope.onCenterClick = function($event, id) {
+		$event.preventDefault();
+		$scope.reset();
+		$scope.currBU = id;
+		// $event.currentTarget
+		// angular.forEach($scope.projectData, function(value, key) {
+			// if (value['icon'] == id) {
+				// value.selectionState = "selected";
+			// }
+		// });
 	};
 	
 	$scope.dialogOpts = {

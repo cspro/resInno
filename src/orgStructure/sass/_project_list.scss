@@ -109,20 +109,22 @@
   }
 }
 
-.CC {
-  background:$neutralBg url('../images/project_icon_CC.png')  50% 50% no-repeat;
-}
-.DD {
-  background:$neutralBg url('../images/project_icon_DD.png')  50% 50% no-repeat;
-}
-.EE {
-  background:$neutralBg url('../images/project_icon_EE.png')  50% 50% no-repeat;
-}
-.OL {
-  background:$neutralBg url('../images/project_icon_OL.png')  50% 50% no-repeat;
-}
-.NG {
-  background:$neutralBg url('../images/project_icon_NG.png')  50% 50% no-repeat;
+span, a {
+  &.CC {
+    background:$neutralBg url('../images/project_icon_CC.png')  50% 50% no-repeat;
+  }
+  &.DD {
+    background:$neutralBg url('../images/project_icon_DD.png')  50% 50% no-repeat;
+  }
+  &.EE {
+    background:$neutralBg url('../images/project_icon_EE.png')  50% 50% no-repeat;
+  }
+  &.OL {
+    background:$neutralBg url('../images/project_icon_OL.png')  50% 50% no-repeat;
+  }
+  &.NG {
+    background:$neutralBg url('../images/project_icon_NG.png')  50% 50% no-repeat;
+  }
 }
 
 .projectColumn.professional {
@@ -275,3 +277,200 @@
     }
   }
 }
+
+/**
+ *   Center Icons - behave like geographies
+ */ 
+
+#wrapper.CC {
+  .projectLink {
+    background-color: lighten($neutralBg, 12%);
+    &:hover, &.selected { 
+      background-color: lighten($neutralBg, 13%); 
+    } 
+  }
+  .projectLink.CC {
+    background-color: darken($neutralBg, 13%);
+    &:hover, &.selected { 
+      background-color: lighten($neutralBg, 2%); 
+    }
+  } 
+  .projectColumn.professional {
+    .projectLink.CC {
+      background-color: lighten($professionalColor1, 0%);
+      &:hover, &.selected { 
+        background-color: desaturate(lighten($professionalColor1, 26%), 10%); 
+      } 
+    }
+  }
+  .projectColumn.higherEd {
+    .projectLink.CC {
+      background-color: lighten($higherEdColor1, 0%);
+      &:hover, &.selected { 
+        background-color: desaturate(lighten($higherEdColor1, 19%), 10%); 
+      } 
+    }
+  }
+  .projectColumn.school {
+    .projectLink.CC {
+      background-color: lighten($schoolColor1, 0%);
+      &:hover, &.selected { 
+        background-color: desaturate(lighten($schoolColor1, 17%), 27%); 
+      } 
+    }
+  }
+}
+  
+#wrapper.DD {
+  .projectLink {
+    background-color: lighten($neutralBg, 12%);
+    &:hover, &.selected { 
+      background-color: lighten($neutralBg, 13%); 
+    } 
+  }
+  .projectLink.DD {
+    background-color: darken($neutralBg, 13%);
+    &:hover, &.selected { 
+      background-color: lighten($neutralBg, 2%); 
+    }
+  } 
+  .projectColumn.professional {
+    .projectLink.DD {
+      background-color: lighten($professionalColor1, 0%);
+      &:hover, &.selected { 
+        background-color: desaturate(lighten($professionalColor1, 26%), 10%); 
+      } 
+    }
+  }
+  .projectColumn.higherEd {
+    .projectLink.DD {
+      background-color: lighten($higherEdColor1, 0%);
+      &:hover, &.selected { 
+        background-color: desaturate(lighten($higherEdColor1, 19%), 10%); 
+      } 
+    }
+  }
+  .projectColumn.school {
+    .projectLink.DD {
+      background-color: lighten($schoolColor1, 0%);
+      &:hover, &.selected { 
+        background-color: desaturate(lighten($schoolColor1, 17%), 27%); 
+      } 
+    }
+  }
+}
+#wrapper.EE {
+  .projectLink {
+    background-color: lighten($neutralBg, 12%);
+    &:hover, &.selected { 
+      background-color: lighten($neutralBg, 13%); 
+    } 
+  }
+  .projectLink.EE {
+    background-color: darken($neutralBg, 13%);
+    &:hover, &.selected { 
+      background-color: lighten($neutralBg, 2%); 
+    }
+  } 
+  .projectColumn.professional {
+    .projectLink.EE {
+      background-color: lighten($professionalColor1, 0%);
+      &:hover, &.selected { 
+        background-color: desaturate(lighten($professionalColor1, 26%), 10%); 
+      } 
+    }
+  }
+  .projectColumn.higherEd {
+    .projectLink.EE {
+      background-color: lighten($higherEdColor1, 0%);
+      &:hover, &.selected { 
+        background-color: desaturate(lighten($higherEdColor1, 19%), 10%); 
+      } 
+    }
+  }
+  .projectColumn.school {
+    .projectLink.EE {
+      background-color: lighten($schoolColor1, 0%);
+      &:hover, &.selected { 
+        background-color: desaturate(lighten($schoolColor1, 17%), 27%); 
+      } 
+    }
+  }
+}
+#wrapper.NG {
+  .projectLink {
+    background-color: lighten($neutralBg, 12%);
+    &:hover, &.selected { 
+      background-color: lighten($neutralBg, 13%); 
+    } 
+  }
+  .projectLink.NG {
+    background-color: darken($neutralBg, 13%);
+    &:hover, &.selected { 
+      background-color: lighten($neutralBg, 2%); 
+    }
+  } 
+  .projectColumn.professional {
+    .projectLink.NG {
+      background-color: lighten($professionalColor1, 0%);
+      &:hover, &.selected { 
+        background-color: desaturate(lighten($professionalColor1, 26%), 10%); 
+      } 
+    }
+  }
+  .projectColumn.higherEd {
+    .projectLink.NG {
+      background-color: lighten($higherEdColor1, 0%);
+      &:hover, &.selected { 
+        background-color: desaturate(lighten($higherEdColor1, 19%), 10%); 
+      } 
+    }
+  }
+  .projectColumn.school {
+    .projectLink.NG {
+      background-color: lighten($schoolColor1, 0%);
+      &:hover, &.selected { 
+        background-color: desaturate(lighten($schoolColor1, 17%), 27%); 
+      } 
+    }
+  }
+}
+#wrapper.OL {
+  .projectLink {
+    background-color: lighten($neutralBg, 12%);
+    &:hover, &.selected { 
+      background-color: lighten($neutralBg, 13%); 
+    } 
+  }
+  .projectLink.OL {
+    background-color: darken($neutralBg, 13%);
+    &:hover, &.selected { 
+      background-color: lighten($neutralBg, 2%); 
+    }
+  } 
+  .projectColumn.professional {
+    .projectLink.OL {
+      background-color: lighten($professionalColor1, 0%);
+      &:hover, &.selected { 
+        background-color: desaturate(lighten($professionalColor1, 26%), 10%); 
+      } 
+    }
+  }
+  .projectColumn.higherEd {
+    .projectLink.OL {
+      background-color: lighten($higherEdColor1, 0%);
+      &:hover, &.selected { 
+        background-color: desaturate(lighten($higherEdColor1, 19%), 10%); 
+      } 
+    }
+  }
+  .projectColumn.school {
+    .projectLink.OL {
+      background-color: lighten($schoolColor1, 0%);
+      &:hover, &.selected { 
+        background-color: desaturate(lighten($schoolColor1, 17%), 27%); 
+      } 
+    }
+  }
+}
+  

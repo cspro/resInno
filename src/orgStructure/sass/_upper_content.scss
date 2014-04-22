@@ -92,7 +92,7 @@
     }
     .iconKey {
       li {
-        display: inline-block;
+        display: block;
         margin: 0 0 3px 0;
         padding: 0 1em 0 0;
         list-style-type: none;
@@ -101,6 +101,18 @@
         font-size: 0.75em;
         background-color: lighten($neutralBg, 15%);
         border-radius: 3px;
+        width: 270px;
+        cursor: pointer; 
+        &:hover {
+          background-color: lighten($neutralBg, 5%);
+        }
+        &:active {
+          background-color: darken($neutralBg, 5%);
+        }
+        &.selected {
+          background-color: darken($neutralBg, 10%);
+          color: lighten($neutralBg, 25%);
+        }
         div {
           display: inline-block;
           padding: 1px;
