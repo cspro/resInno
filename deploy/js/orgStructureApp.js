@@ -1,7 +1,7 @@
 var orgStructure = orgStructure || (orgStructure = {});
 
-orgStructure.App = angular.module('orgStructure.App', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
-	.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+orgStructure.App = angular.module('orgStructure.App', ['ngRoute', 'ngAnimate', 'ui.bootstrap']).
+	config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 		$routeProvider
 						.when('/', {
 							templateUrl: 'partials/main.tpl.html',
@@ -16,17 +16,6 @@ orgStructure.App = angular.module('orgStructure.App', ['ngRoute', 'ngAnimate', '
 						.otherwise({redirectTo: '/'});
 		$locationProvider.html5Mode(true);
 	}]);
-	
-	
-	angular.module('orgStructure.App').directive('testDirective', function() {
-		return {
-			restrict: 'A',
-			link: function(scope, elem, attrs) {
-				console.log("Here is a directive!");
-			}
-		};
-	});
-	
 	
 	
 orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, $sce, $timeout) {

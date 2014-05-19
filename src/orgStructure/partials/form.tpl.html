@@ -57,7 +57,7 @@
 		<div class="col-md-4 col-sm-6 projectColumn professional clearfix">
 			<h2>Professional</h2>
 			<div class="projectList">
-				<li ng-repeat="project in projectData | filter: {businessUnit:'professional'} " class="{{project.businessUnit}}" ng-show="{{project.show}}">
+				<li ng-repeat="project in projectData | filter: {businessUnit:'professional'}" class="{{project.businessUnit}}">
 					<a tooltip="{{project.fullTitle}}" ng-mouseover="onProjectMouseOver($event, project.id)" ng-mouseleave="onProjectLeave($event, project.id)" ng-click="onProjectClick($event, project.id)" class="projectLink {{project.selectionState}} {{project.subSection}} {{project.icon}}">&nbsp;</a>
 				</li>
 			</div>
@@ -65,7 +65,7 @@
 		<div class="col-md-4 col-sm-6 projectColumn higherEd clearfix">
 			<h2>Higher Ed</h2>
 			<div class="projectList">
-				<li ng-repeat="project in projectData | filter: {businessUnit:'higherEd'}" class="{{project.businessUnit}}" ng-show="{{project.show}}">
+				<li ng-repeat="project in projectData | filter: {businessUnit:'higherEd'}" class="{{project.businessUnit}}">
 					<a tooltip="{{project.fullTitle}}" ng-mouseover="onProjectMouseOver($event, project.id)" ng-mouseleave="onProjectLeave($event, project.id)" ng-click="onProjectClick($event, project.id)" class="projectLink {{project.selectionState}} {{project.subSection}} {{project.icon}}">&nbsp;</a>
 				</li>
 			</div>
@@ -74,18 +74,14 @@
 		<div class="col-md-4 projectColumn school clearfix">
 			<h2>School</h2>
 			<div class="projectList">
-				<li ng-repeat="project in projectData | filter: {businessUnit:'school'}" class="{{project.businessUnit}}" ng-show="{{project.show}}">
+				<li ng-repeat="project in projectData | filter: {businessUnit:'school'}" class="{{project.businessUnit}}">
 					<a tooltip="{{project.fullTitle}}" ng-mouseover="onProjectMouseOver($event, project.id)" ng-mouseleave="onProjectLeave($event, project.id)" ng-click="onProjectClick($event, project.id)" class="projectLink {{project.selectionState}} {{project.subSection}} {{project.icon}}">&nbsp;</a>
 				</li>
 			</div>
 		</div> 
 	</div>
 	
-	<div class="row">
-		<p test-directive>Test directive element.</p>
-	</div>
-	
 	<footer class="row footer">
-		<p class="counter">Total Projects: {{projectCount}}</p>
+		<p class="counter">Total Projects: {{projectData.length}}</p>
 		<a href="http://researchnetwork.pearson.com" target="_blank">R&amp;I Network Website</a> |  		<a href="https://neo.pearson.com/groups/research-and-innovation-network" target="_blank">Neo Group</a> | 		<a href="mailto:rinetworkinquire@pearson.com">Email</a>	</footer>
 	</div>

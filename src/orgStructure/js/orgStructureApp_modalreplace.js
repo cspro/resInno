@@ -1,7 +1,7 @@
 var orgStructure = orgStructure || (orgStructure = {});
 
-orgStructure.App = angular.module('orgStructure.App', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
-	.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+orgStructure.App = angular.module('orgStructure.App', ['ngRoute', 'ngAnimate', 'ui.bootstrap']).
+	config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 		$routeProvider
 						.when('/', {
 							templateUrl: 'partials/main.tpl.html',
@@ -18,18 +18,7 @@ orgStructure.App = angular.module('orgStructure.App', ['ngRoute', 'ngAnimate', '
 	}]);
 	
 	
-	angular.module('orgStructure.App').directive('testDirective', function() {
-		return {
-			restrict: 'A',
-			link: function(scope, elem, attrs) {
-				console.log("Here is a directive!");
-			}
-		};
-	});
-	
-	
-	
-orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, $sce, $timeout) {
+orgStructure.MainCtrl = function($scope, $http, $location, $modal, $rootScope, $sce, $timeout) {
 	
 	var formatBU = function(s) {
 		return s ? s.split(" ").join(", ").replace("professional", "Professional").replace("school", "School").replace("higherEd", "Higher Ed") : "Research & Innovation Network";
@@ -41,7 +30,6 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 	$http.get('data/project_data.json')
 		.success(function(result) {
 			$scope.projectData = result;
-			$scope.projectCount = 0;
 			$rootScope.projectDataMap = {};
 			angular.forEach($scope.projectData, function(value, key) {
 				var leads = [];
@@ -58,9 +46,6 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 				value['subSectionDisplay'] = formatSubSection(value['subSection']);
 				value['selectionClass'] = "";
 				value['show'] = value['isVisible'] == 'true' ? true : false;
-				if (value['show']) {
-					$scope.projectCount++;
-				}
 				$rootScope.projectDataMap[value.id] = value;
 			});
 		}).error(function(result) {
@@ -156,6 +141,7 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 	$scope.onProjectClick = function($event, id) {
 		$event.preventDefault();
 		$rootScope.project = $rootScope.projectDataMap[id];
+		$event.target.blur();
 		$scope.openDialog();
 	};
 	
@@ -183,27 +169,23 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 	
 	$scope.dialogOpts = {
 		backdrop: true,
-		backdropFade: true,
-		backdropClick: true,
-		dialogFade: false,
 		keyboard: true,
 		templateUrl: "partials/project.tpl.html",
 		controller: 'orgStructure.ProjectDialogController'
 	};
 
 	$scope.openDialog = function(){
-		var d = $dialog.dialog($scope.dialogOpts);
-		d.open();
+		var d = $modal.open($scope.dialogOpts);
 	};
 
 };
 
 // the dialog is injected into the specified controller
-orgStructure.ProjectDialogController = function($scope, $rootScope, dialog){
+orgStructure.ProjectDialogController = function($scope, $rootScope, $modalInstance){
 	
 	$scope.project = $rootScope.project;
 	
 	$scope.close = function(result){
-		dialog.close(result);
+		$modalInstance.close(result);
 	};
 };
