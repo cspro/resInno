@@ -3,20 +3,14 @@ var orgStructure = orgStructure || (orgStructure = {});
 orgStructure.App = angular.module('orgStructure.App', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
 	.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 		$routeProvider
-						.when('/', {
-							templateUrl: 'partials/main.tpl.html',
-							controller: 'orgStructure.MainCtrl',
-							reloadOnSearch: false
-						})
-						// .when('/inputForm', {
-							// templateUrl: 'partials/form.tpl.html',
-							// controller: 'orgStructure.FormCtrl',
-							// reloadOnSearch: false
-						// })
-						.otherwise({redirectTo: '/'});
+			.when('/', {
+				templateUrl: 'partials/main.tpl.html',
+				controller: 'orgStructure.MainCtrl',
+				reloadOnSearch: false
+			})
+			.otherwise({redirectTo: '/'});
 		$locationProvider.html5Mode(true);
 	}]);
-	
 	
 	angular.module('orgStructure.App').directive('testDirective', function() {
 		return {
@@ -26,7 +20,6 @@ orgStructure.App = angular.module('orgStructure.App', ['ngRoute', 'ngAnimate', '
 			}
 		};
 	});
-	
 	
 	
 orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, $sce, $timeout) {
@@ -82,7 +75,8 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 		{'id': 'CC', 'name': 'College & Career Success' },
 		{'id': 'NG', 'name': 'NextGen Learning & Assessments' },
 		{'id': 'OL', 'name': 'eLearning' },
-		{'id': 'EE', 'name': 'Educator Learning & Effectiveness' }
+		{'id': 'EE', 'name': 'Educator Learning & Effectiveness' },
+		{'id': 'PD', 'name': 'Product Design Research & Efficacy' }
 	];
 	
 	var setSections = function(pos) {
@@ -151,6 +145,14 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 		$event.preventDefault();
 		$scope.reset();
 		$scope.currBU = id;
+		if (id=="PD") {
+			$scope.openDialog(true);
+		}
+	};
+	
+	$scope.onLifecycleCenterClick = function($event, id) {
+		$event.preventDefault();
+		$scope.reset();
 	};
 	
 	$scope.onProjectClick = function($event, id) {
@@ -186,15 +188,17 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 		backdropFade: true,
 		backdropClick: true,
 		dialogFade: false,
-		keyboard: true,
-		templateUrl: "partials/project.tpl.html",
-		controller: 'orgStructure.ProjectDialogController'
+		keyboard: true
 	};
 
-	$scope.openDialog = function(){
+	$scope.openDialog = function(isLifecycle){
+		var opts = $scope.dialogOpts;
+		opts.templateUrl = isLifecycle ? "partials/lifecycle.tpl.html" : "partials/project.tpl.html";
+		opts.controller = isLifecycle ? "orgStructure.LifecycleController" : "orgStructure.ProjectDialogController";
 		var d = $dialog.dialog($scope.dialogOpts);
 		d.open();
 	};
+
 
 };
 
@@ -206,4 +210,18 @@ orgStructure.ProjectDialogController = function($scope, $rootScope, dialog){
 	$scope.close = function(result){
 		dialog.close(result);
 	};
+};
+
+
+orgStructure.LifecycleController  = function($scope, $http) {
+
+	console.log("Hello");
+
+	$http.get('data/lifecycle_data.json')
+		.success(function(result) {
+			$scope.data = result;
+		}).error(function(result) {
+			alert("Error getting project data. " + result);
+		});
+
 };

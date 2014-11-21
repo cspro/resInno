@@ -1,0 +1,38 @@
+<div class="modal-dialog lifecycle">
+	<div class="modal-content">
+		<div class="modal-header">
+			<h2 class="allCaps">{{data.pageTitle}}</h2>
+		</div>
+		<div class="modal-body">
+			<div class="row modalRow">	
+				<div class="modalRowContent">
+					<p>{{data.pageSubTitle}}</p>
+				</div>
+			</div>
+			<div class="row modalRow" id="bannerRow">	
+				<div class="modalRowContent">
+					<div id="bannerWrapper">
+						<img id="banner" src="images/lifecycle_banner.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="row modalRow">	
+				<div class="modalRowContent">
+					<h4>{{data.sectionTitle}}</h4>
+					<div ng-repeat="section in data.sections" class="section">
+						<h2>{{section.title}}</h2>
+						<div class="sectionBoxes">
+							<div ng-repeat="box in section.boxes" class="box">
+								{{box.label}}
+							</div>
+						</div>
+						<div class="sectionDescription">{{section.description}}</div>
+					</div>
+				</div>
+			</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" ng-click="close()">Close</button>
+		</div>
+	</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+ 

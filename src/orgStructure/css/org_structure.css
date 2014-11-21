@@ -74,7 +74,7 @@ img, area, map {
 /* line 8, ../sass/_upper_content.scss */
 #upperContent h1 {
   margin: 0;
-  color: #205f9f;
+  color: #205F9F;
 }
 /* line 12, ../sass/_upper_content.scss */
 #upperContent h2 {
@@ -261,7 +261,7 @@ img, area, map {
   z-index: 100;
   background: url("../images/circle_map_mask.png") 0 0;
 }
-/* line 81, ../sass/org_structure.scss */
+/* line 80, ../sass/org_structure.scss */
 #circleWrapper .circleMask.ng-hide-add, #circleWrapper .circleMask.ng-hide-remove {
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
@@ -983,7 +983,7 @@ span.NG, a.NG {
 
 /* line 37, ../sass/_modal.scss */
 .modal-body {
-  background-color: #f1f1f1;
+  background-color: #F1F1F1;
   padding: 0 1.5em;
 }
 
@@ -1025,7 +1025,7 @@ span.NG, a.NG {
 /* line 72, ../sass/_modal.scss */
 .modal-header h2 {
   font-size: 1.65em;
-  color: #205f9f;
+  color: #205F9F;
   line-height: 48px;
   vertical-align: middle;
   margin: 0;
@@ -1088,7 +1088,7 @@ span.NG, a.NG {
   margin: 0 0 0.5em 0;
   padding-top: 0.5em;
   text-transform: uppercase;
-  color: #205f9f;
+  color: #205F9F;
 }
 /* line 126, ../sass/_modal.scss */
 .modalRowContent h4:first-child {
@@ -1154,8 +1154,8 @@ span.NG, a.NG {
 }
 /* line 174, ../sass/_modal.scss */
 .modalRowContent .tableWrapper .td.tableVerticalDivider {
-  border-top: 1px solid #f1f1f1;
-  border-bottom: 1px solid #f1f1f1;
+  border-top: 1px solid #F1F1F1;
+  border-bottom: 1px solid #F1F1F1;
   background-color: #b1b1b1;
   width: 1px;
   padding: 0;
@@ -1168,11 +1168,11 @@ span.NG, a.NG {
   }
   /* line 191, ../sass/_modal.scss */
   .modal-dialog .modal-header h2, .modal-dialog .modal-header h3 {
-    margin-left: 110px !important;
+    margin-left: 110px;
   }
   /* line 195, ../sass/_modal.scss */
   .modal-dialog .modalRowContent {
-    margin-left: 110px !important;
+    margin-left: 110px;
   }
 }
 /* line 276, ../sass/org_structure.scss */
@@ -1195,4 +1195,45 @@ span.NG, a.NG {
 /* line 289, ../sass/org_structure.scss */
 .footer .counter {
   font-size: 0.85em;
+}
+
+/* line 2, ../sass/_lifecycle.scss */
+.lifecycle #bannerRow {
+  background-color: #fff;
+}
+/* line 4, ../sass/_lifecycle.scss */
+.lifecycle #bannerRow .modalRowContent {
+  padding: 3px 0;
+}
+/* line 7, ../sass/_lifecycle.scss */
+.lifecycle #bannerRow #bannerWrapper {
+  text-align: center;
+  background-color: #fff;
+}
+/* line 10, ../sass/_lifecycle.scss */
+.lifecycle #bannerRow #bannerWrapper #banner {
+  max-width: 100%;
+  height: auto;
+}
+/* line 16, ../sass/_lifecycle.scss */
+.lifecycle .modalRowContent {
+  margin-left: 0;
+}
+/* line 18, ../sass/_lifecycle.scss */
+.lifecycle .modalRowContent .section {
+  display: block;
+  clear: both;
+}
+/* line 21, ../sass/_lifecycle.scss */
+.lifecycle .modalRowContent .section .sectionBoxes {
+  display: block;
+  float: right;
+}
+/* line 24, ../sass/_lifecycle.scss */
+.lifecycle .modalRowContent .section .sectionBoxes .box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-left: 1em;
+  background: #a2a2a2;
 }

@@ -1,0 +1,31 @@
+{
+	"pageTitle": "How Research Supports the Product Lifecycle",
+	"pageSubTitle": "The Center for Product Design Research & Efficacy equips teams across the globe with research to create and continuously improve industry-leading programs that have a measurable impact on someone's life through learning.",
+	"sectionTitle": "Product Lifecycle Stages",
+	"sections" : [
+		{	"title": "Efficacy Research",
+			"description": "Research that examines the impact of a product on outcomes such as student achievement via the use of an experimental or quasi-experimental study.",
+			"boxes": [
+				{"label": "Learner Outcomes Research"},
+				{"label": "Special Populations Research"},
+				{"label": "Data Partnerships"}
+			]
+		},
+		{	"title": "Product Design Research",
+			"description": "Research that uses investigative techniques to support the strategic design and development of products, services, and programs",
+			"boxes": [
+				{"label": "User Testing"},
+				{"label": "Participatory Design"},
+				{"label": "Instructional Tryouts"}
+			]
+		},
+		{	"title": "Product Market Research",
+			"description": "Research that gathers, analyzes and interprets information about a target market, including customer needs, preferences and the competitive landscape, in order to inform product development and business strategy.",
+			"boxes": [
+				{"label": "Market Needs Assessment"},
+				{"label": "Product Concept and Prototype Testing"},
+				{"label": "Pricing, Packaging, and Messaging Research"}
+			]
+		}
+	]
+}

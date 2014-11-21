@@ -1,0 +1,37 @@
+.lifecycle {
+  #bannerRow {
+    background-color: #fff;
+    .modalRowContent {
+      padding: 3px 0;
+    }
+    #bannerWrapper {
+      text-align: center;
+      background-color: #fff;
+      #banner {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .modalRowContent {
+    margin-left: 0;
+    .section {
+      display: block;
+      clear: both;
+      .sectionBoxes {
+        display: block;
+        float: right;
+        .box {
+          width: 100px;
+          height: 100px;
+          display: inline-block;
+          margin-left: 1em;
+          background: darken($neutralBg, 10%);
+        }
+      }
+    }
+  }
+}
+
+
+
