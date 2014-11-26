@@ -48,20 +48,23 @@ orgStructure.MainCtrl = function($scope, $http, $location, $modal, $rootScope, $
 		});
 
 	var validateProject = function(dataObj) {
-		var leads = [];
-		var names = dataObj['projectLeads'].split(',');
-		var addresses = dataObj['leadEmail'].split(',');
-		for (var i=0; i < addresses.length; i++) {
-			leads.push({name: names[i], address: addresses[i] });
-		};
-		dataObj['leads'] = leads;
-		dataObj['related'] = (dataObj['related'] && dataObj['related'] != "") ? dataObj['related'].split(',') : [];
-		dataObj['projectGoal'] = $sce.trustAsHtml(dataObj['projectGoal']);
-		dataObj['projectResults'] = $sce.trustAsHtml(dataObj['projectResults']);
-		dataObj['businessUnitDisplay'] = formatBU(dataObj['businessUnit']);
-		dataObj['subSectionDisplay'] = formatSubSection(dataObj['subSection']);
-		dataObj['selectionClass'] = "";
-		dataObj['show'] = dataObj['isVisible'] == 'true' ? true : false;
+		if (!dataObj.hasBeenProcessed) {
+			var leads = [];
+			var names = dataObj['projectLeads'].split(',');
+			var addresses = dataObj['leadEmail'].split(',');
+			for (var i=0; i < addresses.length; i++) {
+				leads.push({name: names[i], address: addresses[i] });
+			};
+			dataObj['leads'] = leads;
+			dataObj['related'] = (dataObj['related'] && dataObj['related'] != "") ? dataObj['related'].split(',') : [];
+			dataObj['projectGoal'] = $sce.trustAsHtml(dataObj['projectGoal']);
+			dataObj['projectResults'] = $sce.trustAsHtml(dataObj['projectResults']);
+			dataObj['businessUnitDisplay'] = formatBU(dataObj['businessUnit']);
+			dataObj['subSectionDisplay'] = formatSubSection(dataObj['subSection']);
+			dataObj['selectionClass'] = "";
+			dataObj['show'] = dataObj['isVisible'] == 'true' ? true : false;
+			dataObj.hasBeenProcessed = true;
+		}
 	};
 
 	$scope.circleHrefs = [];
@@ -230,7 +233,8 @@ orgStructure.ProjectDialogController = function($scope, $rootScope, $modalInstan
 	$scope.close = function(result){
 		// $rootScope.dialogs;
 		// var d = $rootScope.dialogs.pop();
-		$modalInstance.close(result);
+		$scope.$close();
+		// $modalInstance.close(result);
 	};
 };
 

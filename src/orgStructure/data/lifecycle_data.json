@@ -21,40 +21,100 @@
 					"id": "spe", 
 					"fullTitle": "Special Populations Research",
 					"isVisible": "true",
-					"businessUnit": "school",
-					"subSection": "northAmerica",
-					"projectLeads": "",
-					"leadEmail": "@pearson.com",
-					"projectGoal": "",
-					"projectResults": ""
+					"businessUnit": "professional school highered",
+					"subSection": "northAmerica core growthVenture",
+					"projectLeads": "Marcy Baughman, Mary Ehmann",
+					"leadEmail": "marcy.baughman@pearson.com, mary.ehmann@pearson.com",
+					"projectGoal": "Evaluate the impact of a program or offering on specific populations such as English Language Learner (ELL) students or students in a country that wasn’t intended to be the primary customer.",
+					"projectResults": "Studies provide evidence of program or offering impact for these populations of learners."
 				},
 				{
 					"id": "dat", 
 					"fullTitle": "Data Partnerships",
 					"isVisible": "true",
-					"businessUnit": "school",
-					"subSection": "northAmerica",
-					"projectLeads": "",
-					"leadEmail": "@pearson.com",
-					"projectGoal": "",
-					"projectResults": ""
+					"businessUnit": "professional school highered",
+					"subSection": "northAmerica core growthVenture",
+					"projectLeads": "Marcy Baughman, Mary Ehmann",
+					"leadEmail": "marcy.baughman@pearson.com, mary.ehmann@pearson.com",
+					"projectGoal": "Examine impact of Pearson program or offering in partnership with a school or district.",
+					"projectResults": "Study outcomes provide evidence of program or offering impact via data from local assessments and/or instruments that are of high interest and value to the customer."
 				}
 			]
 		},
 		{	"title": "Product Design Research",
 			"description": "Research that uses investigative techniques to support the strategic design and development of products, services, and programs",
 			"boxes": [
-				{"id": "use", "fullTitle": "User Testing"},
-				{"id": "par", "fullTitle": "Participatory Design"},
-				{"id": "ins", "fullTitle": "Instructional Tryouts"}
+				{
+					"id": "use", 
+					"fullTitle": "User Testing",
+					"isVisible": "true",
+					"businessUnit": "professional school highered",
+					"subSection": "northAmerica core growthVenture",
+					"projectLeads": "Rusty Brandt, Lisa Maurer",
+					"leadEmail": "rusty.brandt@pearson.com, lisa.maurer@pearson.com",
+					"projectGoal": "Work with product teams to develop and implement studies that integrate the voice of the user throughout the research lifecycle.",
+					"projectResults": "By focusing on user research, we are able to collect evidence of the utility, efficiency and engagement of our solutions."
+				},
+				{
+					"id": "par", 
+					"fullTitle": "Participatory Design",
+					"isVisible": "true",
+					"businessUnit": "professional school highered",
+					"subSection": "northAmerica core growthVenture",
+					"projectLeads": "Robin Duffy, Lisa Maurer",
+					"leadEmail": "robin.duffy@pearson.com, lisa.maurer@pearson.com",
+					"projectGoal": "Connect product teams to the ultimate end users of a program and promote active involvement through design partnerships and collaboration.",
+					"projectResults": "By placing a premium on the involvement of end users, we are able to build in usability best practices to support ease of use and engagement."
+				},
+				{
+					"id": "ins", 
+					"fullTitle": "Instructional Tryouts",
+					"isVisible": "true",
+					"businessUnit": "professional school highered",
+					"subSection": "northAmerica core growthVenture",
+					"projectLeads": "Robin Duffy",
+					"leadEmail": "robin.duffy@pearson.com",
+					"projectGoal": "Inform and validate instructional model by infusing contextual factors into development vis-a-vis simulated or actual classroom setting.",
+					"projectResults": "By incorporating contextual factors, the users’ perspective into development it builds empathy of teacher/student experience."
+				}
 			]
 		},
 		{	"title": "Product Market Research",
 			"description": "Research that gathers, analyzes and interprets information about a target market, including customer needs, preferences and the competitive landscape, in order to inform product development and business strategy.",
 			"boxes": [
-				{"id": "mar", "fullTitle": "Market Needs Assessment"},
-				{"id": "pro", "fullTitle": "Product Concept and Prototype Testing"},
-				{"id": "pri", "fullTitle": "Pricing, Packaging, and Messaging Research"}
+				{
+					"id": "mar", 
+					"fullTitle": "Market Needs Assessment",
+					"isVisible": "true",
+					"businessUnit": "professional school highered",
+					"subSection": "northAmerica core growthVenture",
+					"projectLeads": "Kristen Braghi",
+					"leadEmail": "kristen.braghi@pearson.com",
+					"projectGoal": "Gather data on market and customer needs at the outset of development of a new product or revision of an existing program, in order to inform and substantiate proposed product plan and learner outcomes.",
+					"projectResults": "Provides a comprehensive base of information with regard to instructional practices, curriculum and marketplace needs, which allows product development teams to understand key drivers of a given market segment and create a roadmap for success."
+				},
+				{
+					"id": "pro", 
+					"fullTitle": "Product Concept and Prototype Testing",
+					"isVisible": "true",
+					"businessUnit": "professional school highered",
+					"subSection": "northAmerica core growthVenture",
+					"projectLeads": "Kristen Braghi",
+					"leadEmail": "kristen.braghi@pearson.com",
+					"projectGoal": "Obtain direct customer feedback to help prioritize and optimize product ideas at a very early stage; use customer input to uncover strengths and weaknesses in the product’s preliminary instructional design.",
+					"projectResults": "Product development teams are able to save time and cost by refining (and sometimes eliminating) ideas before development begins; enables teams to make modifications at a very early development stage, which will ultimately help drive improved student outcomes."
+				},
+				{
+					"id": "pri", 
+					"fullTitle": "Pricing, Packaging, and Messaging Research",
+					"isVisible": "true",
+					"businessUnit": "professional school highered",
+					"subSection": "northAmerica core growthVenture",
+					"projectLeads": "Kristen Braghi",
+					"leadEmail": "kristen.braghi@pearson.com",
+					"projectGoal": "Determines the most desired combination of product features and packaging options during the development phase, and pinpoints optimal pricing for these options in the marketplace; provides input into formation/refinement of the value proposition during the product development phase; and explores which messages resonate most with customers.",
+					"projectResults": "Confirms that the value proposition and components of the product are clearly understood and resonate with customers, and optimal pricing and packaging are achieved, prior to product launch."
+				}
 			]
 		}
 	]
