@@ -13,10 +13,10 @@
 		<script src="../js/vendor/angular-1.2.0rc1/angular.js"></script>
 		<script src="../js/vendor/angular-1.2.0rc1/angular-route.js"></script> 
 		-->		
-		<script src="js/vendor/angular-1.2.27/angular.js"></script>
-		<script src="js/vendor/angular-1.2.27/angular-route.js"></script>
-		<script src="js/vendor/angular-1.2.27/angular-animate.js"></script>
-		<script src="js/vendor/ui-bootstrap-tpls-0.12.0.js"></script>
+		<script src="https://code.angularjs.org/1.2.27/angular.js"></script>
+		<script src="https://code.angularjs.org/1.2.27/angular-route.js"></script>
+		<script src="https://code.angularjs.org/1.2.27/angular-animate.js"></script>
+		<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
 		<!-- <script src="js/orgStructureForm.js" type="text/javascript"></script> -->
 		<script src="js/orgStructureApp.js" type="text/javascript"></script>
 

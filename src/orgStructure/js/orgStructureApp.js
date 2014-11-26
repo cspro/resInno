@@ -37,20 +37,7 @@ orgStructure.MainCtrl = function($scope, $http, $location, $modal, $rootScope, $
 			$scope.projectCount = 0;
 			$rootScope.projectDataMap = {};
 			angular.forEach($scope.projectData, function(value, key) {
-				var leads = [];
-				var names = value['projectLeads'].split(',');
-				var addresses = value['leadEmail'].split(',');
-				for (var i=0; i < addresses.length; i++) {
-					leads.push({name: names[i], address: addresses[i] });
-				};
-				value['leads'] = leads;
-				value['projectGoal'] = $sce.trustAsHtml(value['projectGoal']);
-				value['projectResults'] = $sce.trustAsHtml(value['projectResults']);
-				value['related'] = value['related'] != "" ? value['related'].split(',') : [];
-				value['businessUnitDisplay'] = formatBU(value['businessUnit']);
-				value['subSectionDisplay'] = formatSubSection(value['subSection']);
-				value['selectionClass'] = "";
-				value['show'] = value['isVisible'] == 'true' ? true : false;
+				validateProject(value);
 				if (value['show']) {
 					$scope.projectCount++;
 				}
@@ -59,6 +46,23 @@ orgStructure.MainCtrl = function($scope, $http, $location, $modal, $rootScope, $
 		}).error(function(result) {
 			alert("Error getting project data. " + result);
 		});
+
+	var validateProject = function(dataObj) {
+		var leads = [];
+		var names = dataObj['projectLeads'].split(',');
+		var addresses = dataObj['leadEmail'].split(',');
+		for (var i=0; i < addresses.length; i++) {
+			leads.push({name: names[i], address: addresses[i] });
+		};
+		dataObj['leads'] = leads;
+		dataObj['related'] = (dataObj['related'] && dataObj['related'] != "") ? dataObj['related'].split(',') : [];
+		dataObj['projectGoal'] = $sce.trustAsHtml(dataObj['projectGoal']);
+		dataObj['projectResults'] = $sce.trustAsHtml(dataObj['projectResults']);
+		dataObj['businessUnitDisplay'] = formatBU(dataObj['businessUnit']);
+		dataObj['subSectionDisplay'] = formatSubSection(dataObj['subSection']);
+		dataObj['selectionClass'] = "";
+		dataObj['show'] = dataObj['isVisible'] == 'true' ? true : false;
+	};
 
 	$scope.circleHrefs = [];
 	var businessUnits = ['higherEd', 'professional', 'school'];
@@ -210,9 +214,9 @@ orgStructure.MainCtrl = function($scope, $http, $location, $modal, $rootScope, $
 
 	$scope.$on('lifecycleBoxClick', function(e, box) {
 		e.preventDefault();
-		//TODO: make box data look like project data
+		validateProject(box);
+		box.icon = "PD";
 		$rootScope.project = box;
-		$rootScope.project = $rootScope.projectDataMap["2CCS"];
 		$scope.openModal(false);
 	});
 

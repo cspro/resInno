@@ -6,25 +6,55 @@
 		{	"title": "Efficacy Research",
 			"description": "Research that examines the impact of a product on outcomes such as student achievement via the use of an experimental or quasi-experimental study.",
 			"boxes": [
-				{"id": "lea", "label": "Learner Outcomes Research"},
-				{"id": "spe", "label": "Special Populations Research"},
-				{"id": "dat", "label": "Data Partnerships"}
+				{
+					"id": "lea", 
+					"fullTitle": "Learner Outcomes Research",
+					"isVisible": "true",
+					"businessUnit": "professional school highered",
+					"subSection": "northAmerica core growthVenture",
+					"projectLeads": "Marcy Baughman, Mary Ehmann, Ann Vilcheck",
+					"leadEmail": "marcy.baughman@pearson.com, mary.ehmann@pearson.com, ann.vilcheck@pearson.com",
+					"projectGoal": "To evaluate the impact of program and/or solution offerings on learner outcomes through the use of studies using scientific research designs.",
+					"projectResults": "Studies provide evidence of program/offering impact and qualitative data on implementation practices and teacher/student feedback."
+				},
+				{
+					"id": "spe", 
+					"fullTitle": "Special Populations Research",
+					"isVisible": "true",
+					"businessUnit": "school",
+					"subSection": "northAmerica",
+					"projectLeads": "",
+					"leadEmail": "@pearson.com",
+					"projectGoal": "",
+					"projectResults": ""
+				},
+				{
+					"id": "dat", 
+					"fullTitle": "Data Partnerships",
+					"isVisible": "true",
+					"businessUnit": "school",
+					"subSection": "northAmerica",
+					"projectLeads": "",
+					"leadEmail": "@pearson.com",
+					"projectGoal": "",
+					"projectResults": ""
+				}
 			]
 		},
 		{	"title": "Product Design Research",
 			"description": "Research that uses investigative techniques to support the strategic design and development of products, services, and programs",
 			"boxes": [
-				{"id": "use", "label": "User Testing"},
-				{"id": "par", "label": "Participatory Design"},
-				{"id": "ins", "label": "Instructional Tryouts"}
+				{"id": "use", "fullTitle": "User Testing"},
+				{"id": "par", "fullTitle": "Participatory Design"},
+				{"id": "ins", "fullTitle": "Instructional Tryouts"}
 			]
 		},
 		{	"title": "Product Market Research",
 			"description": "Research that gathers, analyzes and interprets information about a target market, including customer needs, preferences and the competitive landscape, in order to inform product development and business strategy.",
 			"boxes": [
-				{"id": "mar", "label": "Market Needs Assessment"},
-				{"id": "pro", "label": "Product Concept and Prototype Testing"},
-				{"id": "pri", "label": "Pricing, Packaging, and Messaging Research"}
+				{"id": "mar", "fullTitle": "Market Needs Assessment"},
+				{"id": "pro", "fullTitle": "Product Concept and Prototype Testing"},
+				{"id": "pri", "fullTitle": "Pricing, Packaging, and Messaging Research"}
 			]
 		}
 	]
