@@ -2,16 +2,7 @@
 <html ng-app="orgStructure.App">
 	<head>
 		<?php
-			$host = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-			$path = '';
-			if (strpos($host, 'localhost') !== FALSE) {
-				$path = '/cs/webapps/resInno/src/orgStructure/';
-			} elseif (strpos($host, 'dev') !== FALSE) {
-				$path = '/cs/dev/orgStructure/';
-			} else {
-				$path = '/cs/webapps/orgStructure/';
-			}
-			echo "<base href=\"" . $path . "\"/>";
+			echo "<base href=\"" . $_SERVER['REQUEST_URI'] . "\"/>";
 		?>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

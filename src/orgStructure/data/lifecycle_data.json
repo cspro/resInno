@@ -6,25 +6,25 @@
 		{	"title": "Efficacy Research",
 			"description": "Research that examines the impact of a product on outcomes such as student achievement via the use of an experimental or quasi-experimental study.",
 			"boxes": [
-				{"label": "Learner Outcomes Research"},
-				{"label": "Special Populations Research"},
-				{"label": "Data Partnerships"}
+				{"id": "lea", "label": "Learner Outcomes Research"},
+				{"id": "spe", "label": "Special Populations Research"},
+				{"id": "dat", "label": "Data Partnerships"}
 			]
 		},
 		{	"title": "Product Design Research",
 			"description": "Research that uses investigative techniques to support the strategic design and development of products, services, and programs",
 			"boxes": [
-				{"label": "User Testing"},
-				{"label": "Participatory Design"},
-				{"label": "Instructional Tryouts"}
+				{"id": "use", "label": "User Testing"},
+				{"id": "par", "label": "Participatory Design"},
+				{"id": "ins", "label": "Instructional Tryouts"}
 			]
 		},
 		{	"title": "Product Market Research",
 			"description": "Research that gathers, analyzes and interprets information about a target market, including customer needs, preferences and the competitive landscape, in order to inform product development and business strategy.",
 			"boxes": [
-				{"label": "Market Needs Assessment"},
-				{"label": "Product Concept and Prototype Testing"},
-				{"label": "Pricing, Packaging, and Messaging Research"}
+				{"id": "mar", "label": "Market Needs Assessment"},
+				{"id": "pro", "label": "Product Concept and Prototype Testing"},
+				{"id": "pri", "label": "Pricing, Packaging, and Messaging Research"}
 			]
 		}
 	]

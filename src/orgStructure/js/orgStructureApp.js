@@ -196,9 +196,20 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 		opts.templateUrl = isLifecycle ? "partials/lifecycle.tpl.html" : "partials/project.tpl.html";
 		opts.controller = isLifecycle ? "orgStructure.LifecycleController" : "orgStructure.ProjectDialogController";
 		var d = $dialog.dialog($scope.dialogOpts);
+		if ($rootScope.dialog) {
+			$rootScope.dialog.close();
+		}
+		$rootScope.dialog = d;
 		d.open();
 	};
 
+	$scope.$on('lifecycleBoxClick', function(e, box) {
+		e.preventDefault();
+		//TODO: make box data look like project data
+		$rootScope.project = box;
+		$rootScope.project = $rootScope.projectDataMap["2CCS"];
+		$scope.openDialog(false);
+	});
 
 };
 
@@ -208,14 +219,14 @@ orgStructure.ProjectDialogController = function($scope, $rootScope, dialog){
 	$scope.project = $rootScope.project;
 	
 	$scope.close = function(result){
+		// $rootScope.dialogs;
+		// var d = $rootScope.dialogs.pop();
 		dialog.close(result);
 	};
 };
 
 
-orgStructure.LifecycleController  = function($scope, $http) {
-
-	console.log("Hello");
+orgStructure.LifecycleController  = function($scope, $rootScope, $http) {
 
 	$http.get('data/lifecycle_data.json')
 		.success(function(result) {
@@ -224,4 +235,7 @@ orgStructure.LifecycleController  = function($scope, $http) {
 			alert("Error getting project data. " + result);
 		});
 
+	$scope.onBoxClick = function(e, box) {
+		$rootScope.$broadcast('lifecycleBoxClick', box);
+	};
 };

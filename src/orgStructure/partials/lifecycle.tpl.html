@@ -1,6 +1,10 @@
 <div class="modal-dialog lifecycle">
 	<div class="modal-content">
 		<div class="modal-header">
+			<button type="button" class="close" ng-click="close()" aria-hidden="true">
+				&times;
+			</button>
+			<div class="icon PD">&nbsp;</div>
 			<h2 class="allCaps">{{data.pageTitle}}</h2>
 		</div>
 		<div class="modal-body">
@@ -16,14 +20,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="row modalRow">	
+			<div class="row modalRow stagesRow">	
 				<div class="modalRowContent">
 					<h4>{{data.sectionTitle}}</h4>
 					<div ng-repeat="section in data.sections" class="section">
-						<h2>{{section.title}}</h2>
+						<h5>{{section.title}}</h5>
 						<div class="sectionBoxes">
-							<div ng-repeat="box in section.boxes" class="box">
-								{{box.label}}
+							<div ng-repeat="box in section.boxes" class="box" ng-click="onBoxClick($event, box)">
+								<div><span>{{box.label}}</span></div>
 							</div>
 						</div>
 						<div class="sectionDescription">{{section.description}}</div>

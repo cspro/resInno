@@ -125,6 +125,9 @@ span, a {
   &.NG {
     background:$neutralBg url('../images/project_icon_NG.png')  50% 50% no-repeat;
   }
+  &.PD {
+    background:$neutralBg url('../images/project_icon_PD.png')  50% 50% no-repeat;
+  }
 }
 
 .projectColumn.professional {
