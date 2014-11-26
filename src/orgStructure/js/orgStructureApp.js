@@ -22,7 +22,7 @@ orgStructure.App = angular.module('orgStructure.App', ['ngRoute', 'ngAnimate', '
 	});
 	
 	
-orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, $sce, $timeout) {
+orgStructure.MainCtrl = function($scope, $http, $location, $modal, $rootScope, $sce, $timeout) {
 	
 	var formatBU = function(s) {
 		return s ? s.split(" ").join(", ").replace("professional", "Professional").replace("school", "School").replace("higherEd", "Higher Ed") : "Research & Innovation Network";
@@ -146,7 +146,7 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 		$scope.reset();
 		$scope.currBU = id;
 		if (id=="PD") {
-			$scope.openDialog(true);
+			$scope.openModal(true);
 		}
 	};
 	
@@ -158,7 +158,7 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 	$scope.onProjectClick = function($event, id) {
 		$event.preventDefault();
 		$rootScope.project = $rootScope.projectDataMap[id];
-		$scope.openDialog();
+		$scope.openModal();
 	};
 	
 	$scope.onProjectMouseOver = function($event, id) {
@@ -182,8 +182,8 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 	$scope.onCopyToggle = function() {
 		$scope.hideCopy = !$scope.hideCopy;
 	};
-	
-	$scope.dialogOpts = {
+
+	$scope.modalOpts = {
 		backdrop: true,
 		backdropFade: true,
 		backdropClick: true,
@@ -191,16 +191,21 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 		keyboard: true
 	};
 
-	$scope.openDialog = function(isLifecycle){
-		var opts = $scope.dialogOpts;
+	$scope.openModal = function (isLifecycle) {
+		var opts = $scope.modalOpts;
 		opts.templateUrl = isLifecycle ? "partials/lifecycle.tpl.html" : "partials/project.tpl.html";
 		opts.controller = isLifecycle ? "orgStructure.LifecycleController" : "orgStructure.ProjectDialogController";
-		var d = $dialog.dialog($scope.dialogOpts);
-		if ($rootScope.dialog) {
-			$rootScope.dialog.close();
-		}
-		$rootScope.dialog = d;
-		d.open();
+		opts.scope = $scope;
+		opts.size = "lg";
+		var modalInstance = $modal.open(opts);
+		modalInstance.result.then(function () {
+			}, function () {
+				console.log('Modal dismissed at: ' + new Date());
+			});
+	};
+	
+	$scope.closeModal = function() {
+		$modal.close();
 	};
 
 	$scope.$on('lifecycleBoxClick', function(e, box) {
@@ -208,25 +213,25 @@ orgStructure.MainCtrl = function($scope, $http, $location, $dialog, $rootScope, 
 		//TODO: make box data look like project data
 		$rootScope.project = box;
 		$rootScope.project = $rootScope.projectDataMap["2CCS"];
-		$scope.openDialog(false);
+		$scope.openModal(false);
 	});
 
 };
 
 // the dialog is injected into the specified controller
-orgStructure.ProjectDialogController = function($scope, $rootScope, dialog){
+orgStructure.ProjectDialogController = function($scope, $rootScope, $modalInstance){
 	
 	$scope.project = $rootScope.project;
 	
 	$scope.close = function(result){
 		// $rootScope.dialogs;
 		// var d = $rootScope.dialogs.pop();
-		dialog.close(result);
+		$modalInstance.close(result);
 	};
 };
 
 
-orgStructure.LifecycleController  = function($scope, $rootScope, $http) {
+orgStructure.LifecycleController  = function($scope, $rootScope, $http, $modalInstance) {
 
 	$http.get('data/lifecycle_data.json')
 		.success(function(result) {
@@ -237,5 +242,11 @@ orgStructure.LifecycleController  = function($scope, $rootScope, $http) {
 
 	$scope.onBoxClick = function(e, box) {
 		$rootScope.$broadcast('lifecycleBoxClick', box);
+	};
+	
+	$scope.close = function(result){
+		// $rootScope.dialogs;
+		// var d = $rootScope.dialogs.pop();
+		$modalInstance.close(result);
 	};
 };
