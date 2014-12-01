@@ -151,9 +151,10 @@ orgStructure.MainCtrl = function($scope, $http, $location, $modal, $rootScope, $
 	$scope.onCenterClick = function($event, id) {
 		$event.preventDefault();
 		$scope.reset();
-		$scope.currBU = id;
 		if (id=="PD") {
 			$scope.openModal(true);
+		} else {
+			$scope.currBU = id;
 		}
 	};
 	

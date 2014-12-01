@@ -4,6 +4,7 @@
 	"sectionTitle": "Product Lifecycle Stages",
 	"sections" : [
 		{	"title": "Efficacy Research",
+			"id": "ER",
 			"description": "Research that examines the impact of a product on outcomes such as student achievement via the use of an experimental or quasi-experimental study.",
 			"boxes": [
 				{
@@ -42,6 +43,7 @@
 			]
 		},
 		{	"title": "Product Design Research",
+			"id": "PDR",
 			"description": "Research that uses investigative techniques to support the strategic design and development of products, services, and programs",
 			"boxes": [
 				{
@@ -80,6 +82,7 @@
 			]
 		},
 		{	"title": "Product Market Research",
+			"id": "PMR",
 			"description": "Research that gathers, analyzes and interprets information about a target market, including customer needs, preferences and the competitive landscape, in order to inform product development and business strategy.",
 			"boxes": [
 				{

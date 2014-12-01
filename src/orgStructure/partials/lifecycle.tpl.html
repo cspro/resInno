@@ -21,9 +21,9 @@
 			</div>
 			<div class="row modalRow stagesRow">	
 				<div class="modalRowContent">
-					<h4>{{data.sectionTitle}}</h4>
+					<h2>{{data.sectionTitle}}</h2>
 					<div ng-repeat="section in data.sections" class="section">
-						<h5>{{section.title}}</h5>
+						<h3 class="{{section.id}}">{{section.title}}</h5>
 						<div class="sectionBoxes">
 							<div ng-repeat="box in section.boxes" class="box" ng-click="onBoxClick($event, box)">
 								<div><span>{{box.fullTitle}}</span></div>
