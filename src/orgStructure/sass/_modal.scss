@@ -8,6 +8,7 @@ $iconIndent: 110px;
 @media screen and (min-width: 768px) {
   .modal-dialog {
     width: auto;
+    max-width: 1250px;
     padding: 0em 3em;
     margin-bottom: 1em;
   }

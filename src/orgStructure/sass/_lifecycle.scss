@@ -4,41 +4,73 @@
     text-transform: uppercase;
     margin: 0 0 1em 0;
   }
-  h3 {
+  .sectionTitleWrapper {
     display: block;
-    text-transform: uppercase;
-    border: 1px solid #fff;
+    width: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    padding: 8px;
-    color: #fff;
-    &.ER {
-      background-color: $higherEdColor2;
-    }
-    &.PDR {
-      background-color: $schoolColor2;
-    }
-    &.PMR {
-      background-color: $professionalColor2;
+    background-color: lighten($neutralBg, 15%);
+    h3 {
+      display: block;
+      text-transform: uppercase;
+      border: 1px solid #fff;
+      border-top: none;
+      border-bottom: none;
+      padding: 8px;
+      color: #fff;
+      &.ER {
+        background-color: $higherEdColor2;
+        margin-left: 16.666%;
+        margin-right: 16.666%;
+      }
+      &.PDR {
+        background-color: $schoolColor2;
+        margin-right: 16.666%;
+      }
+      &.PMR {
+        background-color: $professionalColor2;
+        margin-right: 16.666%;
+      }
     }
   }
   
   #bannerRow {
     background-color: #fff;
+    display: none;
     .modalRowContent {
       padding: 3px 0;
     }
     #bannerWrapper {
       text-align: center;
       background-color: #fff;
-      #banner {
-        max-width: 100%;
+      .bannerTable {
+        display: table;
+        width: 100%;
         height: auto;
+        padding: 10px 15px;
+        .bannerCell {
+          display: table-cell;
+          border: 10px solid white;
+          width: 16.666%;
+          max-width: 250px;
+          height: 250px;
+          padding: 0.5em 1em;
+          font-size: 12px;
+          color: white;
+          text-shadow: 1px 1px 3px #333;
+          &.idea {     background: url("../images/lifecycle_bg_idea.jpg")     50% 50% no-repeat}
+          &.explore {  background: url("../images/lifecycle_bg_explore.jpg")  50% 50% no-repeat}
+          &.validate { background: url("../images/lifecycle_bg_validate.jpg") 50% 50% no-repeat}
+          &.grow {     background: url("../images/lifecycle_bg_grow.jpg")     50% 50% no-repeat}
+          &.sustain {  background: url("../images/lifecycle_bg_sustain.jpg")  50% 50% no-repeat}
+          &.retire {   background: url("../images/lifecycle_bg_retire.jpg")   50% 50% no-repeat}
+        }
       }
     }
   }
   .modalRowContent {
     margin-left: 0;
+    padding: 23px;
     .section {
       display: block;
       clear: both;
@@ -95,6 +127,35 @@
     padding-bottom: 2em;
   }
 }
+
+@media (min-width: 630px) {
+  .lifecycle {
+    #bannerRow {
+      display: block;
+      #bannerWrapper {
+        .bannerTable {
+          .bannerCell {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 840px) {
+  .lifecycle {
+    #bannerRow {
+      #bannerWrapper {
+        .bannerTable {
+          .bannerCell {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 
 

@@ -15,7 +15,14 @@
 			<div class="row modalRow" id="bannerRow">	
 				<div class="modalRowContent">
 					<div id="bannerWrapper">
-						<img id="banner" src="images/lifecycle_banner.jpg">
+						<div class="bannerTable">
+							<div class="bannerCell idea">Idea</div>
+							<div class="bannerCell explore">Explore</div>
+							<div class="bannerCell validate">Validate</div>
+							<div class="bannerCell grow">Grow</div>
+							<div class="bannerCell sustain">Sustain</div>
+							<div class="bannerCell retire">Retire</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -23,7 +30,9 @@
 				<div class="modalRowContent">
 					<h2>{{data.sectionTitle}}</h2>
 					<div ng-repeat="section in data.sections" class="section">
-						<h3 class="{{section.id}}">{{section.title}}</h5>
+						<div class="sectionTitleWrapper">
+							<h3 class="{{section.id}}">{{section.title}}</h3>
+						</div>
 						<div class="sectionBoxes">
 							<div ng-repeat="box in section.boxes" class="box" ng-click="onBoxClick($event, box)">
 								<div><span>{{box.fullTitle}}</span></div>
