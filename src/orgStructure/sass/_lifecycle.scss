@@ -25,10 +25,14 @@
       }
       &.PDR {
         background-color: $schoolColor2;
+        border-top-left-radius: 8px;
+        border-left: none;
         margin-right: 16.666%;
       }
       &.PMR {
         background-color: $professionalColor2;
+        border-top-left-radius: 8px;
+        border-left: none;
         margin-right: 16.666%;
       }
     }
