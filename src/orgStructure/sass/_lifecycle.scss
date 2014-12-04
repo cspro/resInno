@@ -13,11 +13,15 @@
     h3 {
       display: block;
       text-transform: uppercase;
-      border: 1px solid #fff;
+      // border: 1px solid #fff;
       border-top: none;
       border-bottom: none;
-      padding: 8px;
+      padding: 8px 20px;
       color: #fff;
+      background-image: url("../images/lifecycle_endArrow_left.png"), url("../images/lifecycle_endArrow_right.png");
+      background-position: center left, center right;
+      background-repeat: no-repeat;
+      text-align: center;
       &.ER {
         background-color: $higherEdColor2;
         margin-left: 16.666%;
@@ -43,6 +47,11 @@
     display: none;
     .modalRowContent {
       padding: 3px 0;
+      #bannerTitle {
+        display: block;
+        text-align: center;
+        margin: 1em 0 0 0;
+      }
     }
     #bannerWrapper {
       text-align: center;
@@ -98,7 +107,7 @@
             width: 100%;
             height: 100%;
             border-radius: 8px;
-            border: 1px solid lighten($neutralBg, 25%);
+            border: 2px solid lighten($neutralBg, 25%);
             -moz-box-shadow:    0px 3px 5px 0px rgba(68,68,68,0.15);
             -webkit-box-shadow: 0px 3px 5px 0px rgba(68,68,68,0.15);
             box-shadow:         0px 3px 5px 0px rgba(68,68,68,0.15);
@@ -106,7 +115,7 @@
             -webkit-transition: background-color 0.25s ease-in-out;
             transition: background-color 0.25s ease-in-out;
             &:hover {
-              background: darken($neutralBg, 8%);
+              background: lighten($neutralBg, 12%);
               -webkit-transition: background-color 0.25s ease-in-out;
               transition: background-color 0.25s ease-in-out;
             }
@@ -124,11 +133,70 @@
             }
           }
         }
+        &.ER {
+          .box {
+            div:hover {
+              border-color: $higherEdColor2; 
+            }
+          }
+        }
+        &.PDR {
+          .box {
+            div:hover {
+              border-color: $schoolColor2; 
+            }
+          }
+        }
+        &.PMR {
+          .box {
+            div:hover {
+              border-color: $professionalColor2; 
+            }
+          }
+        }
       }
     }
   }
   .stagesRow {
     padding-bottom: 2em;
+  }
+}
+
+.lifecyclePrompt {
+  text-align: center;
+  margin: 0.5em 0 0 0;
+  div {
+    display: table;
+    margin: 0 auto;
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 8px;
+    .icon { 
+      display: none;
+      width: 55px;
+      height: 48px;
+      float: left; 
+      margin-left: 20px;
+      margin-right: 1em;
+      &.PD {
+        background:url('../images/project_icons_lg.png')  -275px 0;
+      }
+    }
+    h2 {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 1.25em;
+      color: $accentColor;
+      line-height: 24px;
+      height: 48px;
+      margin: 0;
+    }
+    &:hover {
+      background-color: lighten($neutralBg, 20%);
+    }
+    &:active {
+      background-color: lighten($neutralBg, 25%);
+    }
   }
 }
 
@@ -142,6 +210,16 @@
             font-size: 15px;
           }
         }
+      }
+    }
+  }
+  .lifecyclePrompt {
+    div {
+      .icon {
+        display: block;
+      }
+      h2 {
+        font-size: 1.65em;
       }
     }
   }
