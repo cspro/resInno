@@ -16,11 +16,11 @@
 		<script src="https://code.angularjs.org/1.2.27/angular.js"></script>
 		<script src="https://code.angularjs.org/1.2.27/angular-route.js"></script>
 		<script src="https://code.angularjs.org/1.2.27/angular-animate.js"></script>
-		<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+		<script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
 		<!-- <script src="js/orgStructureForm.js" type="text/javascript"></script> -->
 		<script src="js/orgStructureApp.js" type="text/javascript"></script>
 
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 		
 		<!-- <link href="css/vendor/normalize.css" rel="stylesheet" /> -->
 		<!-- <link href="css/vendor/bootstrap.min.css" rel="stylesheet" /> -->

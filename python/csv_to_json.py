@@ -19,8 +19,7 @@ projectCount = 0
 
 def parseBusinessUnit(businessUnitInput):
 
-    parsed = businessUnitInput.replace(' ', '')
-    parsed = parsed.replace(',', ' ')
+    parsed = businessUnitInput.replace(',', ' ')
     parsed = parsed.lower()
     parsed = parsed.replace('highered', 'higherEd')
 
@@ -29,11 +28,10 @@ def parseBusinessUnit(businessUnitInput):
 
 def parseSubSection(subSectionInput):
 
-    parsed = subSectionInput.replace(' ', '')
-    parsed = parsed.replace(',', ' ')
+    parsed = subSectionInput.replace(',', ' ')
     parsed = parsed.lower()
     parsed = parsed.replace('northamerica', 'northAmerica')
-    parsed = parsed.replace('growth/venture', 'growthVenture')
+    parsed = parsed.replace('growthventure', 'growthVenture')
 
     return parsed
 
