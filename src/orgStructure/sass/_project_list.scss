@@ -28,19 +28,19 @@
         margin-right: -1px;
       }
     }
-    &.professional {
+    &.pac {
       h2 {
-        background-color: $professionalColor2;
+        background-color: $pacColor2;
       }
     }
-    &.higherEd {
+    &.isdd {
       h2 {
-        background-color: $higherEdColor2;
+        background-color: $isddColor2;
       }
     }
-    &.school {
+    &.other {
       h2 {
-        background-color: $schoolColor2;
+        background-color: $otherColor2;
       }
     }
   }
@@ -119,8 +119,8 @@ span, a {
   &.EE {
     background:$neutralBg url('../images/project_icon_EE.png')  50% 50% no-repeat;
   }
-  &.OL {
-    background:$neutralBg url('../images/project_icon_OL.png')  50% 50% no-repeat;
+  &.LS {
+    background:$neutralBg url('../images/project_icon_LS.png')  50% 50% no-repeat;
   }
   &.NG {
     background:$neutralBg url('../images/project_icon_NG.png')  50% 50% no-repeat;
@@ -130,151 +130,151 @@ span, a {
   }
 }
 
-.projectColumn.professional {
+.projectColumn.pac {
   .projectLink.selected {
-    border-color: saturate(lighten($professionalColor2, 5%), 5%);
+    border-color: saturate(lighten($pacColor2, 5%), 5%);
   }
 } 
-.projectColumn.higherEd {
+.projectColumn.isdd {
   .projectLink.selected {
-    border-color: saturate(lighten($higherEdColor2, 10%), 0%);
+    border-color: saturate(lighten($isddColor2, 10%), 0%);
   }
 } 
-.projectColumn.school {
+.projectColumn.other {
   .projectLink.selected {
-    border-color: saturate(lighten($schoolColor2, 10%), 0%);
+    border-color: saturate(lighten($otherColor2, 10%), 0%);
   }
 } 
 
 
-#wrapper.northAmerica {
+#wrapper.research {
   .projectLink {
     background-color: lighten($neutralBg, 12%);
     &:hover, &.selected { 
       background-color: lighten($neutralBg, 13%); 
     } 
   }
-  .projectLink.northAmerica {
+  .projectLink.research {
     background-color: darken($neutralBg, 13%);
     &:hover, &.selected { 
       background-color: lighten($neutralBg, 2%); 
     }
   }
-  &.professional {
-    .projectColumn.professional {
-      .projectLink.northAmerica { 
-        background-color: lighten($professionalColor1, 0%);
+  &.pac {
+    .projectColumn.pac {
+      .projectLink.research { 
+        background-color: lighten($pacColor1, 0%);
         &:hover, &.selected { 
-          background-color: desaturate(lighten($professionalColor1, 26%), 10%); 
+          background-color: desaturate(lighten($pacColor1, 26%), 10%); 
         } 
       }
     }
   }
-  &.higherEd {
-    .projectColumn.higherEd {
-      .projectLink.northAmerica {
-        background-color: lighten($higherEdColor1, 0%);
+  &.isdd {
+    .projectColumn.isdd {
+      .projectLink.research {
+        background-color: lighten($isddColor1, 0%);
         &:hover, &.selected { 
-          background-color: desaturate(lighten($higherEdColor1, 19%), 10%); 
+          background-color: desaturate(lighten($isddColor1, 19%), 10%); 
         } 
       }
     }
   }
-  &.school {
-    .projectColumn.school {
-      .projectLink.northAmerica {
-        background-color: lighten($schoolColor1, 0%);
+  &.other {
+    .projectColumn.other {
+      .projectLink.research {
+        background-color: lighten($otherColor1, 0%);
         &:hover, &.selected { 
-          background-color: desaturate(lighten($schoolColor1, 17%), 27%); 
+          background-color: desaturate(lighten($otherColor1, 17%), 27%); 
         } 
       }
     }
   }
 }
-#wrapper.growthVenture {
+#wrapper.thoughtLeadership {
   .projectLink {
     background-color: lighten($neutralBg, 12%);
     &:hover, &.selected { 
       background-color: lighten($neutralBg, 13%); 
     } 
   }
-  .projectLink.growthVenture {
+  .projectLink.thoughtLeadership {
     // border-color: darken($neutralBg, 50%);
     background-color: darken($neutralBg, 13%);
     &:hover, &.selected { 
       background-color: lighten($neutralBg, 2%); 
     } 
   }
-  &.professional {
-    .projectColumn.professional {
-      .projectLink.growthVenture {
-        background-color: lighten($professionalColor1, 0%);
+  &.pac {
+    .projectColumn.pac {
+      .projectLink.thoughtLeadership {
+        background-color: lighten($pacColor1, 0%);
         &:hover, &.selected { 
-          background-color: desaturate(lighten($professionalColor1, 26%), 10%); 
+          background-color: desaturate(lighten($pacColor1, 26%), 10%); 
         } 
       }
     }
   }
-  &.higherEd {
-    .projectColumn.higherEd {
-      .projectLink.growthVenture {
-        background-color: lighten($higherEdColor1, 0%);
+  &.isdd {
+    .projectColumn.isdd {
+      .projectLink.thoughtLeadership {
+        background-color: lighten($isddColor1, 0%);
         &:hover, &.selected { 
-          background-color: desaturate(lighten($higherEdColor1, 19%), 10%); 
+          background-color: desaturate(lighten($isddColor1, 19%), 10%); 
         } 
       }
     }
   }
-  &.school {
-    .projectColumn.school {
-      .projectLink.growthVenture {
-        background-color: lighten($schoolColor1, 0%);
+  &.other {
+    .projectColumn.other {
+      .projectLink.thoughtLeadership {
+        background-color: lighten($otherColor1, 0%);
         &:hover, &.selected { 
-          background-color: desaturate(lighten($schoolColor1, 17%), 27%); 
+          background-color: desaturate(lighten($otherColor1, 17%), 27%); 
         } 
       }
     }
   }
 }
-#wrapper.core {
+#wrapper.innovation {
   .projectLink {
     background-color: lighten($neutralBg, 12%);
     &:hover, &.selected { 
       background-color: lighten($neutralBg, 13%); 
     } 
   }
-  .projectLink.core {
+  .projectLink.innovation {
     background-color: darken($neutralBg, 13%);
     &:hover, &.selected { 
       background-color: lighten($neutralBg, 2%); 
     } 
   }
-  &.professional {
-    .projectColumn.professional {
-      .projectLink.core {
-        background-color: lighten($professionalColor1, 0%);
+  &.pac {
+    .projectColumn.pac {
+      .projectLink.innovation {
+        background-color: lighten($pacColor1, 0%);
         &:hover, &.selected { 
-          background-color: desaturate(lighten($professionalColor1, 26%), 10%); 
+          background-color: desaturate(lighten($pacColor1, 26%), 10%); 
         } 
       }
     }
   }
-  &.higherEd {
-    .projectColumn.higherEd {
-      .projectLink.core {
-        background-color: lighten($higherEdColor1, 0%);
+  &.isdd {
+    .projectColumn.isdd {
+      .projectLink.innovation {
+        background-color: lighten($isddColor1, 0%);
         &:hover, &.selected { 
-          background-color: desaturate(lighten($higherEdColor1, 19%), 10%); 
+          background-color: desaturate(lighten($isddColor1, 19%), 10%); 
         } 
       }
     }
   }
-  &.school {
-    .projectColumn.school {
-      .projectLink.core {
-        background-color: lighten($schoolColor1, 0%);
+  &.other {
+    .projectColumn.other {
+      .projectLink.innovation {
+        background-color: lighten($otherColor1, 0%);
         &:hover, &.selected { 
-          background-color: desaturate(lighten($schoolColor1, 17%), 27%); 
+          background-color: desaturate(lighten($otherColor1, 17%), 27%); 
         } 
       }
     }
@@ -298,27 +298,27 @@ span, a {
       background-color: lighten($neutralBg, 2%); 
     }
   } 
-  .projectColumn.professional {
+  .projectColumn.pac {
     .projectLink.CC {
-      background-color: lighten($professionalColor1, 0%);
+      background-color: lighten($pacColor1, 0%);
       &:hover, &.selected { 
-        background-color: desaturate(lighten($professionalColor1, 26%), 10%); 
+        background-color: desaturate(lighten($pacColor1, 26%), 10%); 
       } 
     }
   }
-  .projectColumn.higherEd {
+  .projectColumn.isdd {
     .projectLink.CC {
-      background-color: lighten($higherEdColor1, 0%);
+      background-color: lighten($isddColor1, 0%);
       &:hover, &.selected { 
-        background-color: desaturate(lighten($higherEdColor1, 19%), 10%); 
+        background-color: desaturate(lighten($isddColor1, 19%), 10%); 
       } 
     }
   }
-  .projectColumn.school {
+  .projectColumn.other {
     .projectLink.CC {
-      background-color: lighten($schoolColor1, 0%);
+      background-color: lighten($otherColor1, 0%);
       &:hover, &.selected { 
-        background-color: desaturate(lighten($schoolColor1, 17%), 27%); 
+        background-color: desaturate(lighten($otherColor1, 17%), 27%); 
       } 
     }
   }
@@ -337,27 +337,27 @@ span, a {
       background-color: lighten($neutralBg, 2%); 
     }
   } 
-  .projectColumn.professional {
+  .projectColumn.pac {
     .projectLink.DD {
-      background-color: lighten($professionalColor1, 0%);
+      background-color: lighten($pacColor1, 0%);
       &:hover, &.selected { 
-        background-color: desaturate(lighten($professionalColor1, 26%), 10%); 
+        background-color: desaturate(lighten($pacColor1, 26%), 10%); 
       } 
     }
   }
-  .projectColumn.higherEd {
+  .projectColumn.isdd {
     .projectLink.DD {
-      background-color: lighten($higherEdColor1, 0%);
+      background-color: lighten($isddColor1, 0%);
       &:hover, &.selected { 
-        background-color: desaturate(lighten($higherEdColor1, 19%), 10%); 
+        background-color: desaturate(lighten($isddColor1, 19%), 10%); 
       } 
     }
   }
-  .projectColumn.school {
+  .projectColumn.other {
     .projectLink.DD {
-      background-color: lighten($schoolColor1, 0%);
+      background-color: lighten($otherColor1, 0%);
       &:hover, &.selected { 
-        background-color: desaturate(lighten($schoolColor1, 17%), 27%); 
+        background-color: desaturate(lighten($otherColor1, 17%), 27%); 
       } 
     }
   }
@@ -375,27 +375,27 @@ span, a {
       background-color: lighten($neutralBg, 2%); 
     }
   } 
-  .projectColumn.professional {
+  .projectColumn.pac {
     .projectLink.EE {
-      background-color: lighten($professionalColor1, 0%);
+      background-color: lighten($pacColor1, 0%);
       &:hover, &.selected { 
-        background-color: desaturate(lighten($professionalColor1, 26%), 10%); 
+        background-color: desaturate(lighten($pacColor1, 26%), 10%); 
       } 
     }
   }
-  .projectColumn.higherEd {
+  .projectColumn.isdd {
     .projectLink.EE {
-      background-color: lighten($higherEdColor1, 0%);
+      background-color: lighten($isddColor1, 0%);
       &:hover, &.selected { 
-        background-color: desaturate(lighten($higherEdColor1, 19%), 10%); 
+        background-color: desaturate(lighten($isddColor1, 19%), 10%); 
       } 
     }
   }
-  .projectColumn.school {
+  .projectColumn.other {
     .projectLink.EE {
-      background-color: lighten($schoolColor1, 0%);
+      background-color: lighten($otherColor1, 0%);
       &:hover, &.selected { 
-        background-color: desaturate(lighten($schoolColor1, 17%), 27%); 
+        background-color: desaturate(lighten($otherColor1, 17%), 27%); 
       } 
     }
   }
@@ -413,65 +413,65 @@ span, a {
       background-color: lighten($neutralBg, 2%); 
     }
   } 
-  .projectColumn.professional {
+  .projectColumn.pac {
     .projectLink.NG {
-      background-color: lighten($professionalColor1, 0%);
+      background-color: lighten($pacColor1, 0%);
       &:hover, &.selected { 
-        background-color: desaturate(lighten($professionalColor1, 26%), 10%); 
+        background-color: desaturate(lighten($pacColor1, 26%), 10%); 
       } 
     }
   }
-  .projectColumn.higherEd {
+  .projectColumn.isdd {
     .projectLink.NG {
-      background-color: lighten($higherEdColor1, 0%);
+      background-color: lighten($isddColor1, 0%);
       &:hover, &.selected { 
-        background-color: desaturate(lighten($higherEdColor1, 19%), 10%); 
+        background-color: desaturate(lighten($isddColor1, 19%), 10%); 
       } 
     }
   }
-  .projectColumn.school {
+  .projectColumn.other {
     .projectLink.NG {
-      background-color: lighten($schoolColor1, 0%);
+      background-color: lighten($otherColor1, 0%);
       &:hover, &.selected { 
-        background-color: desaturate(lighten($schoolColor1, 17%), 27%); 
+        background-color: desaturate(lighten($otherColor1, 17%), 27%); 
       } 
     }
   }
 }
-#wrapper.OL {
+#wrapper.LS {
   .projectLink {
     background-color: lighten($neutralBg, 12%);
     &:hover, &.selected { 
       background-color: lighten($neutralBg, 13%); 
     } 
   }
-  .projectLink.OL {
+  .projectLink.LS {
     background-color: darken($neutralBg, 13%);
     &:hover, &.selected { 
       background-color: lighten($neutralBg, 2%); 
     }
   } 
-  .projectColumn.professional {
-    .projectLink.OL {
-      background-color: lighten($professionalColor1, 0%);
+  .projectColumn.pac {
+    .projectLink.LS {
+      background-color: lighten($pacColor1, 0%);
       &:hover, &.selected { 
-        background-color: desaturate(lighten($professionalColor1, 26%), 10%); 
+        background-color: desaturate(lighten($pacColor1, 26%), 10%); 
       } 
     }
   }
-  .projectColumn.higherEd {
-    .projectLink.OL {
-      background-color: lighten($higherEdColor1, 0%);
+  .projectColumn.isdd {
+    .projectLink.LS {
+      background-color: lighten($isddColor1, 0%);
       &:hover, &.selected { 
-        background-color: desaturate(lighten($higherEdColor1, 19%), 10%); 
+        background-color: desaturate(lighten($isddColor1, 19%), 10%); 
       } 
     }
   }
-  .projectColumn.school {
-    .projectLink.OL {
-      background-color: lighten($schoolColor1, 0%);
+  .projectColumn.other {
+    .projectLink.LS {
+      background-color: lighten($otherColor1, 0%);
       &:hover, &.selected { 
-        background-color: desaturate(lighten($schoolColor1, 17%), 27%); 
+        background-color: desaturate(lighten($otherColor1, 17%), 27%); 
       } 
     }
   }

@@ -25,10 +25,10 @@ orgStructure.App = angular.module('orgStructure.App', ['ngRoute', 'ngAnimate', '
 orgStructure.MainCtrl = function($scope, $http, $location, $modal, $rootScope, $sce, $timeout) {
 	
 	var formatBU = function(s) {
-		return s ? s.split(" ").join(", ").replace("professional", "Professional").replace("school", "School").replace("higherEd", "Higher Ed") : "Research & Innovation Network";
+		return s ? s.split(" ").join(", ").replace("pac", "Pearson Assessment Center / Clinical").replace("isdd", "Inside Services & Direct Delivery").replace("other", "Higher Ed / Professional") : "Research & Innovation Network";
 	};
 	var formatSubSection = function(s) {
-		return s ? s.split(" ").join(", ").replace("northAmerica", "North America").replace("growthVenture", "Growth / Venture").replace("core", "Core") : "" ;
+		return s ? s.split(" ").join(", ").replace("research", "Research").replace("thoughtLeadership", "Thought Leadership").replace("innovation", "Innovation") : "" ;
 	};
 
 	$http.get('data/project_data.json')
@@ -56,9 +56,10 @@ orgStructure.MainCtrl = function($scope, $http, $location, $modal, $rootScope, $
 				leads.push({name: names[i], address: addresses[i] });
 			};
 			dataObj['leads'] = leads;
-			dataObj['related'] = (dataObj['related'] && dataObj['related'] != "") ? dataObj['related'].split(',') : [];
+			dataObj['resources'] = (dataObj['resources'] && dataObj['resources'] != "") ? dataObj['resources'].split(',') : [];
 			dataObj['projectGoal'] = $sce.trustAsHtml(dataObj['projectGoal']);
 			dataObj['projectResults'] = $sce.trustAsHtml(dataObj['projectResults']);
+			dataObj['pearsonOutcomes'] = $sce.trustAsHtml(dataObj['pearsonOutcomes']);
 			dataObj['businessUnitDisplay'] = formatBU(dataObj['businessUnit']);
 			dataObj['subSectionDisplay'] = formatSubSection(dataObj['subSection']);
 			dataObj['selectionClass'] = "";
@@ -68,8 +69,8 @@ orgStructure.MainCtrl = function($scope, $http, $location, $modal, $rootScope, $
 	};
 
 	$scope.circleHrefs = [];
-	var businessUnits = ['higherEd', 'professional', 'school'];
-	var subSections = ['northAmerica', 'core', 'growthVenture', 'northAmerica'];
+	var businessUnits = ['isdd', 'pac', 'other'];
+	var subSections = ['research', 'innovation', 'thoughtLeadership', 'research'];
 	
 	var positions = [
 		[businessUnits[2], businessUnits[0], businessUnits[1]],
@@ -81,7 +82,7 @@ orgStructure.MainCtrl = function($scope, $http, $location, $modal, $rootScope, $
 		{'id': 'DD', 'name': 'Digital Data, Analytics & Adaptive Learning' },
 		{'id': 'CC', 'name': 'College & Career Success' },
 		{'id': 'NG', 'name': 'NextGen Learning & Assessments' },
-		{'id': 'OL', 'name': 'eLearning' },
+		{'id': 'LS', 'name': 'Learning Science & Technology' },
 		{'id': 'EE', 'name': 'Educator Learning & Effectiveness' },
 		{'id': 'PD', 'name': 'Product Design Research & Efficacy' }
 	];
@@ -134,7 +135,7 @@ orgStructure.MainCtrl = function($scope, $http, $location, $modal, $rootScope, $
 		var oldBU = $scope.currBU;
 		$scope.getLocation();
 		setSections($scope.currBU ? businessUnits.indexOf($scope.currBU) : 0);
-		if (($scope.currBU == 'professional') && (oldBU == undefined)) {
+		if (($scope.currBU == 'pac') && (oldBU == undefined)) {
 			$scope.hideCircleMask = false;
 		} else {
 			if (oldBU != $scope.currBU ) {

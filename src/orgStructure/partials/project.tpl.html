@@ -6,22 +6,25 @@
 			<h2 class="allCaps">{{project.fullTitle}}</h2>
 		</div>
 		<div class="modal-body">
-			<div class="row modalRow" ng-show="project.leads && project.leads.length > 0">
+			<div class="row modalRow" ng-show="project.center">
 				<div class="icon">
-					<div class="lead">&nbsp;</div>
+					<div class="problem">&nbsp;</div>
 				</div>
 				<div class="modalRowContent">
-					<h4>Project Lead<span ng-show="project.leads.length > 1">s</span></h4>
-					<section>
-						<div class="tableWrapper">
-							<div ng-show="project.leads" class="table"> 
-								<div ng-repeat="lead in project.leads" class="tr">
-									<div class="td">{{lead.name}}</div>
-									<div class="td tableVerticalDivider"></div>
-									<div class="td"><a href="mailto:{{lead.address}}">{{lead.address}}</a></div>
-								</div>
-							</div>
-						</div>
+					<h4>Problem</h4>
+					<section ng-show="project.center">
+						<div class="sectionContent">{{project.problem}}</div>
+					</section>
+				</div>
+			</div>
+			<div class="row modalRow" ng-show="project.category">
+				<div class="icon">
+					<div class="category">&nbsp;</div>
+				</div>
+				<div class="modalRowContent">
+					<h4>Category</h4>
+					<section ng-show="project.category">
+						<div class="sectionContent">{{project.category}}</div>
 					</section>
 				</div>
 			</div>
@@ -47,6 +50,17 @@
 					</section>
 				</div>
 			</div>
+			<div class="row modalRow" ng-show="project.pearsonOutcomes">
+				<div class="icon">
+					<div class="outcomes">&nbsp;</div>
+				</div>
+				<div class="modalRowContent">
+					<h4>Pearson Outcomes</h4>
+					<section>
+						<div class="sectionContent" ng-bind-html="project.pearsonOutcomes"></div>
+					</section>
+				</div>
+			</div>
 			<div class="row modalRow" ng-show="project.internalPartners || project.externalPartners">
 				<div class="icon">
 					<div class="partners">&nbsp;</div>
@@ -59,15 +73,43 @@
 					</section>
 				</div>
 			</div>
-			<div class="row modalRow" ng-show="project.related && project.related.length > 0">
+			<div class="row modalRow" ng-show="project.resources && project.resources.length > 0">
 				<div class="icon">
 					<div class="resources">&nbsp;</div>
 				</div>
 				<div class="modalRowContent">
-					<h4>Related Materials</h4>
+					<h4>Resources</h4>
 					<section>
-						<div ng-repeat="link in project.related">
+						<div ng-repeat="link in project.resources">
 							<a href="{{link}}" target="_blank">{{link}}</a><br />
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="row modalRow" ng-show="project.whoToContact">
+				<div class="icon">
+					<div class="contact">&nbsp;</div>
+				</div>
+				<div class="modalRowContent">
+					<h4>Who to Contact</h4>
+					<section ng-show="project.whoToContact">
+						<div class="sectionContent"><a href="mailto:{{project.whoToContact}}">{{project.whoToContact}}</a></div>
+					</section>
+				</div>
+			</div>
+			<div class="row modalRow" ng-show="project.leads && project.leads.length > 0">
+				<div class="icon">
+					<div class="lead">&nbsp;</div>
+				</div>
+				<div class="modalRowContent">
+					<h4>Project Lead<span ng-show="project.leads.length > 1">s</span></h4>
+					<section>
+						<div class="tableWrapper">
+							<div ng-show="project.leads" class="table"> 
+								<div ng-repeat="lead in project.leads" class="tr">
+									<div class="td">{{lead.name}}</div>
+								</div>
+							</div>
 						</div>
 					</section>
 				</div>
@@ -76,20 +118,25 @@
 				<div class="modalRowContent">
 					<div class="tableWrapper">
 						<div class="table"> 
-							<div class="tr" ng-show="project.stage">
-								<div class="td allCaps">Stage of Project: </div>
+							<div class="tr" ng-show="project.status">
+								<div class="td allCaps">Status of Project: </div>
 								<div class="td"></div>
-								<div class="td">{{project.stage}}</div>
+								<div class="td">{{project.status}}</div>
 							</div>
 							<div class="tr">
-								<div class="td allCaps">Business Unit: </div>
+								<div class="td allCaps">Line of Business: </div>
 								<div class="td"></div>
 								<div class="td">{{project.businessUnitDisplay}}</div>
 							</div>
 							<div class="tr">
-								<div class="td allCaps">Geography: </div>
+								<div class="td allCaps">Category: </div>
 								<div class="td"></div>
 								<div class="td">{{project.subSectionDisplay}}</div>
+							</div>
+							<div class="tr">
+								<div class="td allCaps">Center: </div>
+								<div class="td"></div>
+								<div class="td">{{project.center}}</div>
 							</div>
 						</div>
 					</div>

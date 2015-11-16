@@ -55,7 +55,7 @@ $iconIndent: 110px;
     &.EE {
       background:url('../images/project_icons_lg.png')  -110px 0;
     }
-    &.OL {
+    &.LS {
       background:url('../images/project_icons_lg.png')  -165px 0;
     }
     &.NG {
@@ -106,11 +106,21 @@ $iconIndent: 110px;
       &.partners {
         background: url("../images/modal_divider_icons.png") -210px 0 no-repeat;
       }
+      // reuse partners for contact
+      &.contact {
+        background: url("../images/modal_divider_icons.png") -210px 0 no-repeat;
+      }
       &.goals {
         background: url("../images/modal_divider_icons.png") -315px 0 no-repeat;
       }
       &.resources {
         background: url("../images/modal_divider_icons.png") -420px 0 no-repeat;
+      }
+      &.problem {
+        background: url("../images/modal_divider_icons.png") -525px 0 no-repeat;
+      }
+      &.outcomes {
+        background: url("../images/modal_divider_icons.png") -630px 0 no-repeat;
       }
     }
   }

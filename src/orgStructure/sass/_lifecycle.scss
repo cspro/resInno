@@ -23,18 +23,18 @@
       background-repeat: no-repeat;
       text-align: center;
       &.ER {
-        background-color: $higherEdColor2;
+        background-color: $isddColor2;
         margin-left: 16.666%;
         margin-right: 16.666%;
       }
       &.PDR {
-        background-color: $schoolColor2;
+        background-color: $otherColor2;
         border-top-left-radius: 8px;
         border-left: none;
         margin-right: 16.666%;
       }
       &.PMR {
-        background-color: $professionalColor2;
+        background-color: $pacColor2;
         border-top-left-radius: 8px;
         border-left: none;
         margin-right: 16.666%;
@@ -136,21 +136,21 @@
         &.ER {
           .box {
             div:hover {
-              border-color: $higherEdColor2; 
+              border-color: $isddColor2; 
             }
           }
         }
         &.PDR {
           .box {
             div:hover {
-              border-color: $schoolColor2; 
+              border-color: $otherColor2; 
             }
           }
         }
         &.PMR {
           .box {
             div:hover {
-              border-color: $professionalColor2; 
+              border-color: $pacColor2; 
             }
           }
         }

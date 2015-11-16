@@ -1,9 +1,9 @@
-$higherEdColor1: darken(#df4854, 3%);
-$higherEdColor2: darken(#c92f44, 1%);
-$professionalColor1: darken(#7cb557, 8%);
-$professionalColor2: darken(#3fa85c, 5%);
-$schoolColor1: #0088b7;
-$schoolColor2: #006da3;
+$isddColor1: darken(#df4854, 3%);
+$isddColor2: darken(#c92f44, 1%);
+$pacColor1: darken(#7cb557, 8%);
+$pacColor2: darken(#3fa85c, 5%);
+$otherColor1: #0088b7;
+$otherColor2: #006da3;
 $neutralBg: #bbbbbb;
 $accentColor: #205F9F;
 
@@ -94,7 +94,7 @@ img, area, map {
 }
 
 
-#wrapper.professional {
+#wrapper.pac {
   #circleContainer {
     -o-transform:      rotate(0deg);
     -webkit-transform: rotate(0deg);
@@ -103,17 +103,17 @@ img, area, map {
     transform:         rotate(0deg);
     // -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=0, M21=0, M22=1, SizingMethod='auto expand')";
   }
-  .projectColumn.professional {
-    h2 {background-color: $professionalColor2;}
+  .projectColumn.pac {
+    h2 {background-color: $pacColor2;}
   }
-  .projectColumn.higherEd {
-    h2 {background-color: desaturate(lighten($higherEdColor2, 25%), 25%);}
+  .projectColumn.isdd {
+    h2 {background-color: desaturate(lighten($isddColor2, 25%), 25%);}
   }
-  .projectColumn.school {
-    h2 {background-color: desaturate(lighten($schoolColor2, 45%), 55%);}
+  .projectColumn.other {
+    h2 {background-color: desaturate(lighten($otherColor2, 45%), 55%);}
   }
 }
-#wrapper.higherEd {
+#wrapper.isdd {
   #circleContainer {
     -o-transform:      rotate(120deg);
     -webkit-transform: rotate(120deg);
@@ -122,17 +122,17 @@ img, area, map {
     transform:         rotate(120deg);
     // -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=-0.5000000000000004, M12=-0.8660254037844384, M21=0.8660254037844384, M22=-0.5000000000000004, SizingMethod='auto expand')";
   }
-  .projectColumn.professional {
-    h2 {background-color: desaturate(lighten($professionalColor2, 30%), 20%);}
+  .projectColumn.pac {
+    h2 {background-color: desaturate(lighten($pacColor2, 30%), 20%);}
   }
-  .projectColumn.higherEd {
-    h2 {background-color: $higherEdColor2;}
+  .projectColumn.isdd {
+    h2 {background-color: $isddColor2;}
   }
-  .projectColumn.school {
-    h2 {background-color: desaturate(lighten($schoolColor2, 45%), 55%);}
+  .projectColumn.other {
+    h2 {background-color: desaturate(lighten($otherColor2, 45%), 55%);}
   }
 }
-#wrapper.school {
+#wrapper.other {
   #circleContainer {
     -o-transform:      rotate(-120deg);
     -webkit-transform: rotate(-120deg);
@@ -141,28 +141,28 @@ img, area, map {
     transform:         rotate(-120deg);
     // -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=-0.4999999999999998, M12=0.8660254037844387, M21=-0.8660254037844387, M22=-0.4999999999999998, SizingMethod='auto expand')";
   }
-  .projectColumn.professional {
-    h2 {background-color: desaturate(lighten($professionalColor2, 30%), 20%);}
+  .projectColumn.pac {
+    h2 {background-color: desaturate(lighten($pacColor2, 30%), 20%);}
   }
-  .projectColumn.higherEd {
-    h2 {background-color: desaturate(lighten($higherEdColor2, 25%), 25%);}
+  .projectColumn.isdd {
+    h2 {background-color: desaturate(lighten($isddColor2, 25%), 25%);}
   }
-  .projectColumn.school {
-    h2 {background-color: $schoolColor2;}
+  .projectColumn.other {
+    h2 {background-color: $otherColor2;}
   }
 }
 
-#wrapper.northAmerica {
+#wrapper.research {
   .circleMask {
     background: url('../images/circle_map_mask.png') -350px 0 !important;
   }
 }
-#wrapper.growthVenture {
+#wrapper.thoughtLeadership {
   .circleMask {
     background: url('../images/circle_map_mask.png') -700px 0 !important;
   }
 }
-#wrapper.core {
+#wrapper.innovation {
   .circleMask {
     background: url('../images/circle_map_mask.png') -1050px 0 !important;
   }
@@ -202,7 +202,7 @@ img, area, map {
       font-size: 1.15em;
     }
   }
-  .projectColumn.professional {
+  .projectColumn.pac {
     padding-right: 0;
     h2 {
       -webkit-border-top-left-radius: 8px;
@@ -211,7 +211,7 @@ img, area, map {
       border-top-right-radius: 0px !important;    
     }
   }
-  .projectColumn.higherEd {
+  .projectColumn.isdd {
     padding-left: 0;
     h2 {
       -webkit-border-top-left-radius: 0px !important;
@@ -230,7 +230,7 @@ img, area, map {
       font-size: 1.25em;
     }
   }
-  .projectColumn.professional {
+  .projectColumn.pac {
     padding-right: 0;
     h2 {
       -webkit-border-top-left-radius: 10px !important;
@@ -239,7 +239,7 @@ img, area, map {
       border-top-right-radius: 0px !important;    
     }
   }
-  .projectColumn.higherEd {
+  .projectColumn.isdd {
     padding-right: 0;
     padding-left: 0;
     h2 {
@@ -249,7 +249,7 @@ img, area, map {
       border-top-left-radius: 0px !important;    
     }
   }
-  .projectColumn.school {
+  .projectColumn.other {
     padding-left: 0;
     h2 {
       -webkit-border-top-left-radius: 0px !important;

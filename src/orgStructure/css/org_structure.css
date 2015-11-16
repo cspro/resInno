@@ -1,0 +1,1472 @@
+/* line 10, ../sass/org_structure.scss */
+.container {
+  min-width: 360px;
+}
+
+/* line 14, ../sass/org_structure.scss */
+* {
+  font-family: "Open Sans" !important;
+  font-size: 14px;
+}
+
+/* line 18, ../sass/org_structure.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 21, ../sass/org_structure.scss */
+h1 {
+  font-size: 1.75em;
+}
+
+/* line 22, ../sass/org_structure.scss */
+h2 {
+  font-size: 1.35em;
+}
+
+/* line 23, ../sass/org_structure.scss */
+h3 {
+  font-size: 1.15em;
+}
+
+/* line 25, ../sass/org_structure.scss */
+img.no-resize {
+  max-width: none;
+}
+
+/* line 26, ../sass/org_structure.scss */
+img, area, map {
+  outline: none;
+}
+
+/* line 29, ../sass/org_structure.scss */
+.spaceBelow {
+  margin-bottom: 1em;
+}
+
+/* line 32, ../sass/org_structure.scss */
+.spaceAbove {
+  margin-top: 1em;
+}
+
+/* line 35, ../sass/org_structure.scss */
+.allCaps {
+  text-transform: uppercase;
+}
+
+/* line 38, ../sass/org_structure.scss */
+.tooltip-inner {
+  max-width: 300px;
+  min-width: 150px;
+  font-size: 10px !important;
+}
+
+/* line 1, ../sass/_upper_content.scss */
+#upperContent {
+  position: relative;
+  padding: 2em 1em 0;
+  text-align: center;
+}
+/* line 5, ../sass/_upper_content.scss */
+#upperContent h1, #upperContent h2, #upperContent h3 {
+  text-transform: uppercase;
+}
+/* line 8, ../sass/_upper_content.scss */
+#upperContent h1 {
+  margin: 0;
+  color: #205F9F;
+}
+/* line 12, ../sass/_upper_content.scss */
+#upperContent h2 {
+  margin-top: 0;
+}
+/* line 15, ../sass/_upper_content.scss */
+#upperContent #resetButton {
+  display: block;
+  position: absolute;
+  top: 1.5em;
+  left: 1.5em;
+  z-index: 1001;
+  width: 50px;
+  height: 50px;
+  background: url("../images/reset.png") no-repeat;
+  opacity: 0.15;
+  cursor: pointer;
+}
+/* line 26, ../sass/_upper_content.scss */
+#upperContent #resetButton:hover {
+  opacity: 0.25;
+}
+/* line 29, ../sass/_upper_content.scss */
+#upperContent #resetButton.ng-hide {
+  opacity: 0;
+}
+/* line 32, ../sass/_upper_content.scss */
+#upperContent #resetButton.ng-hide-add, #upperContent #resetButton.ng-hide-remove {
+  transition: 0.25s ease-in-out all;
+  display: block !important;
+}
+/* line 37, ../sass/_upper_content.scss */
+#upperContent div.copy {
+  display: table;
+  height: 280px;
+  padding: 1em;
+}
+/* line 41, ../sass/_upper_content.scss */
+#upperContent div.copy div.copyRow {
+  display: table-row;
+}
+/* line 43, ../sass/_upper_content.scss */
+#upperContent div.copy div.copyRow div.copyCell {
+  text-align: left;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 52, ../sass/_upper_content.scss */
+.copyWrapper {
+  clear: both;
+  position: relative;
+}
+/* line 55, ../sass/_upper_content.scss */
+.copyWrapper .copyToggle {
+  position: relative;
+  font-size: 10px;
+  padding: 2px 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  float: right;
+  border: 1px solid #fff;
+  background: #bbbbbb;
+  -moz-box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.3);
+  -webkit-box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.3);
+  box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.3);
+  color: #fff;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+/* line 71, ../sass/_upper_content.scss */
+.copyWrapper .copyToggle:hover {
+  background: #7b7b7b;
+}
+/* line 75, ../sass/_upper_content.scss */
+.copyWrapper .copy {
+  display: none;
+  position: relative;
+  clear: left;
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+  min-width: 300px;
+}
+/* line 82, ../sass/_upper_content.scss */
+.copyWrapper .copy h1, .copyWrapper .copy h2 {
+  margin-bottom: 0;
+}
+/* line 85, ../sass/_upper_content.scss */
+.copyWrapper .copy p {
+  margin-top: 1em;
+}
+/* line 88, ../sass/_upper_content.scss */
+.copyWrapper .copy ul {
+  margin: 0;
+  padding: 0 1.5em;
+  max-width: 600px;
+}
+/* line 94, ../sass/_upper_content.scss */
+.copyWrapper .copy .iconKey li {
+  display: block;
+  margin: 0 0 3px 0;
+  padding: 0 1em 0 0;
+  list-style-type: none;
+  line-height: 20px;
+  vertical-align: top;
+  font-size: 0.75em;
+  background-color: #e1e1e1;
+  border-radius: 3px;
+  width: 270px;
+  cursor: pointer;
+}
+/* line 106, ../sass/_upper_content.scss */
+.copyWrapper .copy .iconKey li:hover {
+  background-color: #c8c8c8;
+}
+/* line 109, ../sass/_upper_content.scss */
+.copyWrapper .copy .iconKey li:active {
+  background-color: #aeaeae;
+}
+/* line 112, ../sass/_upper_content.scss */
+.copyWrapper .copy .iconKey li.selected {
+  background-color: #a2a2a2;
+  color: #fbfbfb;
+}
+/* line 116, ../sass/_upper_content.scss */
+.copyWrapper .copy .iconKey li div {
+  display: inline-block;
+  padding: 1px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0 3px -6px 0;
+  width: 24px;
+  height: 21px;
+  background-color: #959595;
+}
+/* line 125, ../sass/_upper_content.scss */
+.copyWrapper .copy .iconKey li div span {
+  display: block;
+  width: 18px;
+  height: 15px;
+  float: left;
+  margin: 2px;
+  background-size: 100%;
+  background-color: transparent;
+}
+
+/* line 46, ../sass/org_structure.scss */
+#circleWrapper {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+}
+/* line 51, ../sass/org_structure.scss */
+#circleWrapper #mapShim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 350px;
+  height: 350px;
+}
+/* line 59, ../sass/org_structure.scss */
+#circleWrapper #circleContainer {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  left: 0;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+  overflow: hidden;
+  padding: 0;
+}
+/* line 71, ../sass/org_structure.scss */
+#circleWrapper .circleMask {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: url("../images/circle_map_mask.png") 0 0;
+}
+/* line 80, ../sass/org_structure.scss */
+#circleWrapper .circleMask.ng-hide-add, #circleWrapper .circleMask.ng-hide-remove {
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  display: block !important;
+  opacity: 1;
+}
+/* line 87, ../sass/org_structure.scss */
+#circleWrapper .circleMask.ng-hide {
+  opacity: 0;
+}
+/* line 90, ../sass/org_structure.scss */
+#circleWrapper .circleMask.transitioning {
+  background: url("../images/circle_map_mask.png") 0 0 !important;
+}
+
+/* line 98, ../sass/org_structure.scss */
+#wrapper.pac #circleContainer {
+  -o-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+/* line 107, ../sass/org_structure.scss */
+#wrapper.pac .projectColumn.pac h2 {
+  background-color: #389552;
+}
+/* line 110, ../sass/org_structure.scss */
+#wrapper.pac .projectColumn.isdd h2 {
+  background-color: #d39fa6;
+}
+/* line 113, ../sass/org_structure.scss */
+#wrapper.pac .projectColumn.other h2 {
+  background-color: #aacddf;
+}
+
+/* line 117, ../sass/org_structure.scss */
+#wrapper.isdd #circleContainer {
+  -o-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  ms-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+/* line 126, ../sass/org_structure.scss */
+#wrapper.isdd .projectColumn.pac h2 {
+  background-color: #a0c7ab;
+}
+/* line 129, ../sass/org_structure.scss */
+#wrapper.isdd .projectColumn.isdd h2 {
+  background-color: #c52e43;
+}
+/* line 132, ../sass/org_structure.scss */
+#wrapper.isdd .projectColumn.other h2 {
+  background-color: #aacddf;
+}
+
+/* line 136, ../sass/org_structure.scss */
+#wrapper.other #circleContainer {
+  -o-transform: rotate(-120deg);
+  -webkit-transform: rotate(-120deg);
+  -ms-transform: rotate(-120deg);
+  ms-transform: rotate(-120deg);
+  transform: rotate(-120deg);
+}
+/* line 145, ../sass/org_structure.scss */
+#wrapper.other .projectColumn.pac h2 {
+  background-color: #a0c7ab;
+}
+/* line 148, ../sass/org_structure.scss */
+#wrapper.other .projectColumn.isdd h2 {
+  background-color: #d39fa6;
+}
+/* line 151, ../sass/org_structure.scss */
+#wrapper.other .projectColumn.other h2 {
+  background-color: #006da3;
+}
+
+/* line 156, ../sass/org_structure.scss */
+#wrapper.research .circleMask {
+  background: url("../images/circle_map_mask.png") -350px 0 !important;
+}
+
+/* line 161, ../sass/org_structure.scss */
+#wrapper.thoughtLeadership .circleMask {
+  background: url("../images/circle_map_mask.png") -700px 0 !important;
+}
+
+/* line 166, ../sass/org_structure.scss */
+#wrapper.innovation .circleMask {
+  background: url("../images/circle_map_mask.png") -1050px 0 !important;
+}
+
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+@media (min-width: 721px) {
+  /* line 179, ../sass/org_structure.scss */
+  #circleWrapper {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 2em;
+  }
+
+  /* line 185, ../sass/org_structure.scss */
+  .copyWrapper {
+    clear: none;
+  }
+  /* line 187, ../sass/org_structure.scss */
+  .copyWrapper .copyToggle {
+    display: none !important;
+  }
+  /* line 190, ../sass/org_structure.scss */
+  .copyWrapper .copy {
+    display: table !important;
+    clear: none;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* line 200, ../sass/org_structure.scss */
+  .projectColumns h2 {
+    padding: 6px;
+    font-size: 1.15em;
+  }
+
+  /* line 205, ../sass/org_structure.scss */
+  .projectColumn.pac {
+    padding-right: 0;
+  }
+  /* line 207, ../sass/org_structure.scss */
+  .projectColumn.pac h2 {
+    -webkit-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+  }
+
+  /* line 214, ../sass/org_structure.scss */
+  .projectColumn.isdd {
+    padding-left: 0;
+  }
+  /* line 216, ../sass/org_structure.scss */
+  .projectColumn.isdd h2 {
+    -webkit-border-top-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    -webkit-border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
+/* Medium devices (desktops and up) */
+@media (min-width: 992px) {
+  /* line 228, ../sass/org_structure.scss */
+  .projectColumns h2 {
+    padding: 10px;
+    font-size: 1.25em;
+  }
+
+  /* line 233, ../sass/org_structure.scss */
+  .projectColumn.pac {
+    padding-right: 0;
+  }
+  /* line 235, ../sass/org_structure.scss */
+  .projectColumn.pac h2 {
+    -webkit-border-top-left-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+    -webkit-border-top-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+  }
+
+  /* line 242, ../sass/org_structure.scss */
+  .projectColumn.isdd {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* line 245, ../sass/org_structure.scss */
+  .projectColumn.isdd h2 {
+    -webkit-border-top-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    -webkit-border-top-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+  }
+
+  /* line 252, ../sass/org_structure.scss */
+  .projectColumn.other {
+    padding-left: 0;
+  }
+  /* line 254, ../sass/org_structure.scss */
+  .projectColumn.other h2 {
+    -webkit-border-top-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    -webkit-border-top-right-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+  }
+
+  /* line 261, ../sass/org_structure.scss */
+  .hiddenAtLarge {
+    /* Fix for IE10 clearing issue */
+    display: none !important;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+/* line 1, ../sass/_project_list.scss */
+.projectColumns {
+  margin-right: -1px;
+  margin-left: -1px;
+  background: #f1f1f1;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-bottom: 4px;
+}
+/* line 11, ../sass/_project_list.scss */
+.projectColumns .projectColumn {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* line 14, ../sass/_project_list.scss */
+.projectColumns .projectColumn h2 {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  border-right: 1px solid #fff;
+}
+/* line 26, ../sass/_project_list.scss */
+.projectColumns .projectColumn:last-child h2 {
+  border-right: none;
+  margin-right: -1px;
+}
+/* line 32, ../sass/_project_list.scss */
+.projectColumns .projectColumn.pac h2 {
+  background-color: #389552;
+}
+/* line 37, ../sass/_project_list.scss */
+.projectColumns .projectColumn.isdd h2 {
+  background-color: #c52e43;
+}
+/* line 42, ../sass/_project_list.scss */
+.projectColumns .projectColumn.other h2 {
+  background-color: #006da3;
+}
+
+/* line 50, ../sass/_project_list.scss */
+.projectList {
+  margin: 0;
+  padding: 4px;
+  line-height: 1em;
+}
+/* line 54, ../sass/_project_list.scss */
+.projectList li {
+  list-style-type: none;
+  display: block;
+  position: relative;
+  float: left;
+  font-size: 10px;
+  width: 12.5%;
+  min-width: 29px;
+  max-width: 45px;
+  text-align: center;
+  padding: 1px;
+}
+/* line 66, ../sass/_project_list.scss */
+.projectList li .projectLink {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 30px;
+  font-size: 1000px;
+  line-height: 30px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 1px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #bbbbbb;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+/* line 80, ../sass/_project_list.scss */
+.projectList li .projectLink span {
+  width: 100%;
+  height: 40px;
+}
+/* line 84, ../sass/_project_list.scss */
+.projectList li .projectLink:hover, .projectList li .projectLink.selected {
+  border-color: white;
+  background-color: #dadada;
+  -moz-box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.5);
+  -webkit-box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.5);
+  box-shadow: 0px 1px 3px 2px rgba(68, 68, 68, 0.5);
+  z-index: 900;
+}
+/* line 92, ../sass/_project_list.scss */
+.projectList li .projectLink.selected {
+  border-width: 2px;
+  border-color: white;
+  padding: 0;
+}
+/* line 97, ../sass/_project_list.scss */
+.projectList li .projectLink:active {
+  border-color: white;
+  -moz-box-shadow: 0px 0px 2px 0px rgba(68, 68, 68, 0.5);
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(68, 68, 68, 0.5);
+  box-shadow: 0px 0px 2px 0px rgba(68, 68, 68, 0.5);
+  z-index: 900;
+}
+
+/* line 113, ../sass/_project_list.scss */
+span.CC, a.CC {
+  background: #bbbbbb url("../images/project_icon_CC.png") 50% 50% no-repeat;
+}
+/* line 116, ../sass/_project_list.scss */
+span.DD, a.DD {
+  background: #bbbbbb url("../images/project_icon_DD.png") 50% 50% no-repeat;
+}
+/* line 119, ../sass/_project_list.scss */
+span.EE, a.EE {
+  background: #bbbbbb url("../images/project_icon_EE.png") 50% 50% no-repeat;
+}
+/* line 122, ../sass/_project_list.scss */
+span.LS, a.LS {
+  background: #bbbbbb url("../images/project_icon_LS.png") 50% 50% no-repeat;
+}
+/* line 125, ../sass/_project_list.scss */
+span.NG, a.NG {
+  background: #bbbbbb url("../images/project_icon_NG.png") 50% 50% no-repeat;
+}
+/* line 128, ../sass/_project_list.scss */
+span.PD, a.PD {
+  background: #bbbbbb url("../images/project_icon_PD.png") 50% 50% no-repeat;
+}
+
+/* line 134, ../sass/_project_list.scss */
+.projectColumn.pac .projectLink.selected {
+  border-color: #39ae59;
+}
+
+/* line 139, ../sass/_project_list.scss */
+.projectColumn.isdd .projectLink.selected {
+  border-color: #d65062;
+}
+
+/* line 144, ../sass/_project_list.scss */
+.projectColumn.other .projectLink.selected {
+  border-color: #008fd6;
+}
+
+/* line 151, ../sass/_project_list.scss */
+#wrapper.research .projectLink {
+  background-color: #dadada;
+}
+/* line 153, ../sass/_project_list.scss */
+#wrapper.research .projectLink:hover, #wrapper.research .projectLink.selected {
+  background-color: gainsboro;
+}
+/* line 157, ../sass/_project_list.scss */
+#wrapper.research .projectLink.research {
+  background-color: #9a9a9a;
+}
+/* line 159, ../sass/_project_list.scss */
+#wrapper.research .projectLink.research:hover, #wrapper.research .projectLink.research.selected {
+  background-color: silver;
+}
+/* line 165, ../sass/_project_list.scss */
+#wrapper.research.pac .projectColumn.pac .projectLink.research {
+  background-color: #689e45;
+}
+/* line 167, ../sass/_project_list.scss */
+#wrapper.research.pac .projectColumn.pac .projectLink.research:hover, #wrapper.research.pac .projectColumn.pac .projectLink.research.selected {
+  background-color: #afca9e;
+}
+/* line 175, ../sass/_project_list.scss */
+#wrapper.research.isdd .projectColumn.isdd .projectLink.research {
+  background-color: #dd3b48;
+}
+/* line 177, ../sass/_project_list.scss */
+#wrapper.research.isdd .projectColumn.isdd .projectLink.research:hover, #wrapper.research.isdd .projectColumn.isdd .projectLink.research.selected {
+  background-color: #e4949b;
+}
+/* line 185, ../sass/_project_list.scss */
+#wrapper.research.other .projectColumn.other .projectLink.research {
+  background-color: #0088b7;
+}
+/* line 187, ../sass/_project_list.scss */
+#wrapper.research.other .projectColumn.other .projectLink.research:hover, #wrapper.research.other .projectColumn.other .projectLink.research.selected {
+  background-color: #2fb2df;
+}
+
+/* line 195, ../sass/_project_list.scss */
+#wrapper.thoughtLeadership .projectLink {
+  background-color: #dadada;
+}
+/* line 197, ../sass/_project_list.scss */
+#wrapper.thoughtLeadership .projectLink:hover, #wrapper.thoughtLeadership .projectLink.selected {
+  background-color: gainsboro;
+}
+/* line 201, ../sass/_project_list.scss */
+#wrapper.thoughtLeadership .projectLink.thoughtLeadership {
+  background-color: #9a9a9a;
+}
+/* line 204, ../sass/_project_list.scss */
+#wrapper.thoughtLeadership .projectLink.thoughtLeadership:hover, #wrapper.thoughtLeadership .projectLink.thoughtLeadership.selected {
+  background-color: silver;
+}
+/* line 210, ../sass/_project_list.scss */
+#wrapper.thoughtLeadership.pac .projectColumn.pac .projectLink.thoughtLeadership {
+  background-color: #689e45;
+}
+/* line 212, ../sass/_project_list.scss */
+#wrapper.thoughtLeadership.pac .projectColumn.pac .projectLink.thoughtLeadership:hover, #wrapper.thoughtLeadership.pac .projectColumn.pac .projectLink.thoughtLeadership.selected {
+  background-color: #afca9e;
+}
+/* line 220, ../sass/_project_list.scss */
+#wrapper.thoughtLeadership.isdd .projectColumn.isdd .projectLink.thoughtLeadership {
+  background-color: #dd3b48;
+}
+/* line 222, ../sass/_project_list.scss */
+#wrapper.thoughtLeadership.isdd .projectColumn.isdd .projectLink.thoughtLeadership:hover, #wrapper.thoughtLeadership.isdd .projectColumn.isdd .projectLink.thoughtLeadership.selected {
+  background-color: #e4949b;
+}
+/* line 230, ../sass/_project_list.scss */
+#wrapper.thoughtLeadership.other .projectColumn.other .projectLink.thoughtLeadership {
+  background-color: #0088b7;
+}
+/* line 232, ../sass/_project_list.scss */
+#wrapper.thoughtLeadership.other .projectColumn.other .projectLink.thoughtLeadership:hover, #wrapper.thoughtLeadership.other .projectColumn.other .projectLink.thoughtLeadership.selected {
+  background-color: #2fb2df;
+}
+
+/* line 240, ../sass/_project_list.scss */
+#wrapper.innovation .projectLink {
+  background-color: #dadada;
+}
+/* line 242, ../sass/_project_list.scss */
+#wrapper.innovation .projectLink:hover, #wrapper.innovation .projectLink.selected {
+  background-color: gainsboro;
+}
+/* line 246, ../sass/_project_list.scss */
+#wrapper.innovation .projectLink.innovation {
+  background-color: #9a9a9a;
+}
+/* line 248, ../sass/_project_list.scss */
+#wrapper.innovation .projectLink.innovation:hover, #wrapper.innovation .projectLink.innovation.selected {
+  background-color: silver;
+}
+/* line 254, ../sass/_project_list.scss */
+#wrapper.innovation.pac .projectColumn.pac .projectLink.innovation {
+  background-color: #689e45;
+}
+/* line 256, ../sass/_project_list.scss */
+#wrapper.innovation.pac .projectColumn.pac .projectLink.innovation:hover, #wrapper.innovation.pac .projectColumn.pac .projectLink.innovation.selected {
+  background-color: #afca9e;
+}
+/* line 264, ../sass/_project_list.scss */
+#wrapper.innovation.isdd .projectColumn.isdd .projectLink.innovation {
+  background-color: #dd3b48;
+}
+/* line 266, ../sass/_project_list.scss */
+#wrapper.innovation.isdd .projectColumn.isdd .projectLink.innovation:hover, #wrapper.innovation.isdd .projectColumn.isdd .projectLink.innovation.selected {
+  background-color: #e4949b;
+}
+/* line 274, ../sass/_project_list.scss */
+#wrapper.innovation.other .projectColumn.other .projectLink.innovation {
+  background-color: #0088b7;
+}
+/* line 276, ../sass/_project_list.scss */
+#wrapper.innovation.other .projectColumn.other .projectLink.innovation:hover, #wrapper.innovation.other .projectColumn.other .projectLink.innovation.selected {
+  background-color: #2fb2df;
+}
+
+/**
+ *   Center Icons - behave like geographies
+ */
+/* line 289, ../sass/_project_list.scss */
+#wrapper.CC .projectLink {
+  background-color: #dadada;
+}
+/* line 291, ../sass/_project_list.scss */
+#wrapper.CC .projectLink:hover, #wrapper.CC .projectLink.selected {
+  background-color: gainsboro;
+}
+/* line 295, ../sass/_project_list.scss */
+#wrapper.CC .projectLink.CC {
+  background-color: #9a9a9a;
+}
+/* line 297, ../sass/_project_list.scss */
+#wrapper.CC .projectLink.CC:hover, #wrapper.CC .projectLink.CC.selected {
+  background-color: silver;
+}
+/* line 302, ../sass/_project_list.scss */
+#wrapper.CC .projectColumn.pac .projectLink.CC {
+  background-color: #689e45;
+}
+/* line 304, ../sass/_project_list.scss */
+#wrapper.CC .projectColumn.pac .projectLink.CC:hover, #wrapper.CC .projectColumn.pac .projectLink.CC.selected {
+  background-color: #afca9e;
+}
+/* line 310, ../sass/_project_list.scss */
+#wrapper.CC .projectColumn.isdd .projectLink.CC {
+  background-color: #dd3b48;
+}
+/* line 312, ../sass/_project_list.scss */
+#wrapper.CC .projectColumn.isdd .projectLink.CC:hover, #wrapper.CC .projectColumn.isdd .projectLink.CC.selected {
+  background-color: #e4949b;
+}
+/* line 318, ../sass/_project_list.scss */
+#wrapper.CC .projectColumn.other .projectLink.CC {
+  background-color: #0088b7;
+}
+/* line 320, ../sass/_project_list.scss */
+#wrapper.CC .projectColumn.other .projectLink.CC:hover, #wrapper.CC .projectColumn.other .projectLink.CC.selected {
+  background-color: #2fb2df;
+}
+
+/* line 328, ../sass/_project_list.scss */
+#wrapper.DD .projectLink {
+  background-color: #dadada;
+}
+/* line 330, ../sass/_project_list.scss */
+#wrapper.DD .projectLink:hover, #wrapper.DD .projectLink.selected {
+  background-color: gainsboro;
+}
+/* line 334, ../sass/_project_list.scss */
+#wrapper.DD .projectLink.DD {
+  background-color: #9a9a9a;
+}
+/* line 336, ../sass/_project_list.scss */
+#wrapper.DD .projectLink.DD:hover, #wrapper.DD .projectLink.DD.selected {
+  background-color: silver;
+}
+/* line 341, ../sass/_project_list.scss */
+#wrapper.DD .projectColumn.pac .projectLink.DD {
+  background-color: #689e45;
+}
+/* line 343, ../sass/_project_list.scss */
+#wrapper.DD .projectColumn.pac .projectLink.DD:hover, #wrapper.DD .projectColumn.pac .projectLink.DD.selected {
+  background-color: #afca9e;
+}
+/* line 349, ../sass/_project_list.scss */
+#wrapper.DD .projectColumn.isdd .projectLink.DD {
+  background-color: #dd3b48;
+}
+/* line 351, ../sass/_project_list.scss */
+#wrapper.DD .projectColumn.isdd .projectLink.DD:hover, #wrapper.DD .projectColumn.isdd .projectLink.DD.selected {
+  background-color: #e4949b;
+}
+/* line 357, ../sass/_project_list.scss */
+#wrapper.DD .projectColumn.other .projectLink.DD {
+  background-color: #0088b7;
+}
+/* line 359, ../sass/_project_list.scss */
+#wrapper.DD .projectColumn.other .projectLink.DD:hover, #wrapper.DD .projectColumn.other .projectLink.DD.selected {
+  background-color: #2fb2df;
+}
+
+/* line 366, ../sass/_project_list.scss */
+#wrapper.EE .projectLink {
+  background-color: #dadada;
+}
+/* line 368, ../sass/_project_list.scss */
+#wrapper.EE .projectLink:hover, #wrapper.EE .projectLink.selected {
+  background-color: gainsboro;
+}
+/* line 372, ../sass/_project_list.scss */
+#wrapper.EE .projectLink.EE {
+  background-color: #9a9a9a;
+}
+/* line 374, ../sass/_project_list.scss */
+#wrapper.EE .projectLink.EE:hover, #wrapper.EE .projectLink.EE.selected {
+  background-color: silver;
+}
+/* line 379, ../sass/_project_list.scss */
+#wrapper.EE .projectColumn.pac .projectLink.EE {
+  background-color: #689e45;
+}
+/* line 381, ../sass/_project_list.scss */
+#wrapper.EE .projectColumn.pac .projectLink.EE:hover, #wrapper.EE .projectColumn.pac .projectLink.EE.selected {
+  background-color: #afca9e;
+}
+/* line 387, ../sass/_project_list.scss */
+#wrapper.EE .projectColumn.isdd .projectLink.EE {
+  background-color: #dd3b48;
+}
+/* line 389, ../sass/_project_list.scss */
+#wrapper.EE .projectColumn.isdd .projectLink.EE:hover, #wrapper.EE .projectColumn.isdd .projectLink.EE.selected {
+  background-color: #e4949b;
+}
+/* line 395, ../sass/_project_list.scss */
+#wrapper.EE .projectColumn.other .projectLink.EE {
+  background-color: #0088b7;
+}
+/* line 397, ../sass/_project_list.scss */
+#wrapper.EE .projectColumn.other .projectLink.EE:hover, #wrapper.EE .projectColumn.other .projectLink.EE.selected {
+  background-color: #2fb2df;
+}
+
+/* line 404, ../sass/_project_list.scss */
+#wrapper.NG .projectLink {
+  background-color: #dadada;
+}
+/* line 406, ../sass/_project_list.scss */
+#wrapper.NG .projectLink:hover, #wrapper.NG .projectLink.selected {
+  background-color: gainsboro;
+}
+/* line 410, ../sass/_project_list.scss */
+#wrapper.NG .projectLink.NG {
+  background-color: #9a9a9a;
+}
+/* line 412, ../sass/_project_list.scss */
+#wrapper.NG .projectLink.NG:hover, #wrapper.NG .projectLink.NG.selected {
+  background-color: silver;
+}
+/* line 417, ../sass/_project_list.scss */
+#wrapper.NG .projectColumn.pac .projectLink.NG {
+  background-color: #689e45;
+}
+/* line 419, ../sass/_project_list.scss */
+#wrapper.NG .projectColumn.pac .projectLink.NG:hover, #wrapper.NG .projectColumn.pac .projectLink.NG.selected {
+  background-color: #afca9e;
+}
+/* line 425, ../sass/_project_list.scss */
+#wrapper.NG .projectColumn.isdd .projectLink.NG {
+  background-color: #dd3b48;
+}
+/* line 427, ../sass/_project_list.scss */
+#wrapper.NG .projectColumn.isdd .projectLink.NG:hover, #wrapper.NG .projectColumn.isdd .projectLink.NG.selected {
+  background-color: #e4949b;
+}
+/* line 433, ../sass/_project_list.scss */
+#wrapper.NG .projectColumn.other .projectLink.NG {
+  background-color: #0088b7;
+}
+/* line 435, ../sass/_project_list.scss */
+#wrapper.NG .projectColumn.other .projectLink.NG:hover, #wrapper.NG .projectColumn.other .projectLink.NG.selected {
+  background-color: #2fb2df;
+}
+
+/* line 442, ../sass/_project_list.scss */
+#wrapper.LS .projectLink {
+  background-color: #dadada;
+}
+/* line 444, ../sass/_project_list.scss */
+#wrapper.LS .projectLink:hover, #wrapper.LS .projectLink.selected {
+  background-color: gainsboro;
+}
+/* line 448, ../sass/_project_list.scss */
+#wrapper.LS .projectLink.LS {
+  background-color: #9a9a9a;
+}
+/* line 450, ../sass/_project_list.scss */
+#wrapper.LS .projectLink.LS:hover, #wrapper.LS .projectLink.LS.selected {
+  background-color: silver;
+}
+/* line 455, ../sass/_project_list.scss */
+#wrapper.LS .projectColumn.pac .projectLink.LS {
+  background-color: #689e45;
+}
+/* line 457, ../sass/_project_list.scss */
+#wrapper.LS .projectColumn.pac .projectLink.LS:hover, #wrapper.LS .projectColumn.pac .projectLink.LS.selected {
+  background-color: #afca9e;
+}
+/* line 463, ../sass/_project_list.scss */
+#wrapper.LS .projectColumn.isdd .projectLink.LS {
+  background-color: #dd3b48;
+}
+/* line 465, ../sass/_project_list.scss */
+#wrapper.LS .projectColumn.isdd .projectLink.LS:hover, #wrapper.LS .projectColumn.isdd .projectLink.LS.selected {
+  background-color: #e4949b;
+}
+/* line 471, ../sass/_project_list.scss */
+#wrapper.LS .projectColumn.other .projectLink.LS {
+  background-color: #0088b7;
+}
+/* line 473, ../sass/_project_list.scss */
+#wrapper.LS .projectColumn.other .projectLink.LS:hover, #wrapper.LS .projectColumn.other .projectLink.LS.selected {
+  background-color: #2fb2df;
+}
+
+/* ==================================
+ * Override Bootstrap styles 
+ * ================================ */
+@media screen and (min-width: 768px) {
+  /* line 9, ../sass/_modal.scss */
+  .modal-dialog {
+    width: auto;
+    max-width: 1250px;
+    padding: 0em 3em;
+    margin-bottom: 1em;
+  }
+}
+/* line 22, ../sass/_modal.scss */
+.modal-header {
+  min-height: 48px;
+  padding: 1em 1.5em;
+}
+
+/* line 28, ../sass/_modal.scss */
+.modal-header .close {
+  margin-top: -2px;
+}
+
+/* line 31, ../sass/_modal.scss */
+.modal-body {
+  background-color: #F1F1F1;
+  padding: 0 1.5em;
+}
+
+/* line 35, ../sass/_modal.scss */
+.modal-footer {
+  margin-top: 0;
+  padding: 0.5em;
+}
+
+/* ================================== */
+/* line 43, ../sass/_modal.scss */
+.modal-header .icon {
+  display: none;
+  width: 55px;
+  height: 48px;
+  float: left;
+  margin-left: 20px;
+}
+/* line 49, ../sass/_modal.scss */
+.modal-header .icon.CC {
+  background: url("../images/project_icons_lg.png") 0 0;
+}
+/* line 52, ../sass/_modal.scss */
+.modal-header .icon.DD {
+  background: url("../images/project_icons_lg.png") -55px 0;
+}
+/* line 55, ../sass/_modal.scss */
+.modal-header .icon.EE {
+  background: url("../images/project_icons_lg.png") -110px 0;
+}
+/* line 58, ../sass/_modal.scss */
+.modal-header .icon.LS {
+  background: url("../images/project_icons_lg.png") -165px 0;
+}
+/* line 61, ../sass/_modal.scss */
+.modal-header .icon.NG {
+  background: url("../images/project_icons_lg.png") -220px 0;
+}
+/* line 64, ../sass/_modal.scss */
+.modal-header .icon.PD {
+  background: url("../images/project_icons_lg.png") -275px 0;
+}
+/* line 69, ../sass/_modal.scss */
+.modal-header h2 {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.65em;
+  color: #205F9F;
+  line-height: 24px;
+  height: 48px;
+  margin: 0;
+}
+
+/* line 81, ../sass/_modal.scss */
+.modalRow {
+  clear: both;
+  background: url("../images/modal_divider.png") top left no-repeat;
+  background-size: 100% 6px;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+/* line 87, ../sass/_modal.scss */
+.modalRow.footerRow {
+  background-color: #d7d7d7;
+}
+/* line 90, ../sass/_modal.scss */
+.modalRow .icon {
+  display: none;
+  float: left;
+  width: 105px;
+  height: 87px;
+  margin-left: 1em;
+  background: url("../images/modal_divider_icon_bg.png") top left no-repeat;
+}
+/* line 97, ../sass/_modal.scss */
+.modalRow .icon div {
+  width: 105px;
+  height: 87px;
+}
+/* line 100, ../sass/_modal.scss */
+.modalRow .icon div.lead {
+  background: url("../images/modal_divider_icons.png") 0 0 no-repeat;
+}
+/* line 103, ../sass/_modal.scss */
+.modalRow .icon div.results {
+  background: url("../images/modal_divider_icons.png") -105px 0 no-repeat;
+}
+/* line 106, ../sass/_modal.scss */
+.modalRow .icon div.partners {
+  background: url("../images/modal_divider_icons.png") -210px 0 no-repeat;
+}
+/* line 110, ../sass/_modal.scss */
+.modalRow .icon div.contact {
+  background: url("../images/modal_divider_icons.png") -210px 0 no-repeat;
+}
+/* line 113, ../sass/_modal.scss */
+.modalRow .icon div.goals {
+  background: url("../images/modal_divider_icons.png") -315px 0 no-repeat;
+}
+/* line 116, ../sass/_modal.scss */
+.modalRow .icon div.resources {
+  background: url("../images/modal_divider_icons.png") -420px 0 no-repeat;
+}
+/* line 119, ../sass/_modal.scss */
+.modalRow .icon div.problem {
+  background: url("../images/modal_divider_icons.png") -525px 0 no-repeat;
+}
+/* line 122, ../sass/_modal.scss */
+.modalRow .icon div.outcomes {
+  background: url("../images/modal_divider_icons.png") -630px 0 no-repeat;
+}
+
+/* line 128, ../sass/_modal.scss */
+.modalRowContent {
+  display: block;
+  padding: 1.5em 4em 1.5em 1.5em;
+}
+/* line 131, ../sass/_modal.scss */
+.modalRowContent h4 {
+  margin: 0 0 0.5em 0;
+  padding-top: 0.5em;
+  text-transform: uppercase;
+  color: #205F9F;
+}
+/* line 136, ../sass/_modal.scss */
+.modalRowContent h4:first-child {
+  padding-top: 0;
+}
+/* line 139, ../sass/_modal.scss */
+.modalRowContent h4 span {
+  font-size: inherit;
+}
+/* line 143, ../sass/_modal.scss */
+.modalRowContent section {
+  padding-left: 1.5em;
+}
+/* line 146, ../sass/_modal.scss */
+.modalRowContent .sectionContent, .modalRowContent p {
+  margin-bottom: 0.5em;
+}
+/* line 148, ../sass/_modal.scss */
+.modalRowContent .sectionContent ol, .modalRowContent .sectionContent ul, .modalRowContent p ol, .modalRowContent p ul {
+  padding-left: 1.5em;
+}
+/* line 150, ../sass/_modal.scss */
+.modalRowContent .sectionContent ol li, .modalRowContent .sectionContent ul li, .modalRowContent p ol li, .modalRowContent p ul li {
+  margin-bottom: 0.5em;
+}
+/* line 154, ../sass/_modal.scss */
+.modalRowContent .sectionContent:last-child, .modalRowContent p:last-child {
+  margin-bottom: 0;
+}
+/* line 158, ../sass/_modal.scss */
+.modalRowContent .indent {
+  margin-left: 1.5em;
+}
+/* line 161, ../sass/_modal.scss */
+.modalRowContent .tableWrapper {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+/* line 164, ../sass/_modal.scss */
+.modalRowContent .tableWrapper .table {
+  display: table;
+  width: auto !important;
+}
+/* line 168, ../sass/_modal.scss */
+.modalRowContent .tableWrapper .table.indent .td:first-child {
+  padding-left: 1.5em;
+}
+/* line 173, ../sass/_modal.scss */
+.modalRowContent .tableWrapper .tr {
+  display: table-row;
+}
+/* line 176, ../sass/_modal.scss */
+.modalRowContent .tableWrapper .td {
+  display: table-cell;
+}
+/* line 178, ../sass/_modal.scss */
+.modalRowContent .tableWrapper .td:first-child {
+  padding: 0 0.5em 0 0;
+}
+/* line 181, ../sass/_modal.scss */
+.modalRowContent .tableWrapper .td:last-child {
+  padding: 0 0 0 0.5em;
+}
+/* line 184, ../sass/_modal.scss */
+.modalRowContent .tableWrapper .td.tableVerticalDivider {
+  border-top: 1px solid #F1F1F1;
+  border-bottom: 1px solid #F1F1F1;
+  background-color: #b1b1b1;
+  width: 1px;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 197, ../sass/_modal.scss */
+  .modal-dialog .icon {
+    display: block !important;
+  }
+  /* line 201, ../sass/_modal.scss */
+  .modal-dialog .modal-header h2, .modal-dialog .modal-header h3 {
+    margin-left: 110px;
+  }
+  /* line 204, ../sass/_modal.scss */
+  .modal-dialog .modal-header h2 {
+    padding-left: 36px;
+  }
+  /* line 208, ../sass/_modal.scss */
+  .modal-dialog .modalRowContent {
+    margin-left: 110px;
+  }
+}
+/* line 276, ../sass/org_structure.scss */
+.footer {
+  background-color: #e1e1e1;
+  text-align: center;
+  padding: 0.75em;
+  margin: 0 -1px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+/* line 283, ../sass/org_structure.scss */
+.footer p {
+  margin-bottom: 0;
+}
+/* line 286, ../sass/org_structure.scss */
+.footer a {
+  font-size: 0.85em;
+}
+/* line 289, ../sass/org_structure.scss */
+.footer .counter {
+  font-size: 0.85em;
+}
+
+/* line 2, ../sass/_lifecycle.scss */
+.lifecycle h2 {
+  color: #205F9F;
+  text-transform: uppercase;
+  margin: 0 0 1em 0;
+}
+/* line 7, ../sass/_lifecycle.scss */
+.lifecycle .sectionTitleWrapper {
+  display: block;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #e1e1e1;
+}
+/* line 13, ../sass/_lifecycle.scss */
+.lifecycle .sectionTitleWrapper h3 {
+  display: block;
+  text-transform: uppercase;
+  border-top: none;
+  border-bottom: none;
+  padding: 8px 20px;
+  color: #fff;
+  background-image: url("../images/lifecycle_endArrow_left.png"), url("../images/lifecycle_endArrow_right.png");
+  background-position: center left, center right;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+/* line 25, ../sass/_lifecycle.scss */
+.lifecycle .sectionTitleWrapper h3.ER {
+  background-color: #c52e43;
+  margin-left: 16.666%;
+  margin-right: 16.666%;
+}
+/* line 30, ../sass/_lifecycle.scss */
+.lifecycle .sectionTitleWrapper h3.PDR {
+  background-color: #006da3;
+  border-top-left-radius: 8px;
+  border-left: none;
+  margin-right: 16.666%;
+}
+/* line 36, ../sass/_lifecycle.scss */
+.lifecycle .sectionTitleWrapper h3.PMR {
+  background-color: #389552;
+  border-top-left-radius: 8px;
+  border-left: none;
+  margin-right: 16.666%;
+}
+/* line 45, ../sass/_lifecycle.scss */
+.lifecycle #bannerRow {
+  background-color: #fff;
+  display: none;
+}
+/* line 48, ../sass/_lifecycle.scss */
+.lifecycle #bannerRow .modalRowContent {
+  padding: 3px 0;
+}
+/* line 50, ../sass/_lifecycle.scss */
+.lifecycle #bannerRow .modalRowContent #bannerTitle {
+  display: block;
+  text-align: center;
+  margin: 1em 0 0 0;
+}
+/* line 56, ../sass/_lifecycle.scss */
+.lifecycle #bannerRow #bannerWrapper {
+  text-align: center;
+  background-color: #fff;
+}
+/* line 59, ../sass/_lifecycle.scss */
+.lifecycle #bannerRow #bannerWrapper .bannerTable {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 10px 15px;
+}
+/* line 64, ../sass/_lifecycle.scss */
+.lifecycle #bannerRow #bannerWrapper .bannerTable .bannerCell {
+  display: table-cell;
+  border: 10px solid white;
+  width: 16.666%;
+  max-width: 250px;
+  height: 250px;
+  padding: 0.5em 1em;
+  font-size: 12px;
+  color: white;
+  text-shadow: 1px 1px 3px #333;
+}
+/* line 74, ../sass/_lifecycle.scss */
+.lifecycle #bannerRow #bannerWrapper .bannerTable .bannerCell.idea {
+  background: url("../images/lifecycle_bg_idea.jpg") 50% 50% no-repeat;
+}
+/* line 75, ../sass/_lifecycle.scss */
+.lifecycle #bannerRow #bannerWrapper .bannerTable .bannerCell.explore {
+  background: url("../images/lifecycle_bg_explore.jpg") 50% 50% no-repeat;
+}
+/* line 76, ../sass/_lifecycle.scss */
+.lifecycle #bannerRow #bannerWrapper .bannerTable .bannerCell.validate {
+  background: url("../images/lifecycle_bg_validate.jpg") 50% 50% no-repeat;
+}
+/* line 77, ../sass/_lifecycle.scss */
+.lifecycle #bannerRow #bannerWrapper .bannerTable .bannerCell.grow {
+  background: url("../images/lifecycle_bg_grow.jpg") 50% 50% no-repeat;
+}
+/* line 78, ../sass/_lifecycle.scss */
+.lifecycle #bannerRow #bannerWrapper .bannerTable .bannerCell.sustain {
+  background: url("../images/lifecycle_bg_sustain.jpg") 50% 50% no-repeat;
+}
+/* line 79, ../sass/_lifecycle.scss */
+.lifecycle #bannerRow #bannerWrapper .bannerTable .bannerCell.retire {
+  background: url("../images/lifecycle_bg_retire.jpg") 50% 50% no-repeat;
+}
+/* line 84, ../sass/_lifecycle.scss */
+.lifecycle .modalRowContent {
+  margin-left: 0;
+  padding: 23px;
+}
+/* line 87, ../sass/_lifecycle.scss */
+.lifecycle .modalRowContent .section {
+  display: block;
+  clear: both;
+}
+/* line 90, ../sass/_lifecycle.scss */
+.lifecycle .modalRowContent .section .sectionDescription {
+  padding-right: 2em;
+}
+/* line 93, ../sass/_lifecycle.scss */
+.lifecycle .modalRowContent .section .sectionBoxes {
+  display: block;
+  float: right;
+}
+/* line 96, ../sass/_lifecycle.scss */
+.lifecycle .modalRowContent .section .sectionBoxes .box {
+  width: 120px;
+  height: 100px;
+  display: table-cell;
+  padding: 0 0 1em 1em;
+  vertical-align: middle;
+  cursor: pointer;
+}
+/* line 103, ../sass/_lifecycle.scss */
+.lifecycle .modalRowContent .section .sectionBoxes .box div {
+  padding: 0.5em;
+  background: #bbbbbb;
+  display: table;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 2px solid #fbfbfb;
+  -moz-box-shadow: 0px 3px 5px 0px rgba(68, 68, 68, 0.15);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(68, 68, 68, 0.15);
+  box-shadow: 0px 3px 5px 0px rgba(68, 68, 68, 0.15);
+  text-align: center;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+/* line 117, ../sass/_lifecycle.scss */
+.lifecycle .modalRowContent .section .sectionBoxes .box div:hover {
+  background: #dadada;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+/* line 122, ../sass/_lifecycle.scss */
+.lifecycle .modalRowContent .section .sectionBoxes .box div:active {
+  -moz-box-shadow: 0px 0px 2px 0px rgba(68, 68, 68, 0.5);
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(68, 68, 68, 0.5);
+  box-shadow: 0px 0px 2px 0px rgba(68, 68, 68, 0.5);
+  background: #959595;
+}
+/* line 128, ../sass/_lifecycle.scss */
+.lifecycle .modalRowContent .section .sectionBoxes .box div span {
+  font-size: 12px;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 138, ../sass/_lifecycle.scss */
+.lifecycle .modalRowContent .section .sectionBoxes.ER .box div:hover {
+  border-color: #c52e43;
+}
+/* line 145, ../sass/_lifecycle.scss */
+.lifecycle .modalRowContent .section .sectionBoxes.PDR .box div:hover {
+  border-color: #006da3;
+}
+/* line 152, ../sass/_lifecycle.scss */
+.lifecycle .modalRowContent .section .sectionBoxes.PMR .box div:hover {
+  border-color: #389552;
+}
+/* line 160, ../sass/_lifecycle.scss */
+.lifecycle .stagesRow {
+  padding-bottom: 2em;
+}
+
+/* line 165, ../sass/_lifecycle.scss */
+.lifecyclePrompt {
+  text-align: center;
+  margin: 0.5em 0 0 0;
+}
+/* line 168, ../sass/_lifecycle.scss */
+.lifecyclePrompt div {
+  display: table;
+  margin: 0 auto;
+  padding: 0.5em;
+  cursor: pointer;
+  border-radius: 8px;
+}
+/* line 174, ../sass/_lifecycle.scss */
+.lifecyclePrompt div .icon {
+  display: none;
+  width: 55px;
+  height: 48px;
+  float: left;
+  margin-left: 20px;
+  margin-right: 1em;
+}
+/* line 181, ../sass/_lifecycle.scss */
+.lifecyclePrompt div .icon.PD {
+  background: url("../images/project_icons_lg.png") -275px 0;
+}
+/* line 185, ../sass/_lifecycle.scss */
+.lifecyclePrompt div h2 {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.25em;
+  color: #205F9F;
+  line-height: 24px;
+  height: 48px;
+  margin: 0;
+}
+/* line 194, ../sass/_lifecycle.scss */
+.lifecyclePrompt div:hover {
+  background-color: #eeeeee;
+}
+/* line 197, ../sass/_lifecycle.scss */
+.lifecyclePrompt div:active {
+  background-color: #fbfbfb;
+}
+
+@media (min-width: 630px) {
+  /* line 205, ../sass/_lifecycle.scss */
+  .lifecycle #bannerRow {
+    display: block;
+  }
+  /* line 209, ../sass/_lifecycle.scss */
+  .lifecycle #bannerRow #bannerWrapper .bannerTable .bannerCell {
+    font-size: 15px;
+  }
+
+  /* line 218, ../sass/_lifecycle.scss */
+  .lifecyclePrompt div .icon {
+    display: block;
+  }
+  /* line 221, ../sass/_lifecycle.scss */
+  .lifecyclePrompt div h2 {
+    font-size: 1.65em;
+  }
+}
+@media (min-width: 840px) {
+  /* line 232, ../sass/_lifecycle.scss */
+  .lifecycle #bannerRow #bannerWrapper .bannerTable .bannerCell {
+    font-size: 20px;
+  }
+}

@@ -32,7 +32,7 @@
 							<div class="copyCell">
 								<h1>{{displayBU}}</h1>
 								<h2>{{displaySubSection}}&nbsp;</h2>
-								<p>Click on the circle graphic to select a business unit and geography. 
+								<p>Click on the circle graphic to explore by business unit and type of project. 
 									<ul>
 										<li>Projects that correspond to your selection will be highlighted below.</li>
 										<li>Projects that share relevance across business units highlight in dark gray.</li> 
@@ -54,27 +54,27 @@
 		</div>
 	
 	<div class="row projectColumns">
-		<div class="col-md-4 col-sm-6 projectColumn professional clearfix">
-			<h2>Professional</h2>
+		<div class="col-md-4 col-sm-6 projectColumn pac clearfix">
+			<h2>Pearson Assessment Centre / Clinical</h2>
 			<div class="projectList">
-				<li ng-repeat="project in projectData | filter: {businessUnit:'professional'} " class="{{project.businessUnit}}" ng-show="{{project.show}}">
+				<li ng-repeat="project in projectData | filter: {businessUnit:'pac'} " class="{{project.businessUnit}}" ng-show="{{project.show}}">
 					<a tooltip="{{project.fullTitle}}" ng-mouseover="onProjectMouseOver($event, project.id)" ng-mouseleave="onProjectLeave($event, project.id)" ng-click="onProjectClick($event, project.id)" class="projectLink {{project.selectionState}} {{project.subSection}} {{project.icon}}">&nbsp;</a>
 				</li>
 			</div>
 		</div> 
-		<div class="col-md-4 col-sm-6 projectColumn higherEd clearfix">
-			<h2>Higher Ed</h2>
+		<div class="col-md-4 col-sm-6 projectColumn isdd clearfix">
+			<h2>Inside Services &amp; Direct Delivery</h2>
 			<div class="projectList">
-				<li ng-repeat="project in projectData | filter: {businessUnit:'higherEd'}" class="{{project.businessUnit}}" ng-show="{{project.show}}">
+				<li ng-repeat="project in projectData | filter: {businessUnit:'isdd'}" class="{{project.businessUnit}}" ng-show="{{project.show}}">
 					<a tooltip="{{project.fullTitle}}" ng-mouseover="onProjectMouseOver($event, project.id)" ng-mouseleave="onProjectLeave($event, project.id)" ng-click="onProjectClick($event, project.id)" class="projectLink {{project.selectionState}} {{project.subSection}} {{project.icon}}">&nbsp;</a>
 				</li>
 			</div>
 		</div> 
 		<div class="hiddenAtLarge clearfix"></div>
-		<div class="col-md-4 projectColumn school clearfix">
-			<h2>School</h2>
+		<div class="col-md-4 projectColumn other clearfix">
+			<h2>Higher Ed / Professional</h2>
 			<div class="projectList">
-				<li ng-repeat="project in projectData | filter: {businessUnit:'school'}" class="{{project.businessUnit}}" ng-show="{{project.show}}">
+				<li ng-repeat="project in projectData | filter: {businessUnit:'other'}" class="{{project.businessUnit}}" ng-show="{{project.show}}">
 					<a tooltip="{{project.fullTitle}}" ng-mouseover="onProjectMouseOver($event, project.id)" ng-mouseleave="onProjectLeave($event, project.id)" ng-click="onProjectClick($event, project.id)" class="projectLink {{project.selectionState}} {{project.subSection}} {{project.icon}}">&nbsp;</a>
 				</li>
 			</div>
